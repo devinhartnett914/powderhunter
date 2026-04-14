@@ -1,0 +1,575 @@
+---
+import { supabase } from '../lib/supabase';
+import '../styles/global.css';
+
+const { data: resorts } = await supabase
+  .from('resorts')
+  .select('*')
+  .order('name');
+
+const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powder Hunter — Ski Resort Finder</title>
+  <script src={`https://maps.googleapis.com/maps/api/js?key=${clientKey}&libraries=places`}></script>
+</head>
+<body>
+
+<header>
+  <h1>Powder Hunter</h1>
+  <p>Find the best family ski resorts — drive or fly</p>
+</header>
+
+<div class="controls">
+  <div class="control-group">
+    <label>Travel Mode</label>
+    <div class="mode-toggle">
+      <button class="mode-btn active" data-mode="drive" id="modeDrive">Drive</button>
+      <button class="mode-btn" data-mode="fly" id="modeFly">Fly</button>
+    </div>
+  </div>
+
+  <!-- Drive controls -->
+  <div class="control-group drive-only">
+    <label>Your Address</label>
+    <input type="text" id="address" placeholder="e.g., 123 Main St, Arlington, VA">
+  </div>
+  <div class="control-group drive-only">
+    <label>Max Drive (hrs)</label>
+    <input type="number" id="maxDrive" value="8" min="1" max="24">
+  </div>
+
+  <!-- Fly controls -->
+  <div class="control-group fly-only" style="display:none">
+    <label>Your Airport</label>
+    <input type="text" id="homeAirport" placeholder="e.g., DCA, IAD, BWI" list="airportList" style="width:220px" autocomplete="off">
+    <datalist id="airportList">
+      <!-- Metro area codes (all local airports) -->
+      <option value="WAS">Washington DC — All airports (WAS)</option>
+      <option value="NYC">New York — All airports (NYC)</option>
+      <option value="CHI">Chicago — All airports (CHI)</option>
+      <option value="QSF">San Francisco Bay — All airports (QSF)</option>
+      <option value="QLA">Los Angeles — All airports (QLA)</option>
+      <option value="QHO">Houston — All airports (QHO)</option>
+      <option value="YTO">Toronto — All airports (YTO)</option>
+      <option value="YMQ">Montreal — All airports (YMQ)</option>
+      <!-- US Major -->
+      <option value="ATL">Atlanta (ATL)</option>
+      <option value="BOS">Boston (BOS)</option>
+      <option value="BWI">Baltimore/Washington (BWI)</option>
+      <option value="CLT">Charlotte (CLT)</option>
+      <option value="CLE">Cleveland (CLE)</option>
+      <option value="CMH">Columbus (CMH)</option>
+      <option value="CVG">Cincinnati (CVG)</option>
+      <option value="DCA">Washington Reagan (DCA)</option>
+      <option value="DEN">Denver (DEN)</option>
+      <option value="DFW">Dallas/Fort Worth (DFW)</option>
+      <option value="DTW">Detroit (DTW)</option>
+      <option value="EWR">Newark (EWR)</option>
+      <option value="FLL">Fort Lauderdale (FLL)</option>
+      <option value="HNL">Honolulu (HNL)</option>
+      <option value="IAD">Washington Dulles (IAD)</option>
+      <option value="IAH">Houston Intercontinental (IAH)</option>
+      <option value="HOU">Houston Hobby (HOU)</option>
+      <option value="IND">Indianapolis (IND)</option>
+      <option value="JFK">New York JFK (JFK)</option>
+      <option value="LAS">Las Vegas (LAS)</option>
+      <option value="LAX">Los Angeles (LAX)</option>
+      <option value="LGA">New York LaGuardia (LGA)</option>
+      <option value="MCO">Orlando (MCO)</option>
+      <option value="MDW">Chicago Midway (MDW)</option>
+      <option value="MIA">Miami (MIA)</option>
+      <option value="MSP">Minneapolis (MSP)</option>
+      <option value="MSY">New Orleans (MSY)</option>
+      <option value="OAK">Oakland (OAK)</option>
+      <option value="ORD">Chicago O'Hare (ORD)</option>
+      <option value="PBI">West Palm Beach (PBI)</option>
+      <option value="PDX">Portland (PDX)</option>
+      <option value="PHL">Philadelphia (PHL)</option>
+      <option value="PHX">Phoenix (PHX)</option>
+      <option value="PIT">Pittsburgh (PIT)</option>
+      <option value="RDU">Raleigh-Durham (RDU)</option>
+      <option value="RIC">Richmond (RIC)</option>
+      <option value="SAN">San Diego (SAN)</option>
+      <option value="SAT">San Antonio (SAT)</option>
+      <option value="SEA">Seattle (SEA)</option>
+      <option value="SFO">San Francisco (SFO)</option>
+      <option value="SJC">San Jose (SJC)</option>
+      <option value="SLC">Salt Lake City (SLC)</option>
+      <option value="STL">St. Louis (STL)</option>
+      <option value="TPA">Tampa (TPA)</option>
+      <!-- Canada -->
+      <option value="YEG">Edmonton (YEG)</option>
+      <option value="YOW">Ottawa (YOW)</option>
+      <option value="YUL">Montreal (YUL)</option>
+      <option value="YVR">Vancouver (YVR)</option>
+      <option value="YWG">Winnipeg (YWG)</option>
+      <option value="YYC">Calgary (YYC)</option>
+      <option value="YYZ">Toronto (YYZ)</option>
+    </datalist>
+  </div>
+
+  <!-- Shared: dates -->
+  <div class="control-group">
+    <label>Depart Date</label>
+    <input type="date" id="departDate">
+  </div>
+  <div class="control-group">
+    <label>Return Date</label>
+    <input type="date" id="returnDate">
+  </div>
+
+  <div class="control-group">
+    <label>&nbsp;</label>
+    <button class="btn btn-primary" id="searchBtn">Search</button>
+  </div>
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+    <span id="loadingText">Calculating...</span>
+  </div>
+</div>
+
+<div class="filters">
+  <span class="filter-label">Pass:</span>
+  <span class="filter-chip active" data-filter="pass" data-value="all">All</span>
+  <span class="filter-chip" data-filter="pass" data-value="Ikon">Ikon</span>
+  <span class="filter-chip" data-filter="pass" data-value="Epic">Epic</span>
+  <span class="filter-chip" data-filter="pass" data-value="Indy">Indy</span>
+  <span class="filter-chip" data-filter="pass" data-value="Mountain Collective">Mountain Collective</span>
+  <span class="filter-chip" data-filter="pass" data-value="Club Med">Club Med</span>
+  <span style="margin-left: 16px"></span>
+  <span class="filter-label">Daycare:</span>
+  <span class="filter-chip active" data-filter="daycare" data-value="all">All</span>
+  <span class="filter-chip" data-filter="daycare" data-value="yes">Has Daycare</span>
+  <span style="margin-left: 16px"></span>
+  <span class="filter-label">Kids Free:</span>
+  <span class="filter-chip active" data-filter="kidsfree" data-value="all">All</span>
+  <span class="filter-chip" data-filter="kidsfree" data-value="yes">Kids Ski Free</span>
+</div>
+
+<div class="status-bar" id="statusBar">Choose Drive or Fly, then click Search.</div>
+
+<main>
+  <table id="resortTable">
+    <thead>
+      <tr>
+        <th data-col="driveTime" class="drive-col">Drive Time <span class="sort-arrow">&#9660;</span></th>
+        <th data-col="pass">Pass <span class="sort-arrow">&#9660;</span></th>
+        <th data-col="name">Resort <span class="sort-arrow">&#9660;</span></th>
+        <th data-col="location">Location <span class="sort-arrow">&#9660;</span></th>
+        <th data-col="acreage">Acreage <span class="sort-arrow">&#9660;</span></th>
+        <th data-col="kids_ski_free">Kids Free <span class="sort-arrow">&#9660;</span></th>
+        <th data-col="ski_school_min_age">Ski School Age <span class="sort-arrow">&#9660;</span></th>
+        <th>Ski School Cost</th>
+        <th>Daycare</th>
+        <th>Closest Airport</th>
+        <th>Flights</th>
+      </tr>
+    </thead>
+    <tbody id="resortBody"></tbody>
+  </table>
+  <div class="empty" id="emptyState">Choose Drive or Fly above, then click Search.</div>
+</main>
+
+<script define:vars={{ resorts }}>
+  const RESORTS = resorts;
+
+  let currentMode = 'drive';
+  let currentResults = [];
+  let sortCol = 'driveTime';
+  let sortAsc = true;
+  const activeFilters = { pass: 'all', daycare: 'all', kidsfree: 'all' };
+
+  // Parse airport code from text like "Reno (RNO)"
+  function parseAirportCode(str) {
+    if (!str) return null;
+    const match = str.match(/\(([A-Z]{3})\)/);
+    return match ? match[1] : null;
+  }
+
+  // Haversine distance in miles
+  function haversine(lat1, lng1, lat2, lng2) {
+    const R = 3959;
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLng = (lng2 - lng1) * Math.PI / 180;
+    const a = Math.sin(dLat/2) ** 2 + Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) * Math.sin(dLng/2) ** 2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  // Geocode address via API route
+  async function geocode(address) {
+    const res = await fetch(`/api/geocode?address=${encodeURIComponent(address)}`);
+    if (!res.ok) throw new Error('Could not geocode address');
+    return await res.json();
+  }
+
+  // Get driving times via API route
+  async function getDrivingTimes(origin, candidates) {
+    const res = await fetch('/api/distance-matrix', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        originLat: origin.lat,
+        originLng: origin.lng,
+        destinations: candidates.map(r => ({ lat: r.lat, lng: r.lng })),
+      }),
+    });
+    if (!res.ok) throw new Error('Distance calculation failed');
+    const data = await res.json();
+    return data.results.map(r => ({
+      ...candidates[r.index],
+      driveTime: r.durationSec,
+      driveText: r.durationText,
+      driveMiles: r.distanceMi,
+    }));
+  }
+
+  // Build Google Flights URL from origin airport to destination airport
+  function flightsUrl(fromCode, toCode) {
+    const depart = document.getElementById('departDate').value;
+    const ret = document.getElementById('returnDate').value;
+    let url = `https://www.google.com/travel/flights?q=flights+from+${fromCode}+to+${toCode}`;
+    if (depart) {
+      url += `+departing+${depart}`;
+      if (ret) url += `+returning+${ret}`;
+    }
+    return url;
+  }
+
+  // --- Mode toggle ---
+  function setMode(mode) {
+    currentMode = mode;
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector(`.mode-btn[data-mode="${mode}"]`).classList.add('active');
+
+    const driveEls = document.querySelectorAll('.drive-only');
+    const flyEls = document.querySelectorAll('.fly-only');
+    const driveCols = document.querySelectorAll('.drive-col');
+
+    if (mode === 'drive') {
+      driveEls.forEach(el => el.style.display = '');
+      flyEls.forEach(el => el.style.display = 'none');
+      driveCols.forEach(el => el.style.display = '');
+    } else {
+      driveEls.forEach(el => el.style.display = 'none');
+      flyEls.forEach(el => el.style.display = '');
+      driveCols.forEach(el => el.style.display = 'none');
+    }
+
+    // Reset results when switching modes
+    currentResults = [];
+    renderTable();
+
+    const statusBar = document.getElementById('statusBar');
+    if (mode === 'drive') {
+      statusBar.textContent = 'Enter your address and click Search to find resorts within driving distance.';
+    } else {
+      statusBar.textContent = 'Enter your home airport and click Search to see all resorts with flight links.';
+    }
+  }
+
+  // --- Search ---
+  async function search() {
+    if (currentMode === 'drive') {
+      await searchDrive();
+    } else {
+      searchFly();
+    }
+  }
+
+  async function searchDrive() {
+    const address = document.getElementById('address').value.trim();
+    const maxHours = parseFloat(document.getElementById('maxDrive').value) || 8;
+
+    if (!address) { alert('Please enter an address'); return; }
+
+    const btn = document.getElementById('searchBtn');
+    const loading = document.getElementById('loading');
+    btn.disabled = true;
+    loading.classList.add('active');
+    document.getElementById('loadingText').textContent = 'Geocoding your address...';
+
+    try {
+      const origin = await geocode(address);
+
+      const maxMiles = maxHours * 60;
+      const candidates = RESORTS.filter(r =>
+        r.lat && r.lng && haversine(origin.lat, origin.lng, r.lat, r.lng) < maxMiles * 1.5
+      );
+
+      document.getElementById('loadingText').textContent =
+        `Found ${candidates.length} candidates, calculating driving distances...`;
+
+      if (candidates.length === 0) {
+        currentResults = [];
+        renderTable();
+        document.getElementById('statusBar').textContent = 'No resorts found within range.';
+        return;
+      }
+
+      const driveResults = await getDrivingTimes(origin, candidates);
+
+      const maxSec = maxHours * 3600;
+      currentResults = driveResults.filter(r => r.driveTime <= maxSec);
+
+      sortCol = 'driveTime';
+      sortAsc = true;
+      renderTable();
+
+      const passCount = {};
+      currentResults.forEach(r => { passCount[r.pass_type] = (passCount[r.pass_type] || 0) + 1; });
+      const passSummary = Object.entries(passCount).map(([k, v]) => `${v} ${k}`).join(', ');
+      document.getElementById('statusBar').textContent =
+        `${currentResults.length} resorts within ${maxHours} hours: ${passSummary}`;
+
+    } catch (err) {
+      alert('Error: ' + err.message);
+    } finally {
+      btn.disabled = false;
+      loading.classList.remove('active');
+    }
+  }
+
+  function getHomeAirport() {
+    const raw = document.getElementById('homeAirport').value.trim().toUpperCase();
+    // Extract 3-letter code if user selected a datalist option or typed extra text
+    const match = raw.match(/^([A-Z]{3})/);
+    return match ? match[1] : raw;
+  }
+
+  function searchFly() {
+    const homeAirport = getHomeAirport();
+    if (!homeAirport) { alert('Please enter your home airport code'); return; }
+
+    // In fly mode, show all resorts that have an airport
+    currentResults = RESORTS.filter(r => parseAirportCode(r.closest_airport) || parseAirportCode(r.major_airport));
+
+    sortCol = 'name';
+    sortAsc = true;
+    renderTable();
+
+    const passCount = {};
+    currentResults.forEach(r => { passCount[r.pass_type] = (passCount[r.pass_type] || 0) + 1; });
+    const passSummary = Object.entries(passCount).map(([k, v]) => `${v} ${k}`).join(', ');
+    document.getElementById('statusBar').textContent =
+      `${currentResults.length} resorts with airports: ${passSummary}`;
+  }
+
+  // --- Filters ---
+  function toggleFilter(chip) {
+    const filterType = chip.dataset.filter;
+    document.querySelectorAll(`.filter-chip[data-filter="${filterType}"]`).forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    activeFilters[filterType] = chip.dataset.value;
+    renderTable();
+  }
+
+  function getFilteredResults() {
+    return currentResults.filter(r => {
+      if (activeFilters.pass !== 'all' && r.pass_type !== activeFilters.pass) return false;
+      if (activeFilters.daycare === 'yes') {
+        const dc = (r.daycare || '').toLowerCase();
+        if (!dc.startsWith('yes')) return false;
+      }
+      if (activeFilters.kidsfree === 'yes') {
+        const kf = (r.kids_ski_free || '').toLowerCase();
+        if (kf === 'no' || !kf) return false;
+      }
+      return true;
+    });
+  }
+
+  // --- Sorting ---
+  function sortTable(col) {
+    if (sortCol === col) sortAsc = !sortAsc;
+    else { sortCol = col; sortAsc = true; }
+    renderTable();
+  }
+
+  function getSortVal(r, col) {
+    switch(col) {
+      case 'driveTime': return r.driveTime || 999999;
+      case 'pass': return r.pass_type || '';
+      case 'name': return r.name || '';
+      case 'location': return r.location || '';
+      case 'acreage': return r.acreage || 0;
+      case 'kids_ski_free': return r.kids_ski_free || '';
+      case 'ski_school_min_age': return r.ski_school_min_age || 99;
+      default: return '';
+    }
+  }
+
+  // --- Render ---
+  function renderTable() {
+    const filtered = getFilteredResults();
+    const isDrive = currentMode === 'drive';
+    const homeAirport = getHomeAirport();
+    const hasDates = !!document.getElementById('departDate').value;
+
+    filtered.sort((a, b) => {
+      let va = getSortVal(a, sortCol), vb = getSortVal(b, sortCol);
+      if (typeof va === 'string') { va = va.toLowerCase(); vb = vb.toLowerCase(); }
+      if (sortCol === 'acreage') return sortAsc ? vb - va : va - vb;
+      if (va < vb) return sortAsc ? -1 : 1;
+      if (va > vb) return sortAsc ? 1 : -1;
+      return 0;
+    });
+
+    const tbody = document.getElementById('resortBody');
+    const empty = document.getElementById('emptyState');
+
+    // Hide/show drive time column cells
+    document.querySelectorAll('.drive-col').forEach(el => el.style.display = isDrive ? '' : 'none');
+
+    if (filtered.length === 0) {
+      tbody.innerHTML = '';
+      empty.style.display = 'block';
+      if (currentResults.length === 0) {
+        empty.textContent = isDrive
+          ? 'Enter your address above to find resorts within driving distance.'
+          : 'Enter your home airport and click Search.';
+      } else {
+        empty.textContent = 'No resorts match your current filters.';
+      }
+      return;
+    }
+
+    empty.style.display = 'none';
+
+    tbody.innerHTML = filtered.map(r => {
+      // Drive time cell (only in drive mode)
+      let driveCell = '';
+      if (isDrive) {
+        const driveHrs = r.driveTime / 3600;
+        const driveClass = driveHrs <= 4 ? 'short' : driveHrs <= 6 ? 'medium' : 'long';
+        driveCell = `<td class="drive-col"><span class="drive-time ${driveClass}">${r.driveText}</span><br><span class="pass-count">${r.driveMiles} mi</span></td>`;
+      }
+
+      // Resort name with link
+      const resortName = r.url
+        ? `<a href="${r.url}" target="_blank">${r.name}</a>`
+        : r.name;
+
+      // Kids ski free with link
+      const kidsFreeBadge = r.kids_ski_free
+        ? `<span class="badge ${r.kids_ski_free === 'No' ? 'badge-no' : 'badge-yes'}">${r.kids_ski_free}</span>`
+        : '-';
+      const kidsFree = r.kids_ski_free && r.kids_ski_free_url
+        ? `<a href="${r.kids_ski_free_url}" target="_blank">${kidsFreeBadge}</a>`
+        : kidsFreeBadge;
+
+      // Ski school age with link
+      const schoolAge = r.ski_school_min_age
+        ? (r.ski_school_url
+          ? `<a href="${r.ski_school_url}" target="_blank">${r.ski_school_min_age}</a>`
+          : r.ski_school_min_age)
+        : '-';
+
+      // Ski school cost with link
+      const schoolCost = r.ski_school_max_cost
+        ? (r.ski_school_cost_url
+          ? `<a href="${r.ski_school_cost_url}" target="_blank">$${r.ski_school_max_cost}</a>`
+          : '$' + r.ski_school_max_cost)
+        : '-';
+
+      // Daycare with link
+      const daycareBadge = r.daycare
+        ? `<span class="badge ${r.daycare.toLowerCase().startsWith('yes') ? 'badge-yes' : 'badge-no'}">${r.daycare}</span>`
+        : '-';
+      const daycare = r.daycare && r.daycare_url
+        ? `<a href="${r.daycare_url}" target="_blank">${daycareBadge}</a>`
+        : daycareBadge;
+
+      // Flight links
+      const airportCode = parseAirportCode(r.closest_airport);
+      const majorCode = parseAirportCode(r.major_airport);
+      let flightCell = '-';
+
+      if (currentMode === 'fly' && homeAirport) {
+        // Fly mode: link from home airport to resort airport
+        const badges = [];
+        if (airportCode) {
+          const url = flightsUrl(homeAirport, airportCode);
+          const label = hasDates ? `&#9992; ${homeAirport}→${airportCode}` : `&#9992; ${homeAirport}→${airportCode}`;
+          badges.push(`<a href="${url}" target="_blank" class="badge badge-flight">${label}</a>`);
+        }
+        if (majorCode && majorCode !== airportCode) {
+          const url = flightsUrl(homeAirport, majorCode);
+          const label = hasDates ? `&#9992; ${homeAirport}→${majorCode}` : `&#9992; ${homeAirport}→${majorCode}`;
+          badges.push(`<a href="${url}" target="_blank" class="badge badge-flight">${label}</a>`);
+        }
+        flightCell = badges.length > 0 ? badges.join(' ') : '-';
+      } else {
+        // Drive mode: just show resort airport codes linking to Google Flights
+        const badges = [];
+        if (airportCode) {
+          const url = flightsUrl('', airportCode);
+          badges.push(`<a href="${url}" target="_blank" class="badge badge-flight">&#9992; ${airportCode}</a>`);
+        }
+        if (majorCode && majorCode !== airportCode) {
+          const url = flightsUrl('', majorCode);
+          badges.push(`<a href="${url}" target="_blank" class="badge badge-flight">&#9992; ${majorCode}</a>`);
+        }
+        flightCell = badges.length > 0 ? badges.join(' ') : '-';
+      }
+
+      return `<tr>
+        ${driveCell}
+        <td><span class="badge badge-pass">${r.pass_type}</span></td>
+        <td>${resortName}</td>
+        <td>${r.location || ''}</td>
+        <td>${r.acreage ? r.acreage.toLocaleString() : '-'}</td>
+        <td>${kidsFree}</td>
+        <td>${schoolAge}</td>
+        <td>${schoolCost}</td>
+        <td>${daycare}</td>
+        <td>${r.closest_airport || '-'}</td>
+        <td>${flightCell}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  // Set default dates (next Saturday + following Saturday)
+  function setDefaultDates() {
+    const now = new Date();
+    const nextSat = new Date(now);
+    nextSat.setDate(now.getDate() + (6 - now.getDay() + 7) % 7 || 7);
+    const followingSat = new Date(nextSat);
+    followingSat.setDate(nextSat.getDate() + 7);
+
+    document.getElementById('departDate').value = nextSat.toISOString().split('T')[0];
+    document.getElementById('returnDate').value = followingSat.toISOString().split('T')[0];
+  }
+
+  // Wire up event listeners
+  document.getElementById('searchBtn').addEventListener('click', search);
+  document.getElementById('address').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') search();
+  });
+  document.getElementById('homeAirport').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') search();
+  });
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => toggleFilter(chip));
+  });
+  document.querySelectorAll('thead th[data-col]').forEach(th => {
+    th.addEventListener('click', () => sortTable(th.dataset.col));
+  });
+  document.getElementById('modeDrive').addEventListener('click', () => setMode('drive'));
+  document.getElementById('modeFly').addEventListener('click', () => setMode('fly'));
+
+  // Init Places Autocomplete for address
+  const autocomplete = new google.maps.places.Autocomplete(
+    document.getElementById('address'),
+    { types: ['address'], componentRestrictions: { country: 'us' } }
+  );
+
+  setDefaultDates();
+</script>
+
+</body>
+</html>
