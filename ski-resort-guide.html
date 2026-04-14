@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Ski Resort Guide - Ikon Pass</title>
+<style>
+  :root {
+    --blue: #2563eb; --blue-light: #dbeafe; --blue-dark: #1e40af;
+    --gray-50: #f9fafb; --gray-100: #f3f4f6; --gray-200: #e5e7eb;
+    --gray-300: #d1d5db; --gray-400: #9ca3af; --gray-500: #6b7280;
+    --gray-700: #374151; --gray-800: #1f2937; --gray-900: #111827;
+    --green: #059669; --green-light: #d1fae5;
+    --amber: #d97706; --amber-light: #fef3c7;
+    --red-light: #fee2e2;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--gray-50); color: var(--gray-800); }
+
+  .header { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); color: white; padding: 2rem; text-align: center; }
+  .header h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+  .header p { opacity: 0.85; font-size: 0.95rem; }
+
+  .controls { background: white; border-bottom: 1px solid var(--gray-200); padding: 1rem 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; position: sticky; top: 0; z-index: 20; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .controls input[type="text"] { padding: 0.5rem 0.75rem; border: 1px solid var(--gray-300); border-radius: 6px; font-size: 0.875rem; width: 220px; outline: none; }
+  .controls input[type="text"]:focus { border-color: var(--blue); box-shadow: 0 0 0 2px var(--blue-light); }
+  .controls select { padding: 0.5rem 0.75rem; border: 1px solid var(--gray-300); border-radius: 6px; font-size: 0.875rem; background: white; outline: none; cursor: pointer; }
+  .controls select:focus { border-color: var(--blue); box-shadow: 0 0 0 2px var(--blue-light); }
+  .controls label { font-size: 0.8rem; color: var(--gray-500); font-weight: 500; }
+  .filter-group { display: flex; flex-direction: column; gap: 0.2rem; }
+  .resort-count { margin-left: auto; font-size: 0.85rem; color: var(--gray-500); }
+  .reset-btn { padding: 0.5rem 0.75rem; border: 1px solid var(--gray-300); border-radius: 6px; background: white; font-size: 0.8rem; cursor: pointer; color: var(--gray-500); }
+  .reset-btn:hover { background: var(--gray-100); }
+
+  .table-wrap { overflow-x: auto; padding: 0 1rem 2rem; }
+  table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.85rem; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+
+  thead th { background: var(--gray-800); color: white; padding: 0.6rem 0.75rem; text-align: left; font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em; white-space: nowrap; cursor: pointer; user-select: none; position: sticky; top: 68px; z-index: 10; }
+  thead th:hover { background: var(--gray-700); }
+  thead th .sort-icon { margin-left: 4px; opacity: 0.4; font-size: 0.7rem; }
+  thead th.sorted .sort-icon { opacity: 1; }
+  thead th.col-group { background: var(--blue-dark); text-align: center; font-size: 0.7rem; letter-spacing: 0.05em; cursor: default; }
+  thead th.col-group:hover { background: var(--blue-dark); }
+
+  tbody tr { border-bottom: 1px solid var(--gray-100); transition: background 0.15s; }
+  tbody tr:hover { background: var(--blue-light); }
+  td { padding: 0.6rem 0.75rem; vertical-align: middle; }
+  td.center { text-align: center; }
+  td.resort-name { font-weight: 600; white-space: nowrap; }
+  td.resort-name a { color: var(--blue); text-decoration: none; }
+  td.resort-name a:hover { text-decoration: underline; }
+
+  td a { color: var(--blue); text-decoration: none; }
+  td a:hover { text-decoration: underline; }
+
+  .badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+  .badge-green { background: var(--green-light); color: var(--green); }
+  .badge-amber { background: var(--amber-light); color: var(--amber); }
+  .badge-red { background: var(--red-light); color: #dc2626; }
+  .badge-gray { background: var(--gray-100); color: var(--gray-500); }
+
+  .flight-link { display: inline-block; padding: 0.15rem 0.4rem; background: var(--blue-light); color: var(--blue-dark); border-radius: 4px; font-size: 0.75rem; font-weight: 600; text-decoration: none; margin: 0 1px; }
+  .flight-link:hover { background: var(--blue); color: white; text-decoration: none; }
+
+  .acreage-bar { display: flex; align-items: center; gap: 6px; }
+  .acreage-bar .bar { height: 6px; background: linear-gradient(90deg, #60a5fa, #2563eb); border-radius: 3px; min-width: 4px; }
+
+  @media (max-width: 768px) {
+    .controls { flex-direction: column; align-items: stretch; }
+    .controls input[type="text"] { width: 100%; }
+    .resort-count { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Family Ski Resort Guide</h1>
+  <p>Ikon Pass Resorts &mdash; 37 US Resorts with family info, ski school costs & flight links</p>
+</div>
+
+<div class="controls" id="controls">
+  <div class="filter-group">
+    <label>Search</label>
+    <input type="text" id="search" placeholder="Search resorts...">
+  </div>
+  <div class="filter-group">
+    <label>Daycare</label>
+    <select id="filterDaycare"><option value="">All</option><option value="Yes">Yes</option><option value="No">No</option></select>
+  </div>
+  <div class="filter-group">
+    <label>Kids Ski Free</label>
+    <select id="filterKidsFree"><option value="">All</option><option value="Under 13">Under 13</option><option value="Under 7">Under 7</option><option value="Under 6">Under 6</option><option value="Under 5">Under 5</option><option value="No">No</option></select>
+  </div>
+  <div class="filter-group">
+    <label>Min Acreage</label>
+    <select id="filterAcreage"><option value="0">Any</option><option value="500">500+</option><option value="1000">1,000+</option><option value="2000">2,000+</option><option value="3000">3,000+</option></select>
+  </div>
+  <div class="filter-group">
+    <label>Max Ski School Cost</label>
+    <select id="filterCost"><option value="9999">Any</option><option value="250">Under $250</option><option value="300">Under $300</option><option value="350">Under $350</option><option value="400">Under $400</option></select>
+  </div>
+  <button class="reset-btn" onclick="resetFilters()">Reset Filters</button>
+  <span class="resort-count" id="resortCount">37 resorts</span>
+</div>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr id="groupRow">
+      <th class="col-group" colspan="3">Resort Info</th>
+      <th class="col-group" colspan="4">Kids Programs</th>
+      <th class="col-group" colspan="4">Closest Airport</th>
+      <th class="col-group" colspan="4">Closest Major Airport</th>
+    </tr>
+    <tr id="headerRow"></tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+</div>
+
+<script>
+const resorts = [
+  {"name":"Palisades Tahoe","nameLink":"https://www.palisadestahoe.com","acreage":6000,"kidsFree":"Under 5","kidsFreeLink":"https://www.palisadestahoe.com/plan-your-visit/deals-and-packages/kids-ski-free-4-and-under","skiAge":3,"skiAgeLink":"https://www.palisadestahoe.com/ski-school","skiCost":400,"skiCostLink":"https://www.palisadestahoe.com/ski-school","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"Reno (RNO)","ac":"RNO","airportDist":"50 min","majorAirport":"Reno (RNO)","mc":"RNO","majorDist":"1 hr"},
+  {"name":"Big Sky","nameLink":"https://bigskyresort.com","acreage":5850,"kidsFree":"Under 7","kidsFreeLink":"https://help.bigskyresort.com/s/article/Does-my-child-under-6-need-a-lift-ticket","skiAge":3,"skiAgeLink":"https://bigskyresort.com/mountain-sports-school","skiCost":400,"skiCostLink":"https://bigskyresort.com/mountain-sports-school","daycare":"Yes","daycareLink":"https://bigskyresort.com/lone-peak-playhouse","daycareCost":80,"airport":"Bozeman (BZN)","ac":"BZN","airportDist":"1 hr","majorAirport":"Bozeman (BZN)","mc":"BZN","majorDist":"1 hr"},
+  {"name":"Aspen Snowmass","nameLink":"https://www.aspensnowmass.com","acreage":5700,"kidsFree":"Under 7","kidsFreeLink":"https://www.aspensnowmass.com/visit/packages-and-deals/kids-ski-free","skiAge":3,"skiAgeLink":"https://www.aspensnowmass.com/visit/lessons","skiCost":450,"skiCostLink":"https://www.aspensnowmass.com/visit/lessons","daycare":"Yes","daycareLink":"https://www.aspensnowmass.com/visit/lessons/child-care","daycareCost":200,"airport":"Aspen (ASE)","ac":"ASE","airportDist":"10 min","majorAirport":"Denver (DEN)","mc":"DEN","majorDist":"4 hr"},
+  {"name":"Mt. Bachelor","nameLink":"https://www.mtbachelor.com","acreage":4323,"kidsFree":"Under 6","kidsFreeLink":"https://www.mtbachelor.com/tickets-passes/season-passes/kids-ski-free/","skiAge":3,"skiAgeLink":"https://www.mtbachelor.com/lessons-rentals/lessons/group-lessons/signature-start","skiCost":325,"skiCostLink":"https://www.mtbachelor.com/lessons-rentals/lessons/group-lessons/signature-start","daycare":"Yes","daycareLink":"https://www.mtbachelor.com/gravity-school/childcare","daycareCost":null,"airport":"Redmond (RDM)","ac":"RDM","airportDist":"55 min","majorAirport":"Portland (PDX)","mc":"PDX","majorDist":"3 hr 20 min"},
+  {"name":"Deer Valley","nameLink":"https://www.deervalley.com","acreage":4300,"kidsFree":"Under 13","kidsFreeLink":"https://www.deervalley.com/plan-your-trip/packages-specials/kids-ski-free","skiAge":3,"skiAgeLink":"https://www.deervalley.com/plan-your-trip/ski-school","skiCost":460,"skiCostLink":"https://www.deervalley.com/plan-your-trip/ski-school","daycare":"Yes","daycareLink":"https://www.deervalley.com/things-to-do/activities/childrens-center","daycareCost":null,"airport":"Salt Lake City (SLC)","ac":"SLC","airportDist":"45 min","majorAirport":"Salt Lake City (SLC)","mc":"SLC","majorDist":"45 min"},
+  {"name":"Steamboat","nameLink":"https://www.steamboat.com","acreage":3741,"kidsFree":"Under 13","kidsFreeLink":"https://www.steamboat.com/plan-your-trip/deals-and-packages/kids-ski-and-ride-free","skiAge":2,"skiAgeLink":"https://www.steamboat.com/plan-your-trip/snowboarding-ski-lessons","skiCost":380,"skiCostLink":"https://www.steamboat.com/plan-your-trip/snowboarding-ski-lessons","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"Hayden (HDN)","ac":"HDN","airportDist":"30 min","majorAirport":"Denver (DEN)","mc":"DEN","majorDist":"3 hr 45 min"},
+  {"name":"Mammoth","nameLink":"https://www.mammothmountain.com","acreage":3500,"kidsFree":"Under 5","kidsFreeLink":"https://www.mammothmountain.com/plan-your-trip/deals-and-packages/kids-ski-free-week","skiAge":3,"skiAgeLink":"https://www.mammothmountain.com/things-to-do/ski-and-snowboard-lessons","skiCost":350,"skiCostLink":"https://www.mammothmountain.com/things-to-do/ski-and-snowboard-lessons","daycare":"Yes","daycareLink":"https://www.mammothmountain.com/things-to-do/child-care","daycareCost":230,"airport":"Bishop (BIH)","ac":"BIH","airportDist":"45 min","majorAirport":"Los Angeles (LAX)","mc":"LAX","majorDist":"5 hr 30 min"},
+  {"name":"Winter Park","nameLink":"https://www.winterparkresort.com","acreage":3081,"kidsFree":"Under 5","kidsFreeLink":"https://www.winterparkresort.com/plan-your-trip/deals-and-packages/kids-lesson-and-lift","skiAge":4,"skiAgeLink":"https://www.winterparkresort.com/plan-your-trip/lessons/ski-and-ride-school","skiCost":350,"skiCostLink":"https://www.winterparkresort.com/plan-your-trip/lessons/ski-and-ride-school","daycare":"Yes","daycareLink":"https://www.winterparkresort.com/employment/early-education","daycareCost":null,"airport":"Denver (DEN)","ac":"DEN","airportDist":"2 hr","majorAirport":"Denver (DEN)","mc":"DEN","majorDist":"2 hr"},
+  {"name":"Snowbasin","nameLink":"https://www.snowbasin.com","acreage":3000,"kidsFree":"Under 5","kidsFreeLink":"https://www.snowbasin.com/tickets-passes/season-passes/","skiAge":3,"skiAgeLink":"https://www.snowbasin.com/lessons/","skiCost":300,"skiCostLink":"https://www.snowbasin.com/lessons/","daycare":"Yes","daycareLink":"https://www.hakutah.com","daycareCost":75,"airport":"Salt Lake City (SLC)","ac":"SLC","airportDist":"50 min","majorAirport":"Salt Lake City (SLC)","mc":"SLC","majorDist":"50 min"},
+  {"name":"Alta","nameLink":"https://www.alta.com","acreage":2614,"kidsFree":"Under 7","kidsFreeLink":"https://shop.alta.com/products/ages-6-under-season-pass-2","skiAge":3,"skiAgeLink":"https://www.alta.com/ski-school","skiCost":325,"skiCostLink":"https://www.alta.com/ski-school","daycare":"Yes","daycareLink":"https://www.altachildrenscenter.com","daycareCost":null,"airport":"Salt Lake City (SLC)","ac":"SLC","airportDist":"45 min","majorAirport":"Salt Lake City (SLC)","mc":"SLC","majorDist":"45 min"},
+  {"name":"Crystal Mountain","nameLink":"https://www.crystalmountainresort.com","acreage":2600,"kidsFree":"Under 7","kidsFreeLink":"https://www.crystalmountainresort.com/plan-your-trip/special-offers","skiAge":4,"skiAgeLink":"https://www.crystalmountainresort.com/plan-your-trip/ski-and-snowboard-lessons/kids-learning-center","skiCost":325,"skiCostLink":"https://www.crystalmountainresort.com/plan-your-trip/ski-and-snowboard-lessons/kids-learning-center","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"Seattle (SEA)","ac":"SEA","airportDist":"1 hr 30 min","majorAirport":"Seattle (SEA)","mc":"SEA","majorDist":"1 hr 30 min"},
+  {"name":"Copper Mountain","nameLink":"https://www.coppercolorado.com","acreage":2507,"kidsFree":"Under 5","kidsFreeLink":"https://www.coppercolorado.com/tickets-passes/season-passes/","skiAge":3,"skiAgeLink":"https://www.coppercolorado.com/lessons-rentals/lessons","skiCost":350,"skiCostLink":"https://www.coppercolorado.com/lessons-rentals/lessons","daycare":"Yes","daycareLink":"https://www.coppercolorado.com/lodging-amenities/mountain-sprouts-academy","daycareCost":null,"airport":"Denver (DEN)","ac":"DEN","airportDist":"1 hr 50 min","majorAirport":"Denver (DEN)","mc":"DEN","majorDist":"1 hr 50 min"},
+  {"name":"Jackson Hole","nameLink":"https://www.jacksonhole.com","acreage":2500,"kidsFree":"Under 5","kidsFreeLink":"https://www.jacksonhole.com/lift-tickets","skiAge":3,"skiAgeLink":"https://www.jacksonhole.com/mountain-sports-school/children-lessons","skiCost":399,"skiCostLink":"https://www.jacksonhole.com/mountain-sports-school/children-lessons","daycare":"Yes","daycareLink":"https://www.jacksonhole.com/mountain-sports-school/children-lessons","daycareCost":null,"airport":"Jackson Hole (JAC)","ac":"JAC","airportDist":"15 min","majorAirport":"Jackson Hole (JAC)","mc":"JAC","majorDist":"35 min"},
+  {"name":"Sun Valley","nameLink":"https://www.sunvalley.com","acreage":2054,"kidsFree":"Under 5","kidsFreeLink":"https://www.sunvalley.com/lodging/kids-ski-free/","skiAge":2,"skiAgeLink":"https://www.sunvalley.com/lessons/winter-programs","skiCost":300,"skiCostLink":"https://www.sunvalley.com/lessons/winter-programs","daycare":"Yes","daycareLink":"https://www.sunvalley.com/lessons/winter-programs","daycareCost":155,"airport":"Boise (BOI)","ac":"BOI","airportDist":"2 hr 30 min","majorAirport":"Boise (BOI)","mc":"BOI","majorDist":"2 hr 30 min"},
+  {"name":"Sierra-at-Tahoe","nameLink":"https://www.sierraattahoe.com","acreage":2000,"kidsFree":"Under 5","kidsFreeLink":"https://sierraattahoe.com/sierra-for-families/","skiAge":3,"skiAgeLink":"https://www.sierraattahoe.com/lessons/","skiCost":300,"skiCostLink":"https://www.sierraattahoe.com/lessons/","daycare":"Yes","daycareLink":"https://www.sierraattahoe.com/day-care/","daycareCost":null,"airport":"Reno (RNO)","ac":"RNO","airportDist":"1 hr","majorAirport":"Reno (RNO)","mc":"RNO","majorDist":"1 hr 40 min"},
+  {"name":"Summit at Snoqualmie","nameLink":"https://www.summitatsnoqualmie.com","acreage":1994,"kidsFree":"Under 7","kidsFreeLink":"https://www.summitatsnoqualmie.com/lift-tickets","skiAge":3,"skiAgeLink":"https://www.summitatsnoqualmie.com/lessons/kids-lessons","skiCost":300,"skiCostLink":"https://www.summitatsnoqualmie.com/lessons/kids-lessons","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"Seattle (SEA)","ac":"SEA","airportDist":"1 hr 9 min","majorAirport":"Seattle (SEA)","mc":"SEA","majorDist":"1 hr"},
+  {"name":"Alyeska Resort","nameLink":"https://alyeskaresort.com","acreage":1610,"kidsFree":"No","kidsFreeLink":null,"skiAge":4,"skiAgeLink":"https://alyeskaresort.com/mountain-sports-school","skiCost":250,"skiCostLink":"https://alyeskaresort.com/mountain-sports-school","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"Anchorage (ANC)","ac":"ANC","airportDist":"45 min","majorAirport":"Anchorage (ANC)","mc":"ANC","majorDist":"50 min"},
+  {"name":"Killington","nameLink":"https://www.killington.com","acreage":1526,"kidsFree":"Under 7","kidsFreeLink":"https://www.killington.com/skivt/","skiAge":2,"skiAgeLink":"https://www.killington.com/plan-your-trip/lessons-rentals/youth-programs/group-lessons","skiCost":350,"skiCostLink":"https://www.killington.com/plan-your-trip/lessons-rentals/youth-programs/group-lessons","daycare":"Yes","daycareLink":"https://www.killington.com/things-to-do/shopping-amenities/child-care","daycareCost":null,"airport":"Burlington (BTV)","ac":"BTV","airportDist":"1 hr 50 min","majorAirport":"Burlington (BTV)","mc":"BTV","majorDist":"1 hr 45 min"},
+  {"name":"June Mountain","nameLink":"https://www.junemountain.com","acreage":1500,"kidsFree":"Under 13","kidsFreeLink":"https://www.junemountain.com/explore-june-mountain/kids-ski-and-ride-free","skiAge":3,"skiAgeLink":"https://www.junemountain.com/plan-your-trip/lessons/kids-group-ski-lessons","skiCost":250,"skiCostLink":"https://www.junemountain.com/plan-your-trip/lessons/kids-group-ski-lessons","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"Mammoth (MMH)","ac":"MMH","airportDist":"28 min","majorAirport":"Los Angeles (LAX)","mc":"LAX","majorDist":"4 hr 30 min"},
+  {"name":"Arapahoe Basin","nameLink":"https://www.arapahoebasin.com","acreage":1428,"kidsFree":"Under 5","kidsFreeLink":"https://www.arapahoebasin.com/blog/kids-ski-free/","skiAge":3,"skiAgeLink":"https://www.arapahoebasin.com/lessons/","skiCost":275,"skiCostLink":"https://www.arapahoebasin.com/lessons/","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"Denver (DEN)","ac":"DEN","airportDist":"1 hr 49 min","majorAirport":"Denver (DEN)","mc":"DEN","majorDist":"2 hr"},
+  {"name":"Sugarloaf","nameLink":"https://www.sugarloaf.com","acreage":1360,"kidsFree":"Under 5","kidsFreeLink":"https://www.sugarloaf.com/lessons/kids-lessons","skiAge":2,"skiAgeLink":"https://www.sugarloaf.com/lessons/kids-lessons","skiCost":275,"skiCostLink":"https://www.sugarloaf.com/lessons/kids-lessons","daycare":"Yes","daycareLink":"https://www.sugarloaf.com/childcare","daycareCost":null,"airport":"Bangor (BGR)","ac":"BGR","airportDist":"2 hr","majorAirport":"Portland (PWM)","mc":"PWM","majorDist":"3 hr"},
+  {"name":"Taos Ski Valley","nameLink":"https://www.taosskivalley.com","acreage":1294,"kidsFree":"Under 7","kidsFreeLink":"https://taosskivalley.com/play/winter-activities/lift-tickets-season-passes/","skiAge":3,"skiAgeLink":"https://www.taosskivalley.com/play/winter-activities/ski-school-lessons","skiCost":300,"skiCostLink":"https://www.taosskivalley.com/play/winter-activities/ski-school-lessons","daycare":"Yes","daycareLink":"https://www.taosskivalley.com/play/winter-activities/ski-school-lessons","daycareCost":130,"airport":"Santa Fe (SAF)","ac":"SAF","airportDist":"2 hr 13 min","majorAirport":"Albuquerque (ABQ)","mc":"ABQ","majorDist":"2 hr 30 min"},
+  {"name":"Solitude","nameLink":"https://www.solitudemountain.com","acreage":1200,"kidsFree":"Under 5","kidsFreeLink":"https://www.solitudemountain.com/plan-your-trip/snowboarding-ski-lift-tickets-passes","skiAge":3,"skiAgeLink":"https://www.solitudemountain.com/plan-your-trip/snowboarding-ski-lessons","skiCost":300,"skiCostLink":"https://www.solitudemountain.com/plan-your-trip/snowboarding-ski-lessons","daycare":"Yes","daycareLink":"https://www.solitudemountain.com/plan-your-trip/snowboarding-ski-lessons","daycareCost":null,"airport":"Salt Lake City (SLC)","ac":"SLC","airportDist":"40 min","majorAirport":"Salt Lake City (SLC)","mc":"SLC","majorDist":"40 min"},
+  {"name":"Brighton","nameLink":"https://www.brightonresort.com","acreage":1050,"kidsFree":"Under 7","kidsFreeLink":"https://brightonresort.com/kidsskifree","skiAge":4,"skiAgeLink":"https://www.brightonresort.com/ski-school","skiCost":300,"skiCostLink":"https://www.brightonresort.com/ski-school","daycare":"Yes","daycareLink":"https://brightonchildcare.com","daycareCost":null,"airport":"Salt Lake City (SLC)","ac":"SLC","airportDist":"45 min","majorAirport":"Salt Lake City (SLC)","mc":"SLC","majorDist":"45 min"},
+  {"name":"Sunday River","nameLink":"https://www.sundayriver.com","acreage":870,"kidsFree":"Under 5","kidsFreeLink":"https://help.sundayriver.com/s/article/SR-Do-children-5-and-under-ski-for-free","skiAge":3,"skiAgeLink":"https://www.sundayriver.com/snowsports-school/kids-lessons","skiCost":275,"skiCostLink":"https://www.sundayriver.com/snowsports-school/kids-lessons","daycare":"Yes","daycareLink":"https://www.sundayriver.com/day-care","daycareCost":null,"airport":"Portland (PWM)","ac":"PWM","airportDist":"1 hr 30 min","majorAirport":"Portland (PWM)","mc":"PWM","majorDist":"1 hr 30 min"},
+  {"name":"Big Bear Mountain","nameLink":"https://www.bigbearmountainresort.com","acreage":748,"kidsFree":"Under 5","kidsFreeLink":"https://www.bigbearmountainresort.com/deals-and-discounts/toddlers-and-seniors","skiAge":6,"skiAgeLink":"https://www.bigbearmountainresort.com/ski-and-snowboard/group-and-private-lessons","skiCost":300,"skiCostLink":"https://www.bigbearmountainresort.com/ski-and-snowboard/group-and-private-lessons","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"Ontario (ONT)","ac":"ONT","airportDist":"1 hr 28 min","majorAirport":"Los Angeles (LAX)","mc":"LAX","majorDist":"2 hr"},
+  {"name":"Eldora","nameLink":"https://www.eldora.com","acreage":680,"kidsFree":"Under 6","kidsFreeLink":"https://www.eldora.com/tickets-passes/tickets/","skiAge":4,"skiAgeLink":"https://www.eldora.com/lessons-rentals/lesson-and-multi-week-program-finder/eldorables","skiCost":275,"skiCostLink":"https://www.eldora.com/lessons-rentals/lesson-and-multi-week-program-finder/eldorables","daycare":"Yes","daycareLink":"https://www.eldora.com/programs-information","daycareCost":null,"airport":"Denver (DEN)","ac":"DEN","airportDist":"1 hr 18 min","majorAirport":"Denver (DEN)","mc":"DEN","majorDist":"1 hr 20 min"},
+  {"name":"Stratton","nameLink":"https://www.stratton.com","acreage":670,"kidsFree":"Under 6","kidsFreeLink":"https://www.stratton.com/plan-your-trip/deals-and-packages/kids-ski-free","skiAge":3,"skiAgeLink":"https://www.stratton.com/plan-your-trip/snowboarding-ski-lessons","skiCost":300,"skiCostLink":"https://www.stratton.com/plan-your-trip/snowboarding-ski-lessons","daycare":"Yes","daycareLink":"https://www.stratton.com/plan-your-trip/snowboarding-ski-lessons","daycareCost":null,"airport":"Albany (ALB)","ac":"ALB","airportDist":"2 hr","majorAirport":"Albany (ALB)","mc":"ALB","majorDist":"1 hr 50 min"},
+  {"name":"Sugarbush","nameLink":"https://www.sugarbush.com","acreage":484,"kidsFree":"Under 6","kidsFreeLink":"https://www.sugarbush.com/things-to-do/events-calendar/kids-ski-free-week","skiAge":3,"skiAgeLink":"https://www.sugarbush.com/plan-your-trip/ski-and-ride/lessons/schoolhouse-lessons","skiCost":275,"skiCostLink":"https://www.sugarbush.com/plan-your-trip/ski-and-ride/lessons/schoolhouse-lessons","daycare":"Yes","daycareLink":"https://www.sugarbush.com/plan-your-trip/lessons-and-camps/day-care-or-school","daycareCost":null,"airport":"Burlington (BTV)","ac":"BTV","airportDist":"50 min","majorAirport":"Burlington (BTV)","mc":"BTV","majorDist":"50 min"},
+  {"name":"Boyne Highlands","nameLink":"https://www.highlandsharborsprings.com","acreage":435,"kidsFree":"Under 6","kidsFreeLink":"https://www.highlandsharborsprings.com/season-passes/freeride-pass","skiAge":3,"skiAgeLink":"https://www.highlandsharborsprings.com/ski-and-snowboard-lessons/kids","skiCost":200,"skiCostLink":"https://www.highlandsharborsprings.com/ski-and-snowboard-lessons/kids","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"Pellston (PLN)","ac":"PLN","airportDist":"20 min","majorAirport":"Traverse City (TVC)","mc":"TVC","majorDist":"1 hr 20 min"},
+  {"name":"Boyne Mountain","nameLink":"https://www.boynemountain.com","acreage":415,"kidsFree":"Under 6","kidsFreeLink":"https://www.boynemountain.com/lift-tickets","skiAge":2,"skiAgeLink":"https://www.boynemountain.com/snowsports-school/youth-lessons","skiCost":200,"skiCostLink":"https://www.boynemountain.com/snowsports-school/youth-lessons","daycare":"Yes","daycareLink":"https://www.boynemountain.com/helga-haus","daycareCost":60,"airport":"Pellston (PLN)","ac":"PLN","airportDist":"20 min","majorAirport":"Traverse City (TVC)","mc":"TVC","majorDist":"1 hr 15 min"},
+  {"name":"Loon Mountain","nameLink":"https://www.loonmtn.com","acreage":403,"kidsFree":"Under 6","kidsFreeLink":"https://www.loonmtn.com/lift-tickets","skiAge":4,"skiAgeLink":"https://www.loonmtn.com/lessons/group-lessons-4-13","skiCost":275,"skiCostLink":"https://www.loonmtn.com/lessons/group-lessons-4-13","daycare":"Yes","daycareLink":"https://www.loonmtn.com/lessons/daycare","daycareCost":85,"airport":"Manchester (MHT)","ac":"MHT","airportDist":"1 hr 45 min","majorAirport":"Manchester (MHT)","mc":"MHT","majorDist":"1 hr 30 min"},
+  {"name":"Windham Mountain","nameLink":"https://www.windhammountainclub.com","acreage":285,"kidsFree":"Under 6","kidsFreeLink":"https://www.windhammountainclub.com/ski-lessons-programs/","skiAge":3,"skiAgeLink":"https://www.windhammountainclub.com/kids-lessons/","skiCost":275,"skiCostLink":"https://www.windhammountainclub.com/kids-lessons/","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"Albany (ALB)","ac":"ALB","airportDist":"1 hr 30 min","majorAirport":"Albany (ALB)","mc":"ALB","majorDist":"1 hr 20 min"},
+  {"name":"Snowshoe","nameLink":"https://www.snowshoemtn.com","acreage":257,"kidsFree":"Under 6","kidsFreeLink":"https://www.snowshoemtn.com/things-to-do/events/kids-ski-free-week","skiAge":2,"skiAgeLink":"https://www.snowshoemtn.com/plan-your-trip/snowboard-ski-lessons/snowshoe-pre-ski-school","skiCost":275,"skiCostLink":"https://www.snowshoemtn.com/plan-your-trip/snowboard-ski-lessons/snowshoe-pre-ski-school","daycare":"Yes","daycareLink":"https://www.snowshoemtn.com/plan-your-trip/snowboard-ski-lessons/snowshoe-pre-ski-school","daycareCost":189,"airport":"Lewisburg (LWB)","ac":"LWB","airportDist":"1 hr 15 min","majorAirport":"Charleston (CRW)","mc":"CRW","majorDist":"3 hr"},
+  {"name":"Snow Valley","nameLink":"https://www.snow-valley.com","acreage":240,"kidsFree":"Under 5","kidsFreeLink":"https://www.skisnowvalley.com/plan/ski-snowboard/tickets-and-passes/","skiAge":5,"skiAgeLink":"https://www.bigbearmountainresort.com/ski-and-snowboard/group-and-private-lessons","skiCost":200,"skiCostLink":"https://www.bigbearmountainresort.com/ski-and-snowboard/group-and-private-lessons","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"San Bernardino (SBD)","ac":"SBD","airportDist":"25 min","majorAirport":"Los Angeles (LAX)","mc":"LAX","majorDist":"2 hr"},
+  {"name":"Granite Peak","nameLink":"https://www.skigranitepeak.com","acreage":225,"kidsFree":"Under 6","kidsFreeLink":"https://www.skigranitepeak.com/plan-purchase/tickets-flex-4-packs/kids-ski-free","skiAge":3,"skiAgeLink":"https://www.skigranitepeak.com/plan-purchase/lessons/kid-multi-week-lessons","skiCost":175,"skiCostLink":"https://www.skigranitepeak.com/plan-purchase/lessons/kid-multi-week-lessons","daycare":"No","daycareLink":null,"daycareCost":null,"airport":"Wausau (CWA)","ac":"CWA","airportDist":"22 min","majorAirport":"Madison (MSN)","mc":"MSN","majorDist":"1 hr 30 min"},
+  {"name":"Camelback","nameLink":"https://www.camelbackresort.com","acreage":166,"kidsFree":"Under 6","kidsFreeLink":"https://www.camelbackresort.com/lift-tickets-and-passes","skiAge":4,"skiAgeLink":"https://www.camelbackresort.com/ski-ride-academy/children-lessons","skiCost":225,"skiCostLink":"https://www.camelbackresort.com/ski-ride-academy/children-lessons","daycare":"Yes","daycareLink":"https://www.camelbackresort.com/ski-ride-academy/children-lessons","daycareCost":64,"airport":"Lehigh Valley (ABE)","ac":"ABE","airportDist":"45 min","majorAirport":"Philadelphia (PHL)","mc":"PHL","majorDist":"2 hr"}
+];
+
+const maxAcreage = Math.max(...resorts.map(r => r.acreage));
+
+const columns = [
+  {key:'name', label:'Resort', sortable:true},
+  {key:'acreage', label:'Acreage', sortable:true, type:'number'},
+  {key:'kidsFree', label:'Kids Free', sortable:true},
+  {key:'skiAge', label:'Min Age', sortable:true, type:'number'},
+  {key:'skiCost', label:'Max Cost/Day', sortable:true, type:'number'},
+  {key:'daycare', label:'Daycare', sortable:true},
+  {key:'daycareCost', label:'Cost/Day', sortable:true, type:'number'},
+  {key:'airport', label:'Airport', sortable:true},
+  {key:'iad1', label:'IAD', sortable:false},
+  {key:'dca1', label:'DCA', sortable:false},
+  {key:'airportDist', label:'Distance', sortable:true},
+  {key:'majorAirport', label:'Airport', sortable:true},
+  {key:'iad2', label:'IAD', sortable:false},
+  {key:'dca2', label:'DCA', sortable:false},
+  {key:'majorDist', label:'Distance', sortable:true},
+];
+
+let sortCol = 'acreage', sortDir = -1;
+
+function flightsUrl(from, to) {
+  return `https://www.google.com/travel/flights?q=flights+from+${from}+to+${to}`;
+}
+
+function kidsFreeOrder(v) {
+  if (!v || v === 'No') return 0;
+  const m = v.match(/\d+/);
+  return m ? parseInt(m[0]) : 0;
+}
+
+function distMinutes(v) {
+  if (!v) return 9999;
+  let m = 0;
+  const hr = v.match(/(\d+)\s*hr/); if (hr) m += parseInt(hr[1]) * 60;
+  const mn = v.match(/(\d+)\s*min/); if (mn) m += parseInt(mn[1]);
+  return m || 9999;
+}
+
+function getSortVal(r, col) {
+  if (col === 'skiCost' || col === 'daycareCost') return r[col] || 0;
+  if (col === 'acreage' || col === 'skiAge') return r[col];
+  if (col === 'kidsFree') return kidsFreeOrder(r[col]);
+  if (col === 'airportDist' || col === 'majorDist') return distMinutes(r[col]);
+  if (col === 'daycare') return r[col] === 'Yes' ? 1 : 0;
+  return (r[col] || '').toString().toLowerCase();
+}
+
+function renderHeaders() {
+  const tr = document.getElementById('headerRow');
+  tr.innerHTML = '';
+  columns.forEach(c => {
+    const th = document.createElement('th');
+    const isSorted = sortCol === c.key;
+    th.className = isSorted ? 'sorted' : '';
+    const arrow = !c.sortable ? '' : isSorted ? (sortDir === 1 ? ' \u25B2' : ' \u25BC') : ' \u25B4';
+    th.innerHTML = c.label + (c.sortable ? `<span class="sort-icon">${arrow}</span>` : '');
+    if (c.sortable) th.onclick = () => { if (sortCol === c.key) sortDir *= -1; else { sortCol = c.key; sortDir = c.type === 'number' ? -1 : 1; } render(); };
+    tr.appendChild(th);
+  });
+}
+
+function render() {
+  const search = document.getElementById('search').value.toLowerCase();
+  const fDaycare = document.getElementById('filterDaycare').value;
+  const fKids = document.getElementById('filterKidsFree').value;
+  const fAcreage = parseInt(document.getElementById('filterAcreage').value);
+  const fCost = parseInt(document.getElementById('filterCost').value);
+
+  let filtered = resorts.filter(r => {
+    if (search && !r.name.toLowerCase().includes(search)) return false;
+    if (fDaycare && r.daycare !== fDaycare) return false;
+    if (fKids) { if (fKids === 'No' && r.kidsFree !== 'No') return false; if (fKids !== 'No' && kidsFreeOrder(r.kidsFree) < kidsFreeOrder(fKids)) return false; }
+    if (r.acreage < fAcreage) return false;
+    if (r.skiCost > fCost) return false;
+    return true;
+  });
+
+  filtered.sort((a, b) => {
+    const av = getSortVal(a, sortCol), bv = getSortVal(b, sortCol);
+    if (av < bv) return -1 * sortDir; if (av > bv) return 1 * sortDir; return 0;
+  });
+
+  renderHeaders();
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
+
+  filtered.forEach(r => {
+    const tr = document.createElement('tr');
+    const pct = Math.round((r.acreage / maxAcreage) * 100);
+
+    const kidsBadge = r.kidsFree === 'No' ? `<span class="badge badge-gray">No</span>` :
+      kidsFreeOrder(r.kidsFree) >= 13 ? `<span class="badge badge-green">${r.kidsFree}</span>` :
+      kidsFreeOrder(r.kidsFree) >= 7 ? `<span class="badge badge-amber">${r.kidsFree}</span>` :
+      `<span class="badge badge-gray">${r.kidsFree}</span>`;
+    const kidsFreeHtml = r.kidsFreeLink ? `<a href="${r.kidsFreeLink}" target="_blank">${kidsBadge}</a>` : kidsBadge;
+
+    const daycareHtml = r.daycare === 'Yes'
+      ? (r.daycareLink ? `<a href="${r.daycareLink}" target="_blank"><span class="badge badge-green">Yes</span></a>` : `<span class="badge badge-green">Yes</span>`)
+      : `<span class="badge badge-gray">No</span>`;
+
+    tr.innerHTML = `
+      <td class="resort-name"><a href="${r.nameLink}" target="_blank">${r.name}</a></td>
+      <td><div class="acreage-bar"><div class="bar" style="width:${pct}px"></div><span>${r.acreage.toLocaleString()}</span></div></td>
+      <td class="center">${kidsFreeHtml}</td>
+      <td class="center"><a href="${r.skiAgeLink}" target="_blank">${r.skiAge}</a></td>
+      <td class="center"><a href="${r.skiCostLink}" target="_blank">$${r.skiCost}</a></td>
+      <td class="center">${daycareHtml}</td>
+      <td class="center">${r.daycareCost ? '$'+r.daycareCost : '-'}</td>
+      <td style="white-space:nowrap">${r.airport}</td>
+      <td class="center"><a class="flight-link" href="${flightsUrl('IAD',r.ac)}" target="_blank">IAD</a></td>
+      <td class="center"><a class="flight-link" href="${flightsUrl('DCA',r.ac)}" target="_blank">DCA</a></td>
+      <td class="center">${r.airportDist}</td>
+      <td style="white-space:nowrap">${r.majorAirport}</td>
+      <td class="center"><a class="flight-link" href="${flightsUrl('IAD',r.mc)}" target="_blank">IAD</a></td>
+      <td class="center"><a class="flight-link" href="${flightsUrl('DCA',r.mc)}" target="_blank">DCA</a></td>
+      <td class="center">${r.majorDist}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById('resortCount').textContent = `${filtered.length} resort${filtered.length !== 1 ? 's' : ''}`;
+}
+
+function resetFilters() {
+  document.getElementById('search').value = '';
+  document.getElementById('filterDaycare').value = '';
+  document.getElementById('filterKidsFree').value = '';
+  document.getElementById('filterAcreage').value = '0';
+  document.getElementById('filterCost').value = '9999';
+  sortCol = 'acreage'; sortDir = -1;
+  render();
+}
+
+document.getElementById('search').addEventListener('input', render);
+document.getElementById('filterDaycare').addEventListener('change', render);
+document.getElementById('filterKidsFree').addEventListener('change', render);
+document.getElementById('filterAcreage').addEventListener('change', render);
+document.getElementById('filterCost').addEventListener('change', render);
+
+render();
+</script>
+</body>
+</html>
