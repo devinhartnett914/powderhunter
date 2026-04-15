@@ -1,0 +1,254 @@
+[
+  {
+    "pass_type": "Ikon",
+    "name": "Snowbird",
+    "location": "UT",
+    "country": "US",
+    "candidate_id": 215,
+    "candidate_name": "Snowbasin",
+    "dist": 4
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "The Summit at Snoqualmie",
+    "location": "WA",
+    "country": "US",
+    "candidate_id": 224,
+    "candidate_name": "Summit at Snoqualmie",
+    "dist": 4
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "The Highlands",
+    "location": "MI",
+    "country": "US",
+    "candidate_id": 240,
+    "candidate_name": "Boyne Highlands",
+    "dist": 4
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Mt. Brighton",
+    "location": "MI",
+    "country": "US",
+    "candidate_id": 272,
+    "candidate_name": "Mount Brighton",
+    "dist": 3
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Moose Mountain",
+    "location": "Alaska",
+    "country": "US",
+    "candidate_id": 337,
+    "candidate_name": "Burke Mountain",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "White Pass",
+    "location": "Washington",
+    "country": "US",
+    "candidate_id": 316,
+    "candidate_name": "White Pine",
+    "dist": 3
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Cherry Peak",
+    "location": "Utah",
+    "country": "US",
+    "candidate_id": 298,
+    "candidate_name": "China Peak",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Big Powderhorn",
+    "location": "Michigan",
+    "country": "US",
+    "candidate_id": 294,
+    "candidate_name": "Powderhorn",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Crystal Mountain",
+    "location": "Michigan",
+    "country": "US",
+    "candidate_id": 342,
+    "candidate_name": "Christie Mountain",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Norway Mountain",
+    "location": "Michigan",
+    "country": "US",
+    "candidate_id": 344,
+    "candidate_name": "Nordic Mountain",
+    "dist": 3
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Pine Mountain",
+    "location": "Michigan",
+    "country": "US",
+    "candidate_id": 296,
+    "candidate_name": "Silver Mountain",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Powder Ridge",
+    "location": "Minnesota",
+    "country": "US",
+    "candidate_id": 301,
+    "candidate_name": "Dodge Ridge",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Sundown Mountain",
+    "location": "Iowa",
+    "country": "US",
+    "candidate_id": 320,
+    "candidate_name": "Cannon Mountain",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Hatley Pointe",
+    "location": "North Carolina",
+    "country": "US",
+    "candidate_id": 306,
+    "candidate_name": "Eagle Point",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "King Pine",
+    "location": "New Hampshire",
+    "country": "US",
+    "candidate_id": 316,
+    "candidate_name": "White Pine",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Lost Valley",
+    "location": "Maine",
+    "country": "US",
+    "candidate_id": 319,
+    "candidate_name": "Bolton Valley",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mohawk Mountain",
+    "location": "Connecticut",
+    "country": "US",
+    "candidate_id": 343,
+    "candidate_name": "Black Mountain",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mt. Abram",
+    "location": "Maine",
+    "country": "US",
+    "candidate_id": 354,
+    "candidate_name": "Mt. Eyak",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Peek 'n Peak",
+    "location": "New York",
+    "country": "US",
+    "candidate_id": 333,
+    "candidate_name": "Greek Peak",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Snow Ridge",
+    "location": "New York",
+    "country": "US",
+    "candidate_id": 311,
+    "candidate_name": "Snow King",
+    "dist": 3
+  },
+  {
+    "pass_type": "Indy",
+    "name": "West Mountain",
+    "location": "New York",
+    "country": "US",
+    "candidate_id": 347,
+    "candidate_name": "Echo Mountain",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Whaleback Mountain",
+    "location": "New Hampshire",
+    "country": "US",
+    "candidate_id": 305,
+    "candidate_name": "Saddleback Mountain",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Montage Mountain",
+    "location": "Pennsylvania",
+    "country": "US",
+    "candidate_id": 297,
+    "candidate_name": "Brundage Mountain",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Ober Mountain",
+    "location": "Tennessee",
+    "country": "US",
+    "candidate_id": 296,
+    "candidate_name": "Silver Mountain",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Marble Mountain",
+    "location": "Newfoundland and Labrador",
+    "country": "CA",
+    "candidate_id": 337,
+    "candidate_name": "Burke Mountain",
+    "dist": 4
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Shames Mountain",
+    "location": "British Columbia",
+    "country": "CA",
+    "candidate_id": 329,
+    "candidate_name": "Shawnee Mountain",
+    "dist": 3
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Dynaland",
+    "location": "Gifu",
+    "country": "JP",
+    "candidate_id": 290,
+    "candidate_name": "Loveland",
+    "dist": 4
+  },
+  {
+    "pass_type": "Club Med",
+    "name": "Kiroro Grand",
+    "location": "Hokkaido, Japan",
+    "country": "JP",
+    "candidate_id": 402,
+    "candidate_name": "Kiroro Peak",
+    "dist": 4
+  }
+]

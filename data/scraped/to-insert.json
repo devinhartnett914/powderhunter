@@ -1,0 +1,1388 @@
+[
+  {
+    "pass_type": "Ikon",
+    "name": "APPI Resort",
+    "location": "Japan",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Arai Mountain Resort",
+    "location": "Japan",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Chamonix Mont-Blanc Valley",
+    "location": "France",
+    "country": "FR"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "CMH Heli-Skiing",
+    "location": "BC",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Coronet Peak, The Remarkables & Mt Hutt",
+    "location": "New Zealand",
+    "country": "NZ"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Dolomiti Superski",
+    "location": "Italy",
+    "country": "IT"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Furano Ski Resort",
+    "location": "Japan",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Grandvalira Resorts Andorra",
+    "location": "Andorra",
+    "country": "AD"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Ischgl",
+    "location": "Austria",
+    "country": "AT"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Kitzbühel",
+    "location": "Austria",
+    "country": "AT"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Lutsen Mountains",
+    "location": "MN",
+    "country": "US"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Megève Ski Area",
+    "location": "France",
+    "country": "FR"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Mike Wiegele Helicopter Skiing",
+    "location": "BC",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "MONA Yongpyong",
+    "location": "South Korea",
+    "country": "KR"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Mt Buller",
+    "location": "Australia",
+    "country": "AU"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Myoko Suginohara Ski Resort",
+    "location": "Japan",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Nekoma Mountain",
+    "location": "Japan",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Niseko United",
+    "location": "Japan",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "St. Moritz",
+    "location": "Switzerland",
+    "country": "CH"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Schweitzer",
+    "location": "ID",
+    "country": "US"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Shiga Kogen Mountain Resort",
+    "location": "Japan",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "SkiBig3",
+    "location": "AB",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Snowbird",
+    "location": "UT",
+    "country": "US"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Snowriver Mountain Resort",
+    "location": "MI",
+    "country": "US"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "The Summit at Snoqualmie",
+    "location": "WA",
+    "country": "US"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "The Highlands",
+    "location": "MI",
+    "country": "US"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Thredbo",
+    "location": "Australia",
+    "country": "AU"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Tremblant",
+    "location": "QC",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Valle d'Aosta",
+    "location": "Italy",
+    "country": "IT"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Valle Nevado",
+    "location": "Chile",
+    "country": "CL"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Yunding Snow Park",
+    "location": "China",
+    "country": "CN"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Zao Onsen Ski Resort",
+    "location": "Japan",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Ikon",
+    "name": "Zermatt Matterhorn",
+    "location": "Switzerland",
+    "country": "CH"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Brandywine",
+    "location": "OH",
+    "country": "US"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Mt. Brighton",
+    "location": "MI",
+    "country": "US"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Perfect North Slopes",
+    "location": "IN",
+    "country": "US"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Fairmont Hot Springs",
+    "location": "MT",
+    "country": "US"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Andermatt-Sedrun-Disentis",
+    "location": "Switzerland",
+    "country": "CH"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Crans-Montana",
+    "location": "Switzerland",
+    "country": "CH"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Verbier 4 Vallées",
+    "location": "Switzerland",
+    "country": "CH"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Ski Arlberg",
+    "location": "Austria",
+    "country": "AT"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Skirama Dolomiti",
+    "location": "Italy",
+    "country": "IT"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "3 Zinnen Dolomites",
+    "location": "Italy",
+    "country": "IT"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Civetta",
+    "location": "Italy",
+    "country": "IT"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Falcade-Passo San Pellegrino",
+    "location": "Italy",
+    "country": "IT"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Les 3 Vallées",
+    "location": "France",
+    "country": "FR"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Paradiski",
+    "location": "France",
+    "country": "FR"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Tignes-Val d'Isère",
+    "location": "France",
+    "country": "FR"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Hakuba Valley",
+    "location": "Japan",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Rusutsu",
+    "location": "Japan",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Nozawa Onsen",
+    "location": "Japan",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Thredbo",
+    "location": "Australia",
+    "country": "AU"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Perisher",
+    "location": "Australia",
+    "country": "AU"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Falls Creek",
+    "location": "Australia",
+    "country": "AU"
+  },
+  {
+    "pass_type": "Epic",
+    "name": "Hotham",
+    "location": "Australia",
+    "country": "AU"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Bear Valley Adventure Company",
+    "location": "California",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Bear Valley Mountain Resort",
+    "location": "California",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Leavenworth Winter Sports Club",
+    "location": "Washington",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mission Ridge",
+    "location": "Washington",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mountain High",
+    "location": "California",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mt. Shasta",
+    "location": "California",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Moose Mountain",
+    "location": "Alaska",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "White Pass",
+    "location": "Washington",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Cherry Peak",
+    "location": "Utah",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Cuchara",
+    "location": "Colorado",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Pebble Creek Ski Area",
+    "location": "Idaho",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Tamarack Mountain Resort",
+    "location": "Idaho",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Teton Pass",
+    "location": "Wyoming",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Andes Tower Hills",
+    "location": "Minnesota",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Big Powderhorn",
+    "location": "Michigan",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Bottineau Winter Park",
+    "location": "North Dakota",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Bruce Mound Winter Sports Area",
+    "location": "Wisconsin",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Caberfae Peaks",
+    "location": "Michigan",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Camp 10 Ski Area",
+    "location": "Wisconsin",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Coffee Mill Ski Area",
+    "location": "Minnesota",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Crystal Mountain",
+    "location": "Michigan",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Detroit Mountain",
+    "location": "Minnesota",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Great Bear Ski Valley",
+    "location": "South Dakota",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Granite Peak",
+    "location": "Wisconsin",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Great Glen Trails Outdoor Center",
+    "location": "New Hampshire",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Huff Hills Ski Area",
+    "location": "North Dakota",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Loch Lomond",
+    "location": "Ontario",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Lutsen Mountains",
+    "location": "Minnesota",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mount Baldy Ski Area",
+    "location": "Ontario",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mount Kato",
+    "location": "Minnesota",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mt La Crosse",
+    "location": "Wisconsin",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mt. Ripley Ski Area",
+    "location": "Michigan",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Minocqua Winter Park",
+    "location": "Wisconsin",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Norway Mountain",
+    "location": "Michigan",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Paul Bunyan Ski Hill",
+    "location": "Wisconsin",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Pine Mountain",
+    "location": "Michigan",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Powder Ridge",
+    "location": "Minnesota",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Schuss Mountain at Shanty Creek",
+    "location": "Michigan",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Snowriver",
+    "location": "Michigan",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Snowstar",
+    "location": "Illinois",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Spirit Mountain",
+    "location": "Minnesota",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Sunburst Ski Area",
+    "location": "Wisconsin",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Sundown Mountain",
+    "location": "Iowa",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Thrill Hills",
+    "location": "North Dakota",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Trollhaugen",
+    "location": "Wisconsin",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Tyrol Basin Ski and Snowboard",
+    "location": "Wisconsin",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Whitecap Mountains Resort",
+    "location": "Wisconsin",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Marquette Mountain",
+    "location": "Michigan",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Bear Creek",
+    "location": "Pennsylvania",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Cataloochee Ski Area",
+    "location": "North Carolina",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Catamount Mountain Resort",
+    "location": "Massachusetts",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Camden Snow Bowl",
+    "location": "Maine",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Dartmouth Skiway",
+    "location": "New Hampshire",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Dry Hill Ski Area",
+    "location": "New York",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Hatley Pointe",
+    "location": "North Carolina",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "King Pine",
+    "location": "New Hampshire",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Lost Valley",
+    "location": "Maine",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "McIntyre Ski Area",
+    "location": "New Hampshire",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Middlebury Snowbowl",
+    "location": "Vermont",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mohawk Mountain",
+    "location": "Connecticut",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mt. Abram",
+    "location": "Maine",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Peek 'n Peak",
+    "location": "New York",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Saskadena Six Ski Area",
+    "location": "Vermont",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Ski Big Bear",
+    "location": "Pennsylvania",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Ski Sawmill",
+    "location": "Pennsylvania",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Snow Ridge",
+    "location": "New York",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Swain Resort",
+    "location": "New York",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Titus Mountain",
+    "location": "New York",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "West Mountain",
+    "location": "New York",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Whaleback Mountain",
+    "location": "New Hampshire",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Montage Mountain",
+    "location": "Pennsylvania",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Ober Mountain",
+    "location": "Tennessee",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "White Grass Ski Touring",
+    "location": "West Virginia",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Wintergreen",
+    "location": "Virginia",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Wisp",
+    "location": "Maryland",
+    "country": "US"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Apex Mountain Resort",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Baldy Mountain Resort",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Big White Ski Resort",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Black Jack Cross Country Ski Club",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Calabogie Peaks Resort",
+    "location": "Ontario",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Caledonia Nordic Ski Club",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Camp Fortune",
+    "location": "Quebec",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Castle Mountain Resort",
+    "location": "Alberta",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Destination Owls Head",
+    "location": "Quebec",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Fairmont Hot Springs",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Hardwood Ski and Bike",
+    "location": "Ontario",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Hockley Valley Resort",
+    "location": "Ontario",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Hudson Bay Mountain",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Kimberley Nordic Club",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Manning Park",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Manning Park XC",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Marble Mountain",
+    "location": "Newfoundland and Labrador",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mont Edouard",
+    "location": "Quebec",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mont Habitant",
+    "location": "Quebec",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mont Rigaud",
+    "location": "Quebec",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mount Washington Alpine Resort Nordic Centre at Raven Lodge",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mt. Washington",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Murray Ridge Ski Area",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Nelson Nordic Ski Club",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Nickel Plate Cross Country Ski Club",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Pass Powderkeg",
+    "location": "Alberta",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Phoenix Mountain",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Sasquatch Mountain Resort",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Shames Mountain",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Ski Vallée Bleue",
+    "location": "Quebec",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Smokey Mountain Ski Club",
+    "location": "Newfoundland and Labrador",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Sovereign Lake Nordic Club",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Telemark Nordic Center",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Whitehorse Nordic Centre",
+    "location": "Yukon",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Williams Lake Cross Country Ski Club",
+    "location": "British Columbia",
+    "country": "CA"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Amihari Onsen Ski Resort",
+    "location": "Iwate",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Ani Ski Resort",
+    "location": "Akita",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Aomori Spring Ski Resort",
+    "location": "Aomori",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Cupid Valley",
+    "location": "Niigata",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Dynaland",
+    "location": "Gifu",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Geto Kogen",
+    "location": "Iwate",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Hirugano Kogen Ski Resort",
+    "location": "Gifu",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Hodaigi Mountain Resort",
+    "location": "Gunma",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Kamui Ski Links",
+    "location": "Hokkaido",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Kiroro Snow World",
+    "location": "Hokkaido",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Maiko Resort",
+    "location": "Niigata",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Mount Racey Ski Resort",
+    "location": "Hokkaido",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Muica Snow Resort",
+    "location": "Niigata",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Nayoro Piyashiri Ski Resort",
+    "location": "Hokkaido",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Ninox Snow Park",
+    "location": "Niigata",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Okunakayama Kogen",
+    "location": "Iwate",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Onikoube Ski Resort",
+    "location": "Miyagi",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Palcall Tsumagoi Resort",
+    "location": "Gunma",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Pippu Ski Resort",
+    "location": "Hokkaido",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Shimokura",
+    "location": "Iwate",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Takasu Snow Park",
+    "location": "Gifu",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Tangram Ski Circus",
+    "location": "Nagano",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Tazawako",
+    "location": "Akita",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Togakushi Ski Resort",
+    "location": "Nagano",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Washigatake Ski Resort",
+    "location": "Gifu",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "WhitePIA Takasu",
+    "location": "Gifu",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Yuzawa Nakazato Snow Resort",
+    "location": "Niigata",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Corralco Mountain Resort",
+    "location": "Araucanía",
+    "country": "CL"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Baqueira/Beret",
+    "location": "Catalonia",
+    "country": "ES"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Bergbahnen Hohsaas",
+    "location": "Valais",
+    "country": "CH"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Björkliden",
+    "location": "Lapland",
+    "country": "SE"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Domaine skiable des Contamines",
+    "location": "Haute-Savoie",
+    "country": "FR"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Ejder3200 Palandoken",
+    "location": "Erzurum",
+    "country": "TR"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Erciyes Ski Resort",
+    "location": "Kayseri",
+    "country": "TR"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Glencoe Mountain Resort",
+    "location": "Scotland",
+    "country": "GB"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Glenshee Ski Centre",
+    "location": "Scotland",
+    "country": "GB"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Hochzeiger Bergbahnen Pitztal",
+    "location": "Tyrol",
+    "country": "AT"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Innsbruck Ski & City Network",
+    "location": "Tyrol",
+    "country": "AT"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Kaunertaler Gletscher",
+    "location": "Tyrol",
+    "country": "AT"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Kaya Palazzo Kartalkaya Ski & Mountain Resort",
+    "location": "Bolu",
+    "country": "TR"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Les 7 Laux",
+    "location": "Isère",
+    "country": "FR"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Leukerbad Torrent Ski Resort & Gemmi Resort",
+    "location": "Valais",
+    "country": "CH"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Levi",
+    "location": "Lapland",
+    "country": "FI"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Malá Úpa",
+    "location": "Hradec Králové",
+    "country": "CZ"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Norefjell Ski Resort",
+    "location": "Viken",
+    "country": "NO"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Oberstdorf Kleinwalsertal Bergbahnen",
+    "location": "Vorarlberg",
+    "country": "AT"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Pila",
+    "location": "Aosta Valley",
+    "country": "IT"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Pitztaler Gletscherbahn",
+    "location": "Tyrol",
+    "country": "AT"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Pizol",
+    "location": "St. Gallen",
+    "country": "CH"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Portes du Soleil",
+    "location": "France/Switzerland",
+    "country": "FR"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Rauriser-Hochalmbahnen",
+    "location": "Salzburg",
+    "country": "AT"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Riksgränsen",
+    "location": "Lapland",
+    "country": "SE"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "SkiWelt",
+    "location": "Tyrol",
+    "country": "AT"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Steinplatte",
+    "location": "Tyrol",
+    "country": "AT"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Stöten i Sälen",
+    "location": "Dalarna",
+    "country": "SE"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Stranda Ski Resort",
+    "location": "Møre og Romsdal",
+    "country": "NO"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "The Krvavec Ski Resort",
+    "location": "Upper Carniola",
+    "country": "SI"
+  },
+  {
+    "pass_type": "Indy",
+    "name": "Valmorel Ski Resort",
+    "location": "Savoie",
+    "country": "FR"
+  },
+  {
+    "pass_type": "Mountain Collective",
+    "name": "Niseko United",
+    "location": "Hokkaido",
+    "country": "JP"
+  },
+  {
+    "pass_type": "Mountain Collective",
+    "name": "Chamonix",
+    "location": "Auvergne-Rhône-Alpes",
+    "country": "FR"
+  },
+  {
+    "pass_type": "Mountain Collective",
+    "name": "Megève",
+    "location": "Auvergne-Rhône-Alpes",
+    "country": "FR"
+  },
+  {
+    "pass_type": "Mountain Collective",
+    "name": "Mt Buller",
+    "location": "Victoria",
+    "country": "AU"
+  },
+  {
+    "pass_type": "Mountain Collective",
+    "name": "Coronet Peak",
+    "location": "Otago",
+    "country": "NZ"
+  },
+  {
+    "pass_type": "Mountain Collective",
+    "name": "The Remarkables",
+    "location": "Otago",
+    "country": "NZ"
+  },
+  {
+    "pass_type": "Mountain Collective",
+    "name": "Valle Nevado",
+    "location": "Santiago Metropolitan",
+    "country": "CL"
+  },
+  {
+    "pass_type": "Club Med",
+    "name": "Kiroro Grand",
+    "location": "Hokkaido, Japan",
+    "country": "JP"
+  }
+]

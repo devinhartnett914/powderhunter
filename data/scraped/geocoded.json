@@ -1,0 +1,752 @@
+{
+  "Ikon|APPI Resort|Japan": {
+    "lat": 40.0022571,
+    "lng": 140.9705409,
+    "formatted": "１１７ Appikōgen, Hachimantai, Iwate 028-7306, Japan"
+  },
+  "Ikon|Arai Mountain Resort|Japan": {
+    "lat": 36.204824,
+    "lng": 138.252924,
+    "formatted": "Japan"
+  },
+  "Ikon|Chamonix Mont-Blanc Valley|France": {
+    "lat": 45.923697,
+    "lng": 6.869433,
+    "formatted": "Chamonix, France"
+  },
+  "Ikon|CMH Heli-Skiing|BC": {
+    "lat": 51.17766779999999,
+    "lng": -115.5726949,
+    "formatted": "217 Bear St, Banff, AB T1L 1J6, Canada"
+  },
+  "Ikon|Coronet Peak, The Remarkables & Mt Hutt|New Zealand": {
+    "lat": -40.900557,
+    "lng": 174.885971,
+    "formatted": "New Zealand"
+  },
+  "Ikon|Dolomiti Superski|Italy": {
+    "lat": 46.5739752,
+    "lng": 11.6520936,
+    "formatted": "Via Arnaria, 43, 39040 Castelrotto BZ, Italy"
+  },
+  "Ikon|Furano Ski Resort|Japan": {
+    "lat": 43.3249606,
+    "lng": 142.3532411,
+    "formatted": "Nakagoryo, Furano, Hokkaido 076-8511, Japan"
+  },
+  "Ikon|Grandvalira Resorts Andorra|Andorra": {
+    "lat": 42.506285,
+    "lng": 1.521801,
+    "formatted": "Andorra"
+  },
+  "Ikon|Ischgl|Austria": {
+    "lat": 47.0118452,
+    "lng": 10.2884195,
+    "formatted": "6561 Ischgl, Austria"
+  },
+  "Ikon|Kitzbühel|Austria": {
+    "lat": 47.4492375,
+    "lng": 12.3925407,
+    "formatted": "6370 Kitzbuhel, Austria"
+  },
+  "Ikon|Lutsen Mountains|MN": {
+    "lat": 47.663713,
+    "lng": -90.7135557,
+    "formatted": "467 Ski Hill Rd, Lutsen, MN 55612, USA"
+  },
+  "Ikon|Megève Ski Area|France": {
+    "lat": 45.856876,
+    "lng": 6.61775,
+    "formatted": "74120 Megève, France"
+  },
+  "Ikon|Mike Wiegele Helicopter Skiing|BC": {
+    "lat": 52.1130749,
+    "lng": -119.3036844,
+    "formatted": "972 Harrwood Dr, Blue River, BC V0E 1J0, Canada"
+  },
+  "Ikon|MONA Yongpyong|South Korea": {
+    "lat": 37.6436354,
+    "lng": 128.6806104,
+    "formatted": "715 Olympic-ro, Daegwallyeong-myeon, Pyeongchang-gun, Gangwon-do, South Korea"
+  },
+  "Ikon|Mt Buller|Australia": {
+    "lat": -37.1465655,
+    "lng": 146.4506354,
+    "formatted": "Mount Buller VIC 3723, Australia"
+  },
+  "Ikon|Myoko Suginohara Ski Resort|Japan": {
+    "lat": 36.8569225,
+    "lng": 138.15507,
+    "formatted": "Japan, 〒949-2113 Niigata, Myoko, Suginosawa, ２７２ レストラン アリエスカ 272"
+  },
+  "Ikon|Nekoma Mountain|Japan": {
+    "lat": 37.627181,
+    "lng": 140.037977,
+    "formatted": "Japan, 〒969-2701 Fukushima, Yama District, Kitashiobara, Hibara, 猫魔山１１６３"
+  },
+  "Ikon|Niseko United|Japan": {
+    "lat": 42.8047856,
+    "lng": 140.6874494,
+    "formatted": "Niseko, Abuta District, Hokkaido, Japan"
+  },
+  "Ikon|St. Moritz|Switzerland": {
+    "lat": 46.4907973,
+    "lng": 9.8355079,
+    "formatted": "7500 St Moritz, Switzerland"
+  },
+  "Ikon|Schweitzer|ID": {
+    "lat": 48.3673818,
+    "lng": -116.6234094,
+    "formatted": "10000 Schweitzer Mountain Rd, Sandpoint, ID 83864, USA"
+  },
+  "Ikon|Shiga Kogen Mountain Resort|Japan": {
+    "lat": 36.71885280000001,
+    "lng": 138.4922758,
+    "formatted": "Shiga Kogen, 7148 Hirao, Yamanouchi, Shimotakai District, Nagano 381-0401, Japan"
+  },
+  "Ikon|SkiBig3|AB": {
+    "lat": 51.1774406,
+    "lng": -115.5710213,
+    "formatted": "215 Banff Ave, Banff, AB T1L 1H9, Canada"
+  },
+  "Ikon|Snowbird|UT": {
+    "lat": 40.5829259,
+    "lng": -111.6556388,
+    "formatted": "Snowbird, UT 84092, USA"
+  },
+  "Ikon|Snowriver Mountain Resort|MI": {
+    "lat": 46.500277,
+    "lng": -89.970939,
+    "formatted": "500 Indianhead Rd, Wakefield, MI 49968, USA"
+  },
+  "Ikon|The Summit at Snoqualmie|WA": {
+    "lat": 47.7510741,
+    "lng": -120.7401386,
+    "formatted": "Washington, USA"
+  },
+  "Ikon|The Highlands|MI": {
+    "lat": 45.4647239,
+    "lng": -84.926535,
+    "formatted": "600 Highlands Dr, Harbor Springs, MI 49740, USA"
+  },
+  "Ikon|Thredbo|Australia": {
+    "lat": -36.4990449,
+    "lng": 148.3118522,
+    "formatted": "Thredbo NSW, Australia"
+  },
+  "Ikon|Tremblant|QC": {
+    "lat": 46.1184616,
+    "lng": -74.5961852,
+    "formatted": "Mont-Tremblant, QC, Canada"
+  },
+  "Ikon|Valle d'Aosta|Italy": {
+    "lat": 45.7388878,
+    "lng": 7.426186599999999,
+    "formatted": "Aosta Valley, Italy"
+  },
+  "Ikon|Valle Nevado|Chile": {
+    "lat": -33.3531835,
+    "lng": -70.24888539999999,
+    "formatted": "Cam. Valle Nevado S/N, Farellones, Lo Barnechea, Región Metropolitana, Chile"
+  },
+  "Ikon|Yunding Snow Park|China": {
+    "lat": 43.04469,
+    "lng": 124.9415,
+    "formatted": "Yundingzhen, Dongliao County, Liaoyuan, Jilin, China, 136606"
+  },
+  "Ikon|Zao Onsen Ski Resort|Japan": {
+    "lat": 38.1651589,
+    "lng": 140.3952784,
+    "formatted": "Zaoonsen, Yamagata, 990-2301, Japan"
+  },
+  "Ikon|Zermatt Matterhorn|Switzerland": {
+    "lat": 45.938762,
+    "lng": 7.7310009,
+    "formatted": "3920 Zermatt, Switzerland"
+  },
+  "Epic|Brandywine|OH": {
+    "lat": 41.2849233,
+    "lng": -81.5517795,
+    "formatted": "1146 W Highland Rd, Northfield, OH 44067, USA"
+  },
+  "Epic|Mt. Brighton|MI": {
+    "lat": 42.54083,
+    "lng": -83.8115217,
+    "formatted": "4141 Bauer Rd, Brighton, MI 48116, USA"
+  },
+  "Epic|Perfect North Slopes|IN": {
+    "lat": 39.1508879,
+    "lng": -84.88582079999999,
+    "formatted": "19074 Perfect Pl Ln, Lawrenceburg, IN 47025, USA"
+  },
+  "Epic|Fairmont Hot Springs|MT": {
+    "lat": 46.8796822,
+    "lng": -110.3625658,
+    "formatted": "Montana, USA"
+  },
+  "Epic|Andermatt-Sedrun-Disentis|Switzerland": {
+    "lat": 46.6375582,
+    "lng": 8.5930394,
+    "formatted": "Bahnhofpl. 3, 6490 Andermatt, Switzerland"
+  },
+  "Epic|Crans-Montana|Switzerland": {
+    "lat": 46.3118579,
+    "lng": 7.4823527,
+    "formatted": "Crans-Montana, Switzerland"
+  },
+  "Epic|Verbier 4 Vallées|Switzerland": {
+    "lat": 46.0960814,
+    "lng": 7.2285512,
+    "formatted": "Verbier, 1936 Val de Bagnes, Switzerland"
+  },
+  "Epic|Ski Arlberg|Austria": {
+    "lat": 47.1291555,
+    "lng": 10.2639663,
+    "formatted": "Kandaharweg 9, 6580 St. Anton am Arlberg, Austria"
+  },
+  "Epic|Skirama Dolomiti|Italy": {
+    "lat": 46.4102117,
+    "lng": 11.8440351,
+    "formatted": "Dolomites, 32023 Rocca Pietore, Province of Belluno, Italy"
+  },
+  "Epic|3 Zinnen Dolomites|Italy": {
+    "lat": 46.7312978,
+    "lng": 12.3301876,
+    "formatted": "Via Ombrosa, 2f, 39038 Versciaco BZ, Italy"
+  },
+  "Epic|Civetta|Italy": {
+    "lat": 46.4071255,
+    "lng": 12.0751976,
+    "formatted": "Via Pioda, 1, 32010 Zoldo alto BL, Italy"
+  },
+  "Epic|Falcade-Passo San Pellegrino|Italy": {
+    "lat": 46.3566258,
+    "lng": 11.8701577,
+    "formatted": "32020 Pie' Falcade, Province of Belluno, Italy"
+  },
+  "Epic|Les 3 Vallées|France": {
+    "lat": 45.3413534,
+    "lng": 6.5866171,
+    "formatted": "France"
+  },
+  "Epic|Paradiski|France": {
+    "lat": 46.227638,
+    "lng": 2.213749,
+    "formatted": "France"
+  },
+  "Epic|Tignes-Val d'Isère|France": {
+    "lat": 45.458561,
+    "lng": 6.904753599999999,
+    "formatted": "73320 Tignes, France"
+  },
+  "Epic|Hakuba Valley|Japan": {
+    "lat": 36.6981614,
+    "lng": 137.8619333,
+    "formatted": "Hakuba, Kitaazumi District, Nagano, Japan"
+  },
+  "Epic|Rusutsu|Japan": {
+    "lat": 42.7368854,
+    "lng": 140.9106964,
+    "formatted": "681 Izumikawa, Rusutsu, Abuta District, Hokkaido 048-1711, Japan"
+  },
+  "Epic|Nozawa Onsen|Japan": {
+    "lat": 36.9206775,
+    "lng": 138.4523232,
+    "formatted": "7653 Toyosato, Nozawaonsen, Shimotakai District, Nagano 389-2502, Japan"
+  },
+  "Epic|Thredbo|Australia": {
+    "lat": -36.4990449,
+    "lng": 148.3118522,
+    "formatted": "Thredbo NSW, Australia"
+  },
+  "Epic|Perisher|Australia": {
+    "lat": -36.404226,
+    "lng": 148.410792,
+    "formatted": "Kosciuszko Rd, Perisher Valley NSW 2624, Australia"
+  },
+  "Epic|Falls Creek|Australia": {
+    "lat": -36.8646894,
+    "lng": 147.279182,
+    "formatted": "Falls Creek VIC 3699, Australia"
+  },
+  "Epic|Hotham|Australia": {
+    "lat": -36.9752778,
+    "lng": 147.1327778,
+    "formatted": "Mount Hotham, Hotham Heights VIC 3741, Australia"
+  },
+  "Indy|Bear Valley Adventure Company|California": {
+    "lat": 38.4646337,
+    "lng": -120.0399088,
+    "formatted": "Bear Valley, CA 95223, USA"
+  },
+  "Indy|Bear Valley Mountain Resort|California": {
+    "lat": 38.4926051,
+    "lng": -120.0442661,
+    "formatted": "2280 CA-207, Bear Valley, CA 95223, USA"
+  },
+  "Indy|Leavenworth Winter Sports Club|Washington": {
+    "lat": 47.5962326,
+    "lng": -120.6614765,
+    "formatted": "Leavenworth, WA 98826, USA"
+  },
+  "Indy|Mission Ridge|Washington": {
+    "lat": 47.2924657,
+    "lng": -120.399871,
+    "formatted": "7500 Mission Ridge Rd, Wenatchee, WA 98801, USA"
+  },
+  "Indy|Mountain High|California": {
+    "lat": 34.3769418,
+    "lng": -117.6915242,
+    "formatted": "24510 CA-2, Wrightwood, CA 92397, USA"
+  },
+  "Indy|Mt. Shasta|California": {
+    "lat": 41.3098746,
+    "lng": -122.3105666,
+    "formatted": "Mt Shasta, CA 96067, USA"
+  },
+  "Indy|Moose Mountain|Alaska": {
+    "lat": 64.940556,
+    "lng": -147.990556,
+    "formatted": "Moose Mountain, Goldstream, AK 99709, USA"
+  },
+  "Indy|White Pass|Washington": {
+    "lat": 46.6373531,
+    "lng": -121.3913233,
+    "formatted": "48935 US-12, Naches, WA 98937, USA"
+  },
+  "Indy|Cherry Peak|Utah": {
+    "lat": 41.9263482,
+    "lng": -111.7564058,
+    "formatted": "3200 E 11000 N, Richmond, UT 84333, USA"
+  },
+  "Indy|Cuchara|Colorado": {
+    "lat": 37.379167,
+    "lng": -105.099722,
+    "formatted": "Cuchara, CO 81055, USA"
+  },
+  "Indy|Pebble Creek Ski Area|Idaho": {
+    "lat": 42.7785571,
+    "lng": -112.1592798,
+    "formatted": "3340 E Green Canyon Rd, Inkom, ID 83245, USA"
+  },
+  "Indy|Tamarack Mountain Resort|Idaho": {
+    "lat": 46.4174211,
+    "lng": -114.6031627,
+    "formatted": "Tamarack Mountain, Idaho 83539, USA"
+  },
+  "Indy|Teton Pass|Wyoming": {
+    "lat": 43.4974247,
+    "lng": -110.9552144,
+    "formatted": "Teton Pass, Wyoming 83014, USA"
+  },
+  "Indy|Andes Tower Hills|Minnesota": {
+    "lat": 45.850975,
+    "lng": -95.6304971,
+    "formatted": "4505 Andes Rd SW, Kensington, MN 56343, USA"
+  },
+  "Indy|Big Powderhorn|Michigan": {
+    "lat": 46.50903719999999,
+    "lng": -90.0957069,
+    "formatted": "11375 Powderhorn Rd, Bessemer, MI 49911, USA"
+  },
+  "Indy|Bottineau Winter Park|North Dakota": {
+    "lat": 48.950695,
+    "lng": -100.4749526,
+    "formatted": "1 Winter Park Rd, Bottineau, ND 58318, USA"
+  },
+  "Indy|Bruce Mound Winter Sports Area|Wisconsin": {
+    "lat": 44.4462814,
+    "lng": -90.78564449999999,
+    "formatted": "Bruce Mound Winter Sports Area, N791 Bruce Mound Ave, Merrillan, WI 54754, USA"
+  },
+  "Indy|Caberfae Peaks|Michigan": {
+    "lat": 44.2447088,
+    "lng": -85.72057250000002,
+    "formatted": "1 Caberfae Ln, Cadillac, MI 49601, USA"
+  },
+  "Indy|Camp 10 Ski Area|Wisconsin": {
+    "lat": 45.5491829,
+    "lng": -89.50294029999999,
+    "formatted": "1604 Ski Hill Rd, Rhinelander, WI 54501, USA"
+  },
+  "Indy|Coffee Mill Ski Area|Minnesota": {
+    "lat": 44.3636111,
+    "lng": -92.0433333,
+    "formatted": "99 Coulee Way, Wabasha, MN 55981, USA"
+  },
+  "Indy|Crystal Mountain|Michigan": {
+    "lat": 44.5199554,
+    "lng": -85.9922593,
+    "formatted": "12500 Crystal Mountain Dr, Thompsonville, MI 49683, USA"
+  },
+  "Indy|Detroit Mountain|Minnesota": {
+    "lat": 46.8162218,
+    "lng": -95.7835195,
+    "formatted": "Detroit Mountain, Erie Township, MN 56501, USA"
+  },
+  "Indy|Great Bear Ski Valley|South Dakota": {
+    "lat": 43.5780023,
+    "lng": -96.66454689999999,
+    "formatted": "5901 E Rice St, Sioux Falls, SD 57110, USA"
+  },
+  "Indy|Granite Peak|Wisconsin": {
+    "lat": 44.929236,
+    "lng": -89.68316200000001,
+    "formatted": "227200 Snowbird Ave, Wausau, WI 54401, USA"
+  },
+  "Indy|Great Glen Trails Outdoor Center|New Hampshire": {
+    "lat": 44.2892568,
+    "lng": -71.2240647,
+    "formatted": "1 Mt Washington Auto Rd 1st floor, Gorham, NH 03581, USA"
+  },
+  "Indy|Huff Hills Ski Area|North Dakota": {
+    "lat": 46.627425,
+    "lng": -100.723214,
+    "formatted": "5455 County Rd 80, Mandan, ND 58554, USA"
+  },
+  "Indy|Loch Lomond|Ontario": {
+    "lat": 48.2939871,
+    "lng": -89.3482353,
+    "formatted": "1800 Loch Lomond Rd, Thunder Bay, ON P7J 1E9, Canada"
+  },
+  "Indy|Lutsen Mountains|Minnesota": {
+    "lat": 47.663713,
+    "lng": -90.7135557,
+    "formatted": "467 Ski Hill Rd, Lutsen, MN 55612, USA"
+  },
+  "Indy|Mount Baldy Ski Area|Ontario": {
+    "lat": 34.0645932,
+    "lng": -117.6483422,
+    "formatted": "Ontario, CA, USA"
+  },
+  "Indy|Mount Kato|Minnesota": {
+    "lat": 44.1331301,
+    "lng": -94.03336619999999,
+    "formatted": "20461 State Hwy 66, Mankato, MN 56001, USA"
+  },
+  "Indy|Mt La Crosse|Wisconsin": {
+    "lat": 43.74346999999999,
+    "lng": -91.182726,
+    "formatted": "W5549 Old Town Hall Rd, La Crosse, WI 54601, USA"
+  },
+  "Indy|Mt. Ripley Ski Area|Michigan": {
+    "lat": 47.1279318,
+    "lng": -88.5600458,
+    "formatted": "49051 Ski Hill, Hancock, MI 49930, USA"
+  },
+  "Indy|Minocqua Winter Park|Wisconsin": {
+    "lat": 45.8301876,
+    "lng": -89.89557719999999,
+    "formatted": "Minocqua Winter Park, 7543 Squirrel Hill Rd, Minocqua, WI 54548, USA"
+  },
+  "Indy|Norway Mountain|Michigan": {
+    "lat": 45.78929660000001,
+    "lng": -87.8689005,
+    "formatted": "W4948 Brier Mountain Rd, Norway, MI 49870, USA"
+  },
+  "Indy|Paul Bunyan Ski Hill|Wisconsin": {
+    "lat": 45.32557670000001,
+    "lng": -88.5242538,
+    "formatted": "15360 Ski Hill Ln, Lakewood, WI 54138, USA"
+  },
+  "Indy|Pine Mountain|Michigan": {
+    "lat": 44.3148443,
+    "lng": -85.60236429999999,
+    "formatted": "Michigan, USA"
+  },
+  "Indy|Powder Ridge|Minnesota": {
+    "lat": 45.34369299999999,
+    "lng": -94.305315,
+    "formatted": "15015 93rd Ave, Kimball, MN 55353, USA"
+  },
+  "Indy|Schuss Mountain at Shanty Creek|Michigan": {
+    "lat": 44.9485751,
+    "lng": -85.1850784,
+    "formatted": "5780 Shanty Creek Rd, Bellaire, MI 49615, USA"
+  },
+  "Indy|Snowriver|Michigan": {
+    "lat": 46.500277,
+    "lng": -89.970939,
+    "formatted": "500 Indianhead Rd, Wakefield, MI 49968, USA"
+  },
+  "Indy|Snowstar|Illinois": {
+    "lat": 41.425203,
+    "lng": -90.7461749,
+    "formatted": "9500 126th St W, Andalusia, IL 61232, USA"
+  },
+  "Indy|Spirit Mountain|Minnesota": {
+    "lat": 46.7182684,
+    "lng": -92.2167365,
+    "formatted": "9500 Spirit Mountain Pl, Duluth, MN 55810, USA"
+  },
+  "Indy|Sunburst Ski Area|Wisconsin": {
+    "lat": 43.493936,
+    "lng": -88.224007,
+    "formatted": "8355 Prospect Dr, Kewaskum, WI 53040, USA"
+  },
+  "Indy|Sundown Mountain|Iowa": {
+    "lat": 42.5163315,
+    "lng": -90.8186286,
+    "formatted": "16991 Asbury Rd, Dubuque, IA 52002, USA"
+  },
+  "Indy|Thrill Hills|North Dakota": {
+    "lat": 46.5320298,
+    "lng": -97.9355987,
+    "formatted": "270 Mill Rd, Fort Ransom, ND 58033, USA"
+  },
+  "Indy|Trollhaugen|Wisconsin": {
+    "lat": 45.3513159,
+    "lng": -92.61809350000001,
+    "formatted": "2232 100th Ave, Dresser, WI 54009, USA"
+  },
+  "Indy|Tyrol Basin Ski and Snowboard|Wisconsin": {
+    "lat": 43.0445285,
+    "lng": -89.7841088,
+    "formatted": "3487 Bohn Rd, Mt Horeb, WI 53572, USA"
+  },
+  "Indy|Whitecap Mountains Resort|Wisconsin": {
+    "lat": 46.4069352,
+    "lng": -90.3969777,
+    "formatted": "9106 W Co Rd E, Upson, WI 54565, USA"
+  },
+  "Indy|Marquette Mountain|Michigan": {
+    "lat": 46.5082074,
+    "lng": -87.42080969999999,
+    "formatted": "4501 M-553, Marquette, MI 49855, USA"
+  },
+  "Indy|Bear Creek|Pennsylvania": {
+    "lat": 40.4763102,
+    "lng": -75.6255779,
+    "formatted": "101 Doe Mountain Ln, Macungie, PA 18062, USA"
+  },
+  "Indy|Cataloochee Ski Area|North Carolina": {
+    "lat": 35.562607,
+    "lng": -83.089852,
+    "formatted": "1080 Ski Lodge Rd, Maggie Valley, NC 28751, USA"
+  },
+  "Indy|Catamount Mountain Resort|Massachusetts": {
+    "lat": 42.1690998,
+    "lng": -73.4769258,
+    "formatted": "78 Catamount Rd, Hillsdale, NY 12529, USA"
+  },
+  "Indy|Camden Snow Bowl|Maine": {
+    "lat": 44.2166019,
+    "lng": -69.1345561,
+    "formatted": "20 Barnestown Rd, Camden, ME 04843, USA"
+  },
+  "Indy|Dartmouth Skiway|New Hampshire": {
+    "lat": 43.787748,
+    "lng": -72.099538,
+    "formatted": "39 Grafton Turnpike Rd, Lyme Center, NH 03769, USA"
+  },
+  "Indy|Dry Hill Ski Area|New York": {
+    "lat": 43.931234,
+    "lng": -75.90181,
+    "formatted": "18160 Alpine Ridge Rd, Watertown, NY 13601, USA"
+  },
+  "Indy|Hatley Pointe|North Carolina": {
+    "lat": 35.9547286,
+    "lng": -82.5088205,
+    "formatted": "578 Valley View Cir, Mars Hill, NC 28754, USA"
+  },
+  "Indy|King Pine|New Hampshire": {
+    "lat": 43.8678986,
+    "lng": -71.08924689999999,
+    "formatted": "1251 Eaton Rd, Madison, NH 03849, USA"
+  },
+  "Indy|Lost Valley|Maine": {
+    "lat": 44.1360699,
+    "lng": -70.282957,
+    "formatted": "200 Lost Valley Rd, Auburn, ME 04210, USA"
+  },
+  "Indy|McIntyre Ski Area|New Hampshire": {
+    "lat": 43.0065612,
+    "lng": -71.4418183,
+    "formatted": "50 Chalet Wy, Manchester, NH 03104, USA"
+  },
+  "Indy|Middlebury Snowbowl|Vermont": {
+    "lat": 43.9391922,
+    "lng": -72.95758719999999,
+    "formatted": "6886 Vermont Rte 125, Hancock, VT 05748, USA"
+  },
+  "Indy|Mohawk Mountain|Connecticut": {
+    "lat": 41.838231,
+    "lng": -73.3150586,
+    "formatted": "46 Great Hollow Rd, Cornwall, CT 06753, USA"
+  },
+  "Indy|Mt. Abram|Maine": {
+    "lat": 44.3797967,
+    "lng": -70.7068562,
+    "formatted": "308 Howe Hill Rd, Greenwood, ME 04255, USA"
+  },
+  "Indy|Peek 'n Peak|New York": {
+    "lat": 42.0623302,
+    "lng": -79.7355401,
+    "formatted": "1405 Old Rd, Clymer, NY 14724, USA"
+  },
+  "Indy|Saskadena Six Ski Area|Vermont": {
+    "lat": 43.6650614,
+    "lng": -72.5432659,
+    "formatted": "247 Stage Rd, South Pomfret, VT 05067, USA"
+  },
+  "Indy|Ski Big Bear|Pennsylvania": {
+    "lat": 41.2033216,
+    "lng": -77.1945247,
+    "formatted": "Pennsylvania, USA"
+  },
+  "Indy|Ski Sawmill|Pennsylvania": {
+    "lat": 41.5194205,
+    "lng": -77.28934009999999,
+    "formatted": "383 Oregon Hill Rd, Morris, PA 16938, USA"
+  },
+  "Indy|Snow Ridge|New York": {
+    "lat": 43.63974779999999,
+    "lng": -75.4201233,
+    "formatted": "4173 West Rd, Turin, NY 13473, USA"
+  },
+  "Indy|Swain Resort|New York": {
+    "lat": 42.47659840000001,
+    "lng": -77.8551328,
+    "formatted": "2275 Co Rd 24, Swain, NY 14884, USA"
+  },
+  "Indy|Titus Mountain|New York": {
+    "lat": 44.763333,
+    "lng": -74.235278,
+    "formatted": "Titusville Mountain, Malone, NY 12953, USA"
+  },
+  "Indy|West Mountain|New York": {
+    "lat": 43.285651,
+    "lng": -73.725285,
+    "formatted": "59 West Mountain Road, Queensbury, NY 12804, USA"
+  },
+  "Indy|Whaleback Mountain|New Hampshire": {
+    "lat": 43.601705,
+    "lng": -72.18026499999999,
+    "formatted": "160 Whaleback Mountain Rd, Enfield, NH 03748, USA"
+  },
+  "Indy|Montage Mountain|Pennsylvania": {
+    "lat": 41.3512429,
+    "lng": -75.6629169,
+    "formatted": "1000 Montage Mountain Rd, Scranton, PA 18507, USA"
+  },
+  "Indy|Ober Mountain|Tennessee": {
+    "lat": 35.7014998,
+    "lng": -83.56158409999999,
+    "formatted": "Ober Mountain, 1339 Ski Mountain Rd, Gatlinburg, TN 37738, USA"
+  },
+  "Indy|White Grass Ski Touring|West Virginia": {
+    "lat": 39.0190365,
+    "lng": -79.4217469,
+    "formatted": "White Grass Ski Day Lodge, 643 Weiss Knob Ski Rd, Davis, WV 26260, USA"
+  },
+  "Indy|Wintergreen|Virginia": {
+    "lat": 37.91485,
+    "lng": -78.9438802,
+    "formatted": "39 Mountain Inn Loop, Nellysford, VA 22958, USA"
+  },
+  "Indy|Wisp|Maryland": {
+    "lat": 39.5568677,
+    "lng": -79.3634466,
+    "formatted": "296 Marsh Hill Rd, McHenry, MD 21541, USA"
+  },
+  "Indy|Apex Mountain Resort|British Columbia": {
+    "lat": 49.3906667,
+    "lng": -119.9040536,
+    "formatted": "324 Strayhorse Rd, Hedley, BC V0X 1N6, Canada"
+  },
+  "Indy|Baldy Mountain Resort|British Columbia": {
+    "lat": 49.1528412,
+    "lng": -119.2364219,
+    "formatted": "2680 Mount Baldy Rd, Oliver, BC V0H 1T0, Canada"
+  },
+  "Indy|Big White Ski Resort|British Columbia": {
+    "lat": 49.7313098,
+    "lng": -118.9439326,
+    "formatted": "5315 Big White Rd, Kelowna, BC V1P 1T4, Canada"
+  },
+  "Indy|Black Jack Cross Country Ski Club|British Columbia": {
+    "lat": 53.7266683,
+    "lng": -127.6476206,
+    "formatted": "British Columbia, Canada"
+  },
+  "Indy|Calabogie Peaks Resort|Ontario": {
+    "lat": 36.778261,
+    "lng": -119.4179324,
+    "formatted": "California, USA"
+  },
+  "Indy|Caledonia Nordic Ski Club|British Columbia": {
+    "lat": 53.9706141,
+    "lng": -122.8732369,
+    "formatted": "8141 Otway Rd, Prince George, BC V2M 7B4, Canada"
+  },
+  "Indy|Camp Fortune|Quebec": {
+    "lat": 45.5090169,
+    "lng": -75.85122419999999,
+    "formatted": "300 Chem. Dunlop, Chelsea, QC J9B 2N3, Canada"
+  },
+  "Indy|Castle Mountain Resort|Alberta": {
+    "lat": 49.3191188,
+    "lng": -114.4125829,
+    "formatted": "HWY-774, Pincher Creek No. 9, AB T0K 1W0, Canada"
+  },
+  "Indy|Destination Owls Head|Quebec": {
+    "lat": 45.0740231,
+    "lng": -72.2982723,
+    "formatted": "40 Chem. du Mont Owls Head, Mansonville, QC J0E 1X0, Canada"
+  },
+  "Indy|Fairmont Hot Springs|British Columbia": {
+    "lat": 50.335927,
+    "lng": -115.851186,
+    "formatted": "Fairmont Hot Springs, BC V0A 1K4, Canada"
+  },
+  "Indy|Hardwood Ski and Bike|Ontario": {
+    "lat": 34.0645932,
+    "lng": -117.6483422,
+    "formatted": "Ontario, CA, USA"
+  },
+  "Indy|Hockley Valley Resort|Ontario": {
+    "lat": 36.778261,
+    "lng": -119.4179324,
+    "formatted": "California, USA"
+  },
+  "Indy|Hudson Bay Mountain|British Columbia": {
+    "lat": 54.8116666,
+    "lng": -127.3397222,
+    "formatted": "Hudson Bay Mountain, Bulkley-Nechako, BC V0J 2N0, Canada"
+  },
+  "Indy|Kimberley Nordic Club|British Columbia": {
+    "lat": 49.6822765,
+    "lng": -116.0069369,
+    "formatted": "840 N Star Dr, Kimberley, BC V1A 3E9, Canada"
+  },
+  "Indy|Manning Park|British Columbia": {
+    "lat": 49.064647,
+    "lng": -120.781581,
+    "formatted": "Manning Park, BC V1K 1P3, Canada"
+  },
+  "Indy|Manning Park XC|British Columbia": {
+    "lat": 49.064647,
+    "lng": -120.781581,
+    "formatted": "Manning Park, BC V1K 1P3, Canada"
+  },
+  "Indy|Marble Mountain|Newfoundland and Labrador": {
+    "lat": 48.9481507,
+    "lng": -57.8310334,
+    "formatted": "2 Marble Dr, Steady Brook, NL A2H 2N2, Canada"
+  },
+  "Indy|Mont Edouard|Quebec": {
+    "lat": 48.15138899999999,
+    "lng": -70.283611,
+    "formatted": "Mont Édouard, L'Anse-Saint-Jean, QC G0V 1J0, Canada"
+  },
+  "Indy|Mont Habitant|Quebec": {
+    "lat": 45.8830555,
+    "lng": -74.1669444,
+    "formatted": "Mont Habitant, Saint-Sauveur, QC J0R 1R5, Canada"
+  },
+  "Indy|Mont Rigaud|Quebec": {
+    "lat": 45.4680559,
+    "lng": -74.3391609,
+    "formatted": "321 des Erables, Rigaud, QC J0P 1P0, Canada"
+  }
+}
