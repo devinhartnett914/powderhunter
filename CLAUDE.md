@@ -14,18 +14,17 @@ Family ski trip planning webapp. 201 resorts across 5 ski passes (Ikon, Epic, In
 - All 200 resorts fetched from Supabase on page load, filtered/sorted client-side
 - Google Maps Distance Matrix + Geocoding proxied through Netlify Functions (API key server-side)
 - Google Places Autocomplete runs client-side with a restricted API key
-- Resort data seeded from `data/ski-resorts.xlsx` via `scripts/seed-database.ts`
+- Resort data is scraper-driven: the roster and static fields are populated by scheduled scrapers (see `netlify/functions/roster-*`, planned). The original Excel bootstrap (`data/ski-resorts.xlsx` + `scripts/seed-database.ts`) was retired once Supabase was the source of truth.
 
 ## Data Model
 Single `resorts` table with: name, pass_type, url, location, acreage, lat, lng, kids_ski_free, ski_school_min_age, ski_school_max_cost, daycare, baby_club_med, airport fields, and URL columns for source links.
 
 ## Environment Variables
 - `PUBLIC_SUPABASE_URL` / `PUBLIC_SUPABASE_ANON_KEY` — safe to expose (RLS read-only)
-- `SUPABASE_SERVICE_ROLE_KEY` — seed script only, never expose
+- `SUPABASE_SERVICE_ROLE_KEY` — scheduled functions + admin scripts only, never expose
 - `GOOGLE_MAPS_API_KEY` — server-side only (Netlify Functions)
 - `PUBLIC_GOOGLE_MAPS_CLIENT_KEY` — referrer-restricted client key (Places only)
 
 ## Commands
 - `npm run dev` — local dev server
 - `npm run build` — production build
-- `npm run seed` — seed Supabase from Excel

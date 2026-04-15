@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "seed": "npx tsx scripts/seed-database.ts"
+    "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/netlify": "^6.0.0",
@@ -15,7 +14,6 @@
     "astro": "^5.7.0"
   },
   "devDependencies": {
-    "tsx": "^4.19.0",
-    "xlsx": "^0.18.5"
+    "tsx": "^4.19.0"
   }
 }
