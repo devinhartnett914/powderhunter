@@ -5,4 +5,8 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  # PUBLIC_-prefixed env vars are intentionally shipped to the browser
+  # (Astro inlines them at build time). Tell Netlify's secret scanner
+  # to skip them so it doesn't treat them as leaked credentials.
+  SECRETS_SCAN_OMIT_KEYS = "PUBLIC_GOOGLE_MAPS_CLIENT_KEY,PUBLIC_SUPABASE_URL,PUBLIC_SUPABASE_ANON_KEY"
 
