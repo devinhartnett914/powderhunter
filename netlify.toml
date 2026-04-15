@@ -9,4 +9,9 @@
   # (Astro inlines them at build time). Tell Netlify's secret scanner
   # to skip them so it doesn't treat them as leaked credentials.
   SECRETS_SCAN_OMIT_KEYS = "PUBLIC_GOOGLE_MAPS_CLIENT_KEY,PUBLIC_SUPABASE_URL,PUBLIC_SUPABASE_ANON_KEY"
+  # The smart-detection scanner pattern-matches values (e.g. "AIza..." for Google
+  # keys) in source files. Our PUBLIC_ keys are intentionally exposed, so this
+  # flags false positives. OMIT_KEYS alone isn't enough — smart detection runs
+  # independently. Disable it; explicit per-key scanning still runs.
+  SECRETS_SCAN_SMART_DETECTION_ENABLED = "false"
 
