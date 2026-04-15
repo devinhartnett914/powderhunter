@@ -307,15 +307,16 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
       flyCols.forEach(el => el.style.display = '');
     }
 
-    // Reset results when switching modes
-    currentResults = [];
+    // Reset to the full resort list when switching modes (travel times clear
+    // until the user runs a search).
+    currentResults = RESORTS.slice();
     renderTable();
 
     const statusBar = document.getElementById('statusBar');
     if (mode === 'drive') {
-      statusBar.textContent = 'Enter your address and click Search to find resorts within driving distance.';
+      statusBar.textContent = `Showing all ${RESORTS.length} resorts. Enter an address + max drive to narrow.`;
     } else {
-      statusBar.textContent = 'Enter your home airport and click Search to see all resorts with flight links.';
+      statusBar.textContent = `Showing all ${RESORTS.length} resorts. Enter a home airport + max flight to narrow.`;
     }
   }
 
@@ -563,9 +564,13 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
       // Unified Travel Time cell
       let travelCell = '';
       if (isDrive) {
-        const driveHrs = r.driveTime / 3600;
-        const cls = driveHrs <= 4 ? 'short' : driveHrs <= 6 ? 'medium' : 'long';
-        travelCell = `<td><span class="drive-time ${cls}">${r.driveText}</span></td>`;
+        if (r.driveTime != null) {
+          const driveHrs = r.driveTime / 3600;
+          const cls = driveHrs <= 4 ? 'short' : driveHrs <= 6 ? 'medium' : 'long';
+          travelCell = `<td><span class="drive-time ${cls}">${r.driveText}</span></td>`;
+        } else {
+          travelCell = `<td><span class="pass-count">—</span></td>`;
+        }
       } else {
         const total = r.travelTime;
         const cls = total == null ? 'long' : total <= 5 ? 'short' : total <= 8 ? 'medium' : 'long';
@@ -683,6 +688,11 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
   // returns ApiNotActivatedMapError. See memory "powderhunter Places Autocomplete broken".
   // Users type the full address manually for now.
 
+  // Show all resorts on initial load (sorted by acreage by default).
+  currentResults = RESORTS.slice();
+  document.getElementById('statusBar').textContent =
+    `Showing all ${RESORTS.length} resorts. Enter an address + max drive to narrow.`;
+  renderTable();
 </script>
 
 </body>
