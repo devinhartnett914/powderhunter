@@ -48,9 +48,6 @@ INSERT INTO resorts (name, pass_type, location, lat, lng, static_updated_at) VAL
 INSERT INTO resorts (name, pass_type, location, lat, lng, static_updated_at) VALUES ('Verbier 4 Vallées', 'Epic', 'Switzerland', 46.0960814, 7.2285512, now()) ON CONFLICT (name, pass_type, location) DO NOTHING;
 INSERT INTO resorts (name, pass_type, location, lat, lng, static_updated_at) VALUES ('Ski Arlberg', 'Epic', 'Austria', 47.1291555, 10.2639663, now()) ON CONFLICT (name, pass_type, location) DO NOTHING;
 INSERT INTO resorts (name, pass_type, location, lat, lng, static_updated_at) VALUES ('Skirama Dolomiti', 'Epic', 'Italy', 46.4102117, 11.8440351, now()) ON CONFLICT (name, pass_type, location) DO NOTHING;
-INSERT INTO resorts (name, pass_type, location, lat, lng, static_updated_at) VALUES ('3 Zinnen Dolomites', 'Epic', 'Italy', 46.7312978, 12.3301876, now()) ON CONFLICT (name, pass_type, location) DO NOTHING;
-INSERT INTO resorts (name, pass_type, location, lat, lng, static_updated_at) VALUES ('Civetta', 'Epic', 'Italy', 46.4071255, 12.0751976, now()) ON CONFLICT (name, pass_type, location) DO NOTHING;
-INSERT INTO resorts (name, pass_type, location, lat, lng, static_updated_at) VALUES ('Falcade-Passo San Pellegrino', 'Epic', 'Italy', 46.3566258, 11.8701577, now()) ON CONFLICT (name, pass_type, location) DO NOTHING;
 INSERT INTO resorts (name, pass_type, location, lat, lng, static_updated_at) VALUES ('Les 3 Vallées', 'Epic', 'France', 45.3413534, 6.5866171, now()) ON CONFLICT (name, pass_type, location) DO NOTHING;
 INSERT INTO resorts (name, pass_type, location, lat, lng, static_updated_at) VALUES ('Paradiski', 'Epic', 'France', 46.227638, 2.213749, now()) ON CONFLICT (name, pass_type, location) DO NOTHING;
 INSERT INTO resorts (name, pass_type, location, lat, lng, static_updated_at) VALUES ('Tignes-Val d''Isère', 'Epic', 'France', 45.458561, 6.904753599999999, now()) ON CONFLICT (name, pass_type, location) DO NOTHING;

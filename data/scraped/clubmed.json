@@ -1,1 +1,107 @@
-[{"name":"Tignes","location":"French Alps, France","country":"FR"},{"name":"Val d'Isère","location":"French Alps, France","country":"FR"},{"name":"Grand Massif Samoëns Morillon","location":"French Alps, France","country":"FR"},{"name":"Peisey-Vallandry","location":"French Alps, France","country":"FR"},{"name":"Val Thorens Sensations","location":"French Alps, France","country":"FR"},{"name":"Alpe d'Huez","location":"French Alps, France","country":"FR"},{"name":"Les Arcs Panorama","location":"French Alps, France","country":"FR"},{"name":"La Rosière","location":"French Alps, France","country":"FR"},{"name":"Valmorel","location":"French Alps, France","country":"FR"},{"name":"Serre-Chevalier","location":"French Alps, France","country":"FR"},{"name":"La Plagne 2100","location":"French Alps, France","country":"FR"},{"name":"Pragelato Sestriere","location":"Italian Alps, Italy","country":"IT"},{"name":"Saint-Moritz Roi Soleil","location":"Swiss Alps, Switzerland","country":"CH"},{"name":"Quebec Charlevoix","location":"Charlevoix, Canada","country":"CA"},{"name":"Kiroro Peak","location":"Hokkaido, Japan","country":"JP"},{"name":"Kiroro Grand","location":"Hokkaido, Japan","country":"JP"},{"name":"Tomamu Hokkaido","location":"Hokkaido, Japan","country":"JP"},{"name":"Sahoro Hokkaido","location":"Hokkaido, Japan","country":"JP"},{"name":"Yabuli","location":"Northeast China, China","country":"CN"},{"name":"Beidahu","location":"Jilin, China","country":"CN"},{"name":"Changbaishan","location":"Northeast China, China","country":"CN"}]
+[
+  {
+    "name": "Tignes",
+    "location": "French Alps, France",
+    "country": "FR"
+  },
+  {
+    "name": "Val d'Isère",
+    "location": "French Alps, France",
+    "country": "FR"
+  },
+  {
+    "name": "Grand Massif Samoëns Morillon",
+    "location": "French Alps, France",
+    "country": "FR"
+  },
+  {
+    "name": "Peisey-Vallandry",
+    "location": "French Alps, France",
+    "country": "FR"
+  },
+  {
+    "name": "Val Thorens Sensations",
+    "location": "French Alps, France",
+    "country": "FR"
+  },
+  {
+    "name": "Alpe d'Huez",
+    "location": "French Alps, France",
+    "country": "FR"
+  },
+  {
+    "name": "Les Arcs Panorama",
+    "location": "French Alps, France",
+    "country": "FR"
+  },
+  {
+    "name": "La Rosière",
+    "location": "French Alps, France",
+    "country": "FR"
+  },
+  {
+    "name": "Valmorel",
+    "location": "French Alps, France",
+    "country": "FR"
+  },
+  {
+    "name": "Serre-Chevalier",
+    "location": "French Alps, France",
+    "country": "FR"
+  },
+  {
+    "name": "La Plagne 2100",
+    "location": "French Alps, France",
+    "country": "FR"
+  },
+  {
+    "name": "Pragelato Sestriere",
+    "location": "Italian Alps, Italy",
+    "country": "IT"
+  },
+  {
+    "name": "Saint-Moritz Roi Soleil",
+    "location": "Swiss Alps, Switzerland",
+    "country": "CH"
+  },
+  {
+    "name": "Quebec Charlevoix",
+    "location": "Charlevoix, Canada",
+    "country": "CA"
+  },
+  {
+    "name": "Kiroro Peak",
+    "location": "Hokkaido, Japan",
+    "country": "JP"
+  },
+  {
+    "name": "Kiroro Grand",
+    "location": "Hokkaido, Japan",
+    "country": "JP"
+  },
+  {
+    "name": "Tomamu Hokkaido",
+    "location": "Hokkaido, Japan",
+    "country": "JP"
+  },
+  {
+    "name": "Sahoro Hokkaido",
+    "location": "Hokkaido, Japan",
+    "country": "JP"
+  },
+  {
+    "name": "Yabuli",
+    "location": "Northeast China, China",
+    "country": "CN"
+  },
+  {
+    "name": "Beidahu",
+    "location": "Jilin, China",
+    "country": "CN"
+  },
+  {
+    "name": "Changbaishan",
+    "location": "Northeast China, China",
+    "country": "CN"
+  }
+]
