@@ -17,8 +17,9 @@ header p { opacity: 0.8; margin-top: 4px; font-size: 14px; }
 .control-group input, .control-group select { padding: 8px 12px; border: 1px solid var(--gray-300); border-radius: var(--radius); font-size: 14px; }
 .control-group input:focus, .control-group select:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-light); }
 #address { width: 320px; }
-#maxDrive { width: 80px; }
-#departDate, #returnDate { width: 150px; }
+#maxDrive, #maxFlight { width: 80px; }
+
+.footnote { padding: 12px 0 0; font-size: 12px; color: var(--gray-500); font-style: italic; }
 
 .mode-toggle { display: flex; border: 1px solid var(--gray-300); border-radius: var(--radius); overflow: hidden; }
 .mode-btn { padding: 8px 16px; border: none; background: white; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.15s; color: var(--gray-700); }
@@ -45,6 +46,7 @@ table { width: 100%; border-collapse: collapse; font-size: 13px; }
 thead th { position: sticky; top: 0; background: var(--gray-700); color: white; padding: 10px 12px; text-align: left; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.3px; cursor: pointer; white-space: nowrap; user-select: none; }
 thead th:hover { background: var(--gray-900); }
 thead th .sort-arrow { margin-left: 4px; opacity: 0.5; }
+thead th.sorted { background: var(--blue); }
 thead th.sorted .sort-arrow { opacity: 1; }
 tbody tr { border-bottom: 1px solid var(--gray-200); }
 tbody tr:nth-child(even) { background: var(--gray-50); }
