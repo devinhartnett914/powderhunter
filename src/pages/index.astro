@@ -151,7 +151,7 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
   <table id="resortTable">
     <thead>
       <tr>
-        <th data-col="travelTime">Travel Time <span class="sort-arrow">&#9660;</span></th>
+        <th data-col="travelTime" class="travel-col" style="display:none">Travel Time <span class="sort-arrow">&#9660;</span></th>
         <th data-col="pass">Pass <span class="sort-arrow">&#9660;</span></th>
         <th data-col="name">Resort <span class="sort-arrow">&#9660;</span></th>
         <th data-col="location">Location <span class="sort-arrow">&#9660;</span></th>
@@ -178,6 +178,7 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
   let currentResults = [];
   let sortCol = 'acreage';
   let sortAsc = true;
+  let hasSearched = false;
   const activeFilters = { pass: 'all', daycare: 'all', kidsfree: 'all' };
 
   // Parse airport code from text like "Reno (RNO)"
@@ -310,6 +311,7 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
     // Reset to the full resort list when switching modes (travel times clear
     // until the user runs a search).
     currentResults = RESORTS.slice();
+    hasSearched = false;
     renderTable();
 
     const statusBar = document.getElementById('statusBar');
@@ -367,6 +369,7 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
       // Expose driveTime in hours as travelTime for unified sorting
       currentResults.forEach(r => { r.travelTime = r.driveTime / 3600; });
 
+      hasSearched = true;
       sortCol = 'acreage';
       sortAsc = true;
       renderTable();
@@ -451,6 +454,7 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
     }
     currentResults = enriched;
 
+    hasSearched = true;
     sortCol = 'acreage';
     sortAsc = true;
     renderTable();
@@ -526,8 +530,11 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
     const tbody = document.getElementById('resortBody');
     const empty = document.getElementById('emptyState');
 
-    // Fly-only elements (footnote only now — the Travel Time column is shown in both modes)
+    // Fly-only elements (footnote)
     document.querySelectorAll('.fly-col').forEach(el => el.style.display = isFly ? '' : 'none');
+
+    // Travel Time column: hidden until the user has run a search
+    document.querySelectorAll('.travel-col').forEach(el => el.style.display = hasSearched ? '' : 'none');
 
     // Update sort indicators on column headers
     // For acreage, asc=true means biggest-first (reversed in comparator), so flip the arrow.
@@ -563,24 +570,26 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
     tbody.innerHTML = filtered.map(r => {
       // Unified Travel Time cell
       let travelCell = '';
-      if (isDrive) {
-        if (r.driveTime != null) {
-          const driveHrs = r.driveTime / 3600;
-          const cls = driveHrs <= 4 ? 'short' : driveHrs <= 6 ? 'medium' : 'long';
-          travelCell = `<td><span class="drive-time ${cls}">${r.driveText}</span></td>`;
+      if (hasSearched) {
+        if (isDrive) {
+          if (r.driveTime != null) {
+            const driveHrs = r.driveTime / 3600;
+            const cls = driveHrs <= 4 ? 'short' : driveHrs <= 6 ? 'medium' : 'long';
+            travelCell = `<td class="travel-col"><span class="drive-time ${cls}">${r.driveText}</span></td>`;
+          } else {
+            travelCell = `<td class="travel-col"><span class="pass-count">—</span></td>`;
+          }
         } else {
-          travelCell = `<td><span class="pass-count">—</span></td>`;
+          const total = r.travelTime;
+          const cls = total == null ? 'long' : total <= 5 ? 'short' : total <= 8 ? 'medium' : 'long';
+          const totalStr = total != null ? formatHours(total) : '—';
+          const via = r.bestAirportCode ? ` via ${r.bestAirportCode}` : '';
+          const parts = [];
+          if (r.bestFlightHrs != null) parts.push(`${formatHours(r.bestFlightHrs)} flight`);
+          if (r.bestDriveHrs != null) parts.push(`${formatHours(r.bestDriveHrs)} drive`);
+          const breakdown = parts.length ? `<br><span class="pass-count">${parts.join(' + ')}${via}</span>` : '';
+          travelCell = `<td class="travel-col"><span class="drive-time ${cls}">${totalStr}</span>${breakdown}</td>`;
         }
-      } else {
-        const total = r.travelTime;
-        const cls = total == null ? 'long' : total <= 5 ? 'short' : total <= 8 ? 'medium' : 'long';
-        const totalStr = total != null ? formatHours(total) : '—';
-        const via = r.bestAirportCode ? ` via ${r.bestAirportCode}` : '';
-        const parts = [];
-        if (r.bestFlightHrs != null) parts.push(`${formatHours(r.bestFlightHrs)} flight`);
-        if (r.bestDriveHrs != null) parts.push(`${formatHours(r.bestDriveHrs)} drive`);
-        const breakdown = parts.length ? `<br><span class="pass-count">${parts.join(' + ')}${via}</span>` : '';
-        travelCell = `<td><span class="drive-time ${cls}">${totalStr}</span>${breakdown}</td>`;
       }
 
       // Resort name with link
