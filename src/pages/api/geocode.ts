@@ -11,7 +11,7 @@ export const GET: APIRoute = async ({ request }) => {
     });
   }
 
-  const apiKey = import.meta.env.GOOGLE_MAPS_API_KEY;
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY;
   const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${apiKey}`;
 
   const res = await fetch(geocodeUrl);

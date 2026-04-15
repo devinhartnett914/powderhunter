@@ -11,7 +11,7 @@ export const POST: APIRoute = async ({ request }) => {
     });
   }
 
-  const apiKey = import.meta.env.GOOGLE_MAPS_API_KEY;
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY;
   const origin = `${originLat},${originLng}`;
 
   const allResults: any[] = [];
