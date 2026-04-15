@@ -1,5 +1,6 @@
 ---
 import { supabase } from '../lib/supabase';
+import airports from '../data/airports.json';
 import '../styles/global.css';
 
 const { data: resorts } = await supabase
@@ -15,7 +16,6 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Powder Hunter — Ski Resort Finder</title>
-  <script src={`https://maps.googleapis.com/maps/api/js?key=${clientKey}&libraries=places`}></script>
 </head>
 <body>
 
@@ -112,15 +112,9 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
       <option value="YYZ">Toronto (YYZ)</option>
     </datalist>
   </div>
-
-  <!-- Shared: dates -->
-  <div class="control-group">
-    <label>Depart Date</label>
-    <input type="date" id="departDate">
-  </div>
-  <div class="control-group">
-    <label>Return Date</label>
-    <input type="date" id="returnDate">
+  <div class="control-group fly-only" style="display:none">
+    <label>Max Flight (hrs)</label>
+    <input type="number" id="maxFlight" value="6" min="1" max="24">
   </div>
 
   <div class="control-group">
@@ -157,7 +151,7 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
   <table id="resortTable">
     <thead>
       <tr>
-        <th data-col="driveTime" class="drive-col">Drive Time <span class="sort-arrow">&#9660;</span></th>
+        <th data-col="travelTime">Travel Time <span class="sort-arrow">&#9660;</span></th>
         <th data-col="pass">Pass <span class="sort-arrow">&#9660;</span></th>
         <th data-col="name">Resort <span class="sort-arrow">&#9660;</span></th>
         <th data-col="location">Location <span class="sort-arrow">&#9660;</span></th>
@@ -166,21 +160,23 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
         <th data-col="ski_school_min_age">Ski School Age <span class="sort-arrow">&#9660;</span></th>
         <th>Ski School Cost</th>
         <th>Daycare</th>
-        <th>Closest Airport</th>
-        <th>Flights</th>
+        <th>Local Airport</th>
+        <th>Major Airport</th>
       </tr>
     </thead>
     <tbody id="resortBody"></tbody>
   </table>
   <div class="empty" id="emptyState">Choose Drive or Fly above, then click Search.</div>
+  <p class="footnote fly-col" style="display:none">Flight times are rough estimates: great-circle distance ÷ 500 mph, plus 1 h taxi/takeoff/descent. Hub-to-hub routes assumed direct; all other routes add a 2 h layover allowance; long hauls (>2,500 mi) add another 30 min. Actual times vary with routing, airline, and connections.</p>
 </main>
 
-<script define:vars={{ resorts }}>
+<script define:vars={{ resorts, airports }}>
   const RESORTS = resorts;
+  const AIRPORTS = airports;
 
   let currentMode = 'drive';
   let currentResults = [];
-  let sortCol = 'driveTime';
+  let sortCol = 'acreage';
   let sortAsc = true;
   const activeFilters = { pass: 'all', daycare: 'all', kidsfree: 'all' };
 
@@ -230,14 +226,65 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
 
   // Build Google Flights URL from origin airport to destination airport
   function flightsUrl(fromCode, toCode) {
-    const depart = document.getElementById('departDate').value;
-    const ret = document.getElementById('returnDate').value;
-    let url = `https://www.google.com/travel/flights?q=flights+from+${fromCode}+to+${toCode}`;
-    if (depart) {
-      url += `+departing+${depart}`;
-      if (ret) url += `+returning+${ret}`;
-    }
-    return url;
+    return `https://www.google.com/travel/flights?q=flights+from+${fromCode}+to+${toCode}`;
+  }
+
+  // Major hub airports where most routes run direct.
+  // Flights between two hubs assumed direct; anything else gets a layover allowance.
+  const HUBS = new Set([
+    'ATL','ORD','DFW','DEN','LAX','JFK','SFO','SEA','CLT','LAS','MIA','PHX',
+    'EWR','MSP','DTW','BOS','PHL','IAH','IAD','SLC','MCO','BWI','DCA','LGA',
+    'SAN','PDX','STL','MDW','TPA','MCI','IND','CLE','MEM','BNA','RDU','PIT',
+    'DAL','OAK','AUS','SJC','SMF','HNL','YYZ','YVR','YUL','YYC',
+  ]);
+
+  // Estimate total travel time in hours (including layover when needed).
+  // Formula:
+  //   air time = great-circle miles / 500 mph
+  //   + 1.0 hr fixed overhead (taxi, takeoff, descent, arrival taxi)
+  //   + 2.0 hr layover if either endpoint is NOT a major hub (likely a connection)
+  //   + 0.5 hr extra for very long hauls (>2500 mi)
+  function estFlightHours(fromCode, toCode) {
+    const a = AIRPORTS[fromCode];
+    const b = AIRPORTS[toCode];
+    if (!a || !b) return null;
+    const miles = haversine(a.lat, a.lng, b.lat, b.lng);
+    // Too close to fly — under ~150 mi is a drivable hop, not a flight (e.g. IAD↔BWI)
+    if (miles < 150) return null;
+    const airHours = miles / 500;
+    const overhead = 1.0;
+    const bothHubs = HUBS.has(fromCode) && HUBS.has(toCode);
+    const layover = bothHubs ? 0 : 2.0;
+    const longHaul = miles > 2500 ? 0.5 : 0;
+    return airHours + overhead + layover + longHaul;
+  }
+
+  function formatHours(h) {
+    if (h == null) return '—';
+    const hrs = Math.floor(h);
+    const mins = Math.round((h - hrs) * 60);
+    return mins === 0 ? `${hrs}h` : `${hrs}h ${mins}m`;
+  }
+
+  // The Excel source stores airport-to-resort distance as drive time
+  // (e.g. "2 hr", "1 hr 30 min"). Pass through verbatim with clearer labeling.
+  function formatAirportDistance(val) {
+    if (val == null || val === '' || val === '-') return null;
+    const s = String(val).trim();
+    if (!s) return null;
+    return `${s} drive to resort`;
+  }
+
+  // Parse drive-time strings like "2 hr", "1 hr 30 min", "45 min" -> decimal hours.
+  function parseDriveTimeHours(val) {
+    if (val == null || val === '' || val === '-') return null;
+    const s = String(val);
+    const hrMatch = s.match(/(\d+(?:\.\d+)?)\s*hr/i);
+    const minMatch = s.match(/(\d+)\s*min/i);
+    if (!hrMatch && !minMatch) return null;
+    const hrs = hrMatch ? parseFloat(hrMatch[1]) : 0;
+    const mins = minMatch ? parseInt(minMatch[1], 10) : 0;
+    return hrs + mins / 60;
   }
 
   // --- Mode toggle ---
@@ -248,16 +295,16 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
 
     const driveEls = document.querySelectorAll('.drive-only');
     const flyEls = document.querySelectorAll('.fly-only');
-    const driveCols = document.querySelectorAll('.drive-col');
+    const flyCols = document.querySelectorAll('.fly-col');
 
     if (mode === 'drive') {
       driveEls.forEach(el => el.style.display = '');
       flyEls.forEach(el => el.style.display = 'none');
-      driveCols.forEach(el => el.style.display = '');
+      flyCols.forEach(el => el.style.display = 'none');
     } else {
       driveEls.forEach(el => el.style.display = 'none');
       flyEls.forEach(el => el.style.display = '');
-      driveCols.forEach(el => el.style.display = 'none');
+      flyCols.forEach(el => el.style.display = '');
     }
 
     // Reset results when switching modes
@@ -316,7 +363,10 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
       const maxSec = maxHours * 3600;
       currentResults = driveResults.filter(r => r.driveTime <= maxSec);
 
-      sortCol = 'driveTime';
+      // Expose driveTime in hours as travelTime for unified sorting
+      currentResults.forEach(r => { r.travelTime = r.driveTime / 3600; });
+
+      sortCol = 'acreage';
       sortAsc = true;
       renderTable();
 
@@ -344,19 +394,72 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
   function searchFly() {
     const homeAirport = getHomeAirport();
     if (!homeAirport) { alert('Please enter your home airport code'); return; }
+    if (!AIRPORTS[homeAirport]) {
+      alert(`Unknown airport code "${homeAirport}". Try a 3-letter IATA code (e.g. DEN, BOS, SLC).`);
+      return;
+    }
+    const maxHours = parseFloat(document.getElementById('maxFlight').value) || 6;
 
-    // In fly mode, show all resorts that have an airport
-    currentResults = RESORTS.filter(r => parseAirportCode(r.closest_airport) || parseAirportCode(r.major_airport));
+    const enriched = [];
+    for (const r of RESORTS) {
+      const closest = parseAirportCode(r.closest_airport);
+      const major = parseAirportCode(r.major_airport);
+      // Skip self-flights (home === destination)
+      const closestValid = closest && closest !== homeAirport;
+      const majorValid = major && major !== homeAirport && major !== closest;
+      if (!closestValid && !majorValid) continue;
+      const closestHrs = closestValid ? estFlightHours(homeAirport, closest) : null;
+      const majorHrs = majorValid ? estFlightHours(homeAirport, major) : null;
+      const closestDriveHrs = parseDriveTimeHours(r.closest_airport_distance);
+      const majorDriveHrs = parseDriveTimeHours(r.major_airport_distance);
 
-    sortCol = 'name';
+      const closestTotal = (closestHrs != null && closestDriveHrs != null)
+        ? closestHrs + closestDriveHrs : null;
+      const majorTotal = (majorHrs != null && majorDriveHrs != null)
+        ? majorHrs + majorDriveHrs : null;
+
+      // Flight-only filter still uses flight hours (not drive time) so max-flight makes sense
+      const flightCandidates = [closestHrs, majorHrs].filter(h => h != null);
+      if (flightCandidates.length === 0) continue;
+      const anyFits = flightCandidates.some(h => h <= maxHours);
+      if (!anyFits) continue;
+
+      // Pick the best airport option for the Travel Time cell.
+      // Prefer the one with a known total; tie-break by shortest total.
+      const totals = [
+        { total: closestTotal, flight: closestHrs, drive: closestDriveHrs, code: closest, label: r.closest_airport },
+        { total: majorTotal, flight: majorHrs, drive: majorDriveHrs, code: major, label: r.major_airport },
+      ].filter(o => o.total != null);
+      // Fallback: if no total (missing drive data), use flight-only
+      const best = totals.length
+        ? totals.reduce((a, b) => a.total < b.total ? a : b)
+        : (closestHrs != null
+            ? { total: null, flight: closestHrs, drive: null, code: closest, label: r.closest_airport }
+            : { total: null, flight: majorHrs, drive: null, code: major, label: r.major_airport });
+
+      enriched.push({
+        ...r,
+        closestFlightHrs: closestHrs,
+        majorFlightHrs: majorHrs,
+        travelTime: best.total != null ? best.total : best.flight,
+        bestAirportCode: best.code,
+        bestAirportLabel: best.label,
+        bestFlightHrs: best.flight,
+        bestDriveHrs: best.drive,
+      });
+    }
+    currentResults = enriched;
+
+    sortCol = 'acreage';
     sortAsc = true;
     renderTable();
 
     const passCount = {};
     currentResults.forEach(r => { passCount[r.pass_type] = (passCount[r.pass_type] || 0) + 1; });
     const passSummary = Object.entries(passCount).map(([k, v]) => `${v} ${k}`).join(', ');
-    document.getElementById('statusBar').textContent =
-      `${currentResults.length} resorts with airports: ${passSummary}`;
+    document.getElementById('statusBar').textContent = currentResults.length === 0
+      ? `No resorts within ${maxHours}h flight of ${homeAirport}.`
+      : `${currentResults.length} resorts within ${maxHours}h flight of ${homeAirport}: ${passSummary}`;
   }
 
   // --- Filters ---
@@ -392,7 +495,7 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
 
   function getSortVal(r, col) {
     switch(col) {
-      case 'driveTime': return r.driveTime || 999999;
+      case 'travelTime': return r.travelTime != null ? r.travelTime : 999999;
       case 'pass': return r.pass_type || '';
       case 'name': return r.name || '';
       case 'location': return r.location || '';
@@ -407,8 +510,8 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
   function renderTable() {
     const filtered = getFilteredResults();
     const isDrive = currentMode === 'drive';
+    const isFly = currentMode === 'fly';
     const homeAirport = getHomeAirport();
-    const hasDates = !!document.getElementById('departDate').value;
 
     filtered.sort((a, b) => {
       let va = getSortVal(a, sortCol), vb = getSortVal(b, sortCol);
@@ -422,8 +525,24 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
     const tbody = document.getElementById('resortBody');
     const empty = document.getElementById('emptyState');
 
-    // Hide/show drive time column cells
-    document.querySelectorAll('.drive-col').forEach(el => el.style.display = isDrive ? '' : 'none');
+    // Fly-only elements (footnote only now — the Travel Time column is shown in both modes)
+    document.querySelectorAll('.fly-col').forEach(el => el.style.display = isFly ? '' : 'none');
+
+    // Update sort indicators on column headers
+    // For acreage, asc=true means biggest-first (reversed in comparator), so flip the arrow.
+    const arrowUp = '&#9650;';   // ▲
+    const arrowDown = '&#9660;'; // ▼
+    const effectiveAsc = sortCol === 'acreage' ? !sortAsc : sortAsc;
+    document.querySelectorAll('thead th[data-col]').forEach(th => {
+      const arrow = th.querySelector('.sort-arrow');
+      if (th.dataset.col === sortCol) {
+        th.classList.add('sorted');
+        if (arrow) arrow.innerHTML = effectiveAsc ? arrowUp : arrowDown;
+      } else {
+        th.classList.remove('sorted');
+        if (arrow) arrow.innerHTML = arrowDown;
+      }
+    });
 
     if (filtered.length === 0) {
       tbody.innerHTML = '';
@@ -441,12 +560,22 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
     empty.style.display = 'none';
 
     tbody.innerHTML = filtered.map(r => {
-      // Drive time cell (only in drive mode)
-      let driveCell = '';
+      // Unified Travel Time cell
+      let travelCell = '';
       if (isDrive) {
         const driveHrs = r.driveTime / 3600;
-        const driveClass = driveHrs <= 4 ? 'short' : driveHrs <= 6 ? 'medium' : 'long';
-        driveCell = `<td class="drive-col"><span class="drive-time ${driveClass}">${r.driveText}</span><br><span class="pass-count">${r.driveMiles} mi</span></td>`;
+        const cls = driveHrs <= 4 ? 'short' : driveHrs <= 6 ? 'medium' : 'long';
+        travelCell = `<td><span class="drive-time ${cls}">${r.driveText}</span></td>`;
+      } else {
+        const total = r.travelTime;
+        const cls = total == null ? 'long' : total <= 5 ? 'short' : total <= 8 ? 'medium' : 'long';
+        const totalStr = total != null ? formatHours(total) : '—';
+        const via = r.bestAirportCode ? ` via ${r.bestAirportCode}` : '';
+        const parts = [];
+        if (r.bestFlightHrs != null) parts.push(`${formatHours(r.bestFlightHrs)} flight`);
+        if (r.bestDriveHrs != null) parts.push(`${formatHours(r.bestDriveHrs)} drive`);
+        const breakdown = parts.length ? `<br><span class="pass-count">${parts.join(' + ')}${via}</span>` : '';
+        travelCell = `<td><span class="drive-time ${cls}">${totalStr}</span>${breakdown}</td>`;
       }
 
       // Resort name with link
@@ -476,49 +605,49 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
           : '$' + r.ski_school_max_cost)
         : '-';
 
-      // Daycare with link
+      // Daycare with link; add Baby Club Med line for Club Med resorts
       const daycareBadge = r.daycare
         ? `<span class="badge ${r.daycare.toLowerCase().startsWith('yes') ? 'badge-yes' : 'badge-no'}">${r.daycare}</span>`
         : '-';
-      const daycare = r.daycare && r.daycare_url
+      let daycare = r.daycare && r.daycare_url
         ? `<a href="${r.daycare_url}" target="_blank">${daycareBadge}</a>`
         : daycareBadge;
-
-      // Flight links
-      const airportCode = parseAirportCode(r.closest_airport);
-      const majorCode = parseAirportCode(r.major_airport);
-      let flightCell = '-';
-
-      if (currentMode === 'fly' && homeAirport) {
-        // Fly mode: link from home airport to resort airport
-        const badges = [];
-        if (airportCode) {
-          const url = flightsUrl(homeAirport, airportCode);
-          const label = hasDates ? `&#9992; ${homeAirport}→${airportCode}` : `&#9992; ${homeAirport}→${airportCode}`;
-          badges.push(`<a href="${url}" target="_blank" class="badge badge-flight">${label}</a>`);
-        }
-        if (majorCode && majorCode !== airportCode) {
-          const url = flightsUrl(homeAirport, majorCode);
-          const label = hasDates ? `&#9992; ${homeAirport}→${majorCode}` : `&#9992; ${homeAirport}→${majorCode}`;
-          badges.push(`<a href="${url}" target="_blank" class="badge badge-flight">${label}</a>`);
-        }
-        flightCell = badges.length > 0 ? badges.join(' ') : '-';
-      } else {
-        // Drive mode: just show resort airport codes linking to Google Flights
-        const badges = [];
-        if (airportCode) {
-          const url = flightsUrl('', airportCode);
-          badges.push(`<a href="${url}" target="_blank" class="badge badge-flight">&#9992; ${airportCode}</a>`);
-        }
-        if (majorCode && majorCode !== airportCode) {
-          const url = flightsUrl('', majorCode);
-          badges.push(`<a href="${url}" target="_blank" class="badge badge-flight">&#9992; ${majorCode}</a>`);
-        }
-        flightCell = badges.length > 0 ? badges.join(' ') : '-';
+      if (r.pass_type === 'Club Med' && r.baby_club_med) {
+        const bcm = String(r.baby_club_med);
+        const bcmBadge = `<span class="badge ${bcm.toLowerCase().startsWith('yes') ? 'badge-yes' : 'badge-no'}">Baby Club Med: ${bcm}</span>`;
+        daycare += `<br>${bcmBadge}`;
       }
 
+      // Airport + flight cells (split into Local and Major)
+      const airportCode = parseAirportCode(r.closest_airport);
+      const majorCode = parseAirportCode(r.major_airport);
+
+      // Major row should only render when it differs from the local airport
+      const showMajor = majorCode && majorCode !== airportCode;
+
+      const makeFlightBadge = (code, hrs) => {
+        if (!code) return '-';
+        // Suppress self-flights
+        if (isFly && homeAirport && code === homeAirport) return '-';
+        const url = isFly && homeAirport ? flightsUrl(homeAirport, code) : flightsUrl('', code);
+        const prefix = isFly && homeAirport ? `${homeAirport}→${code}` : code;
+        const timeStr = isFly && hrs != null ? ` ~${formatHours(hrs)}` : '';
+        return `<a href="${url}" target="_blank" class="badge badge-flight">&#9992; ${prefix}${timeStr}</a>`;
+      };
+
+      const combineAirport = (label, code, hrs) => {
+        if (!code) return '-';
+        const badge = makeFlightBadge(code, hrs);
+        const badgeLine = badge && badge !== '-' ? `<br>${badge}` : '';
+        return `${label}${badgeLine}`;
+      };
+      const localAirportCell = combineAirport(r.closest_airport, airportCode, r.closestFlightHrs);
+      const majorAirportCell = showMajor
+        ? combineAirport(r.major_airport, majorCode, r.majorFlightHrs)
+        : '-';
+
       return `<tr>
-        ${driveCell}
+        ${travelCell}
         <td><span class="badge badge-pass">${r.pass_type}</span></td>
         <td>${resortName}</td>
         <td>${r.location || ''}</td>
@@ -527,22 +656,10 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
         <td>${schoolAge}</td>
         <td>${schoolCost}</td>
         <td>${daycare}</td>
-        <td>${r.closest_airport || '-'}</td>
-        <td>${flightCell}</td>
+        <td>${localAirportCell}</td>
+        <td>${majorAirportCell}</td>
       </tr>`;
     }).join('');
-  }
-
-  // Set default dates (next Saturday + following Saturday)
-  function setDefaultDates() {
-    const now = new Date();
-    const nextSat = new Date(now);
-    nextSat.setDate(now.getDate() + (6 - now.getDay() + 7) % 7 || 7);
-    const followingSat = new Date(nextSat);
-    followingSat.setDate(nextSat.getDate() + 7);
-
-    document.getElementById('departDate').value = nextSat.toISOString().split('T')[0];
-    document.getElementById('returnDate').value = followingSat.toISOString().split('T')[0];
   }
 
   // Wire up event listeners
@@ -562,13 +679,10 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
   document.getElementById('modeDrive').addEventListener('click', () => setMode('drive'));
   document.getElementById('modeFly').addEventListener('click', () => setMode('fly'));
 
-  // Init Places Autocomplete for address
-  const autocomplete = new google.maps.places.Autocomplete(
-    document.getElementById('address'),
-    { types: ['address'], componentRestrictions: { country: 'us' } }
-  );
+  // Places Autocomplete disabled — Google's legacy Places API is deprecated and currently
+  // returns ApiNotActivatedMapError. See memory "powderhunter Places Autocomplete broken".
+  // Users type the full address manually for now.
 
-  setDefaultDates();
 </script>
 
 </body>
