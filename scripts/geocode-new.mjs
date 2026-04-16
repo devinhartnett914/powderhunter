@@ -8,7 +8,7 @@ for (const l of envLines) { const m = l.match(/^([^#=]+)=(.*)$/); if (m) env[m[1
 const KEY = env.GOOGLE_MAPS_API_KEY;
 if (!KEY) { console.error("missing GOOGLE_MAPS_API_KEY"); process.exit(1); }
 
-const CAP = 150;
+const CAP = 500;
 const DELAY_MS = 120;
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 

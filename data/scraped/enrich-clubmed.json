@@ -1,0 +1,23 @@
+[
+  {"name": "Alpe d'Huez", "vertical_ft": 6888, "closest_airport": "Grenoble (GNB)", "major_airport": "Lyon (LYS)", "closest_airport_distance": "1 hr 30 min", "major_airport_distance": "2 hr 30 min"},
+  {"name": "Beidahu", "vertical_ft": 2461, "closest_airport": "Jilin (JIL)", "major_airport": "Changchun (CGQ)", "closest_airport_distance": "1 hr 30 min", "major_airport_distance": "2 hr 30 min"},
+  {"name": "Changbaishan", "vertical_ft": 2953, "closest_airport": "Changbaishan (NBS)", "major_airport": "Changchun (CGQ)", "closest_airport_distance": "30 min", "major_airport_distance": "4 hr 30 min"},
+  {"name": "Grand Massif Samoëns Morillon", "vertical_ft": 5906, "closest_airport": "Geneva (GVA)", "major_airport": null, "closest_airport_distance": "1 hr 10 min", "major_airport_distance": null},
+  {"name": "Kiroro Grand", "vertical_ft": 2953, "closest_airport": "Sapporo New Chitose (CTS)", "major_airport": null, "closest_airport_distance": "1 hr 40 min", "major_airport_distance": null},
+  {"name": "Kiroro Peak", "vertical_ft": 2953, "closest_airport": "Sapporo New Chitose (CTS)", "major_airport": null, "closest_airport_distance": "1 hr 40 min", "major_airport_distance": null},
+  {"name": "La Plagne 2100", "vertical_ft": 6562, "closest_airport": "Chambéry (CMF)", "major_airport": "Geneva (GVA)", "closest_airport_distance": "1 hr 40 min", "major_airport_distance": "2 hr 30 min"},
+  {"name": "La Rosière", "vertical_ft": 4921, "closest_airport": "Chambéry (CMF)", "major_airport": "Geneva (GVA)", "closest_airport_distance": "1 hr 50 min", "major_airport_distance": "2 hr 30 min"},
+  {"name": "Les Arcs Panorama", "vertical_ft": 6562, "closest_airport": "Chambéry (CMF)", "major_airport": "Geneva (GVA)", "closest_airport_distance": "1 hr 40 min", "major_airport_distance": "2 hr 20 min"},
+  {"name": "Peisey-Vallandry", "vertical_ft": 6562, "closest_airport": "Chambéry (CMF)", "major_airport": "Geneva (GVA)", "closest_airport_distance": "1 hr 45 min", "major_airport_distance": "2 hr 25 min"},
+  {"name": "Pragelato Sestriere", "vertical_ft": 3281, "closest_airport": "Turin (TRN)", "major_airport": "Milan Malpensa (MXP)", "closest_airport_distance": "1 hr 30 min", "major_airport_distance": "3 hr"},
+  {"name": "Québec Charlevoix", "vertical_ft": 2526, "closest_airport": "Québec City (YQB)", "major_airport": "Montréal (YUL)", "closest_airport_distance": "1 hr 15 min", "major_airport_distance": "4 hr"},
+  {"name": "Sahoro Hokkaido", "vertical_ft": 2133, "closest_airport": "Obihiro (OBO)", "major_airport": "Sapporo New Chitose (CTS)", "closest_airport_distance": "1 hr", "major_airport_distance": "2 hr 30 min"},
+  {"name": "Saint-Moritz Roi Soleil", "vertical_ft": 4757, "closest_airport": "Engadin (SMV)", "major_airport": "Zürich (ZRH)", "closest_airport_distance": "10 min", "major_airport_distance": "2 hr 45 min"},
+  {"name": "Serre Chevalier", "vertical_ft": 4265, "closest_airport": "Turin (TRN)", "major_airport": "Lyon (LYS)", "closest_airport_distance": "1 hr 50 min", "major_airport_distance": "2 hr 50 min"},
+  {"name": "Tignes", "vertical_ft": 4921, "closest_airport": "Chambéry (CMF)", "major_airport": "Geneva (GVA)", "closest_airport_distance": "2 hr", "major_airport_distance": "2 hr 45 min"},
+  {"name": "Tomamu Hokkaido", "vertical_ft": 2953, "closest_airport": "Sapporo New Chitose (CTS)", "major_airport": null, "closest_airport_distance": "1 hr 30 min", "major_airport_distance": null},
+  {"name": "Val d'Isère", "vertical_ft": 4921, "closest_airport": "Chambéry (CMF)", "major_airport": "Geneva (GVA)", "closest_airport_distance": "2 hr", "major_airport_distance": "2 hr 50 min"},
+  {"name": "Val Thorens Sensations", "vertical_ft": 4757, "closest_airport": "Chambéry (CMF)", "major_airport": "Geneva (GVA)", "closest_airport_distance": "1 hr 45 min", "major_airport_distance": "2 hr 30 min"},
+  {"name": "Valmorel", "vertical_ft": 4593, "closest_airport": "Chambéry (CMF)", "major_airport": "Geneva (GVA)", "closest_airport_distance": "1 hr 15 min", "major_airport_distance": "2 hr"},
+  {"name": "Yabuli Sun Mountain", "vertical_ft": 2822, "closest_airport": "Harbin (HRB)", "major_airport": null, "closest_airport_distance": "2 hr 30 min", "major_airport_distance": null}
+]

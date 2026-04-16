@@ -748,5 +748,410 @@
     "lat": 45.4680559,
     "lng": -74.3391609,
     "formatted": "321 des Erables, Rigaud, QC J0P 1P0, Canada"
+  },
+  "Indy|Mount Washington Alpine Resort Nordic Centre at Raven Lodge|British Columbia": {
+    "lat": 53.7266683,
+    "lng": -127.6476206,
+    "formatted": "British Columbia, Canada"
+  },
+  "Indy|Mt. Washington|British Columbia": {
+    "lat": 49.7413173,
+    "lng": -125.3030741,
+    "formatted": "Mt. Washington, 1 Strathcona Pkwy, Comox-Strathcona C, BC V9J 1L0, Canada"
+  },
+  "Indy|Murray Ridge Ski Area|British Columbia": {
+    "lat": 54.5178781,
+    "lng": -124.2105529,
+    "formatted": "7904 Chalet Dr, Fort St James, BC V0J 1P0, Canada"
+  },
+  "Indy|Nelson Nordic Ski Club|British Columbia": {
+    "lat": 49.4095314,
+    "lng": -117.2113795,
+    "formatted": "4650 Nelson Nelway Hwy #4638, Central Kootenay G, BC V1L 5R3, Canada"
+  },
+  "Indy|Nickel Plate Cross Country Ski Club|British Columbia": {
+    "lat": 49.383699,
+    "lng": -119.9542074,
+    "formatted": "Nickel Plate Rd #2600, Hedley, BC V0X 1K0, Canada"
+  },
+  "Indy|Pass Powderkeg|Alberta": {
+    "lat": 49.6026978,
+    "lng": -114.4447799,
+    "formatted": "Pass Powderkeg Ski Hl, Crowsnest Pass, AB T0K 0E0, Canada"
+  },
+  "Indy|Phoenix Mountain|British Columbia": {
+    "lat": 49.1091113,
+    "lng": -118.5862705,
+    "formatted": "8000, Phoenix Ski Hill Road, Grand Forks, BC V0H 1H5, Canada"
+  },
+  "Indy|Sasquatch Mountain Resort|British Columbia": {
+    "lat": 49.379918,
+    "lng": -121.9354691,
+    "formatted": "20955 Hemlock Valley Rd, Agassiz, BC V0M 1A1, Canada"
+  },
+  "Indy|Shames Mountain|British Columbia": {
+    "lat": 54.484131,
+    "lng": -128.9528149,
+    "formatted": "Unnamed Rd Terrace BC V8G Canada, Kitimat-Stikine, BC V8G 0G8, Canada"
+  },
+  "Indy|Ski Vallée Bleue|Quebec": {
+    "lat": 46.0259818,
+    "lng": -74.218426,
+    "formatted": "1418 Chem. de la Vall. Bleue, Val-David, QC J0T 2N0, Canada"
+  },
+  "Indy|Smokey Mountain Ski Club|Newfoundland and Labrador": {
+    "lat": 52.9785231,
+    "lng": -66.9214848,
+    "formatted": "Labrador City, NL A0R, Canada"
+  },
+  "Indy|Sovereign Lake Nordic Club|British Columbia": {
+    "lat": 50.36244,
+    "lng": -119.105133,
+    "formatted": "250 Lake Rd, Vernon, BC V1B 3M8, Canada"
+  },
+  "Indy|Telemark Nordic Center|British Columbia": {
+    "lat": 36.778261,
+    "lng": -119.4179324,
+    "formatted": "California, USA"
+  },
+  "Indy|Whitehorse Nordic Centre|Yukon": {
+    "lat": 60.7305552,
+    "lng": -135.1014079,
+    "formatted": "200 Sumanik Dr, Whitehorse, YT Y1A 6J6, Canada"
+  },
+  "Indy|Williams Lake Cross Country Ski Club|British Columbia": {
+    "lat": 52.2416278,
+    "lng": -122.1322618,
+    "formatted": "3505 Bull Mountain Rd, Williams Lake, BC V2G 4Z3, Canada"
+  },
+  "Indy|Amihari Onsen Ski Resort|Iwate": {
+    "lat": 39.821275,
+    "lng": 140.93627,
+    "formatted": "Komatsukura-14-3 Nagayama, Shizukuishi, Iwate District, Iwate 020-0585, Japan"
+  },
+  "Indy|Ani Ski Resort|Akita": {
+    "lat": 39.9573111,
+    "lng": 140.49767,
+    "formatted": "Kaginodaki-79-5 Anikaginodaki, Kitaakita, Akita 018-4624, Japan"
+  },
+  "Indy|Aomori Spring Ski Resort|Aomori": {
+    "lat": 40.6953,
+    "lng": 140.2819897,
+    "formatted": "Japan, 〒038-2712 Aomori, Nishitsugaru District, Ajigasawa, Nagadairamachi, Nishiiwakiyama−７５−２ 鯵ヶ沢高原"
+  },
+  "Indy|Cupid Valley|Niigata": {
+    "lat": 37.055035,
+    "lng": 138.4845041,
+    "formatted": "4820 Yasuzukaku Sugawa, Joetsu, Niigata 942-0534, Japan"
+  },
+  "Indy|Dynaland|Gifu": {
+    "lat": 35.9902088,
+    "lng": 136.8705351,
+    "formatted": "3035-2 Takasuchō Nishibora, Gujo, Gifu 501-5305, Japan"
+  },
+  "Indy|Geto Kogen|Iwate": {
+    "lat": 39.2366246,
+    "lng": 140.9062609,
+    "formatted": "1 Chiwari-国有林内 Wagachō Iwasaki Shinden, Kitakami, Iwate 024-0322, Japan"
+  },
+  "Indy|Hirugano Kogen Ski Resort|Gifu": {
+    "lat": 36.0055472,
+    "lng": 136.9085684,
+    "formatted": "4670-75 Takasuchō Hirugano, Gujo, Gifu 501-5301, Japan"
+  },
+  "Indy|Hodaigi Mountain Resort|Gunma": {
+    "lat": 36.8372869,
+    "lng": 139.0782966,
+    "formatted": "3839-1 Fujiwara, Minakami, Tone District, Gunma 379-1721, Japan"
+  },
+  "Indy|Kamui Ski Links|Hokkaido": {
+    "lat": 43.704967,
+    "lng": 142.187102,
+    "formatted": "Nishioka-112 Kamuichō, Asahikawa, Hokkaido 074-1181, Japan"
+  },
+  "Indy|Kiroro Snow World|Hokkaido": {
+    "lat": 43.0677043,
+    "lng": 140.9895954,
+    "formatted": "Tokiwa, Akaigawa, Yoichi District, Hokkaido 046-0571, Japan"
+  },
+  "Indy|Maiko Resort|Niigata": {
+    "lat": 36.9797053,
+    "lng": 138.8401497,
+    "formatted": "Maiko, Minamiuonuma, Niigata 949-6423, Japan"
+  },
+  "Indy|Mount Racey Ski Resort|Hokkaido": {
+    "lat": 43.051373,
+    "lng": 141.9694165,
+    "formatted": "2-chōme-4 Suehiro, Yubari, Hokkaido 068-0411, Japan"
+  },
+  "Indy|Muica Snow Resort|Niigata": {
+    "lat": 37.0714127,
+    "lng": 138.8460142,
+    "formatted": "2910-114 Koguriyama, Minamiuonuma, Niigata 949-6636, Japan"
+  },
+  "Indy|Nayoro Piyashiri Ski Resort|Hokkaido": {
+    "lat": 44.4044208,
+    "lng": 142.51344,
+    "formatted": "Nisshin, Nayoro, Hokkaido 096-0066, Japan"
+  },
+  "Indy|Ninox Snow Park|Niigata": {
+    "lat": 37.9268164,
+    "lng": 139.4679026,
+    "formatted": "Japan, 〒957-0333 Niigata, Shibata, Kamisankō, 大平国有林無番地"
+  },
+  "Indy|Okunakayama Kogen|Iwate": {
+    "lat": 40.0831987,
+    "lng": 141.1912904,
+    "formatted": "Nishitako Okunakayama, Ichinohe, Ninohe District, Iwate 028-5134, Japan"
+  },
+  "Indy|Onikoube Ski Resort|Miyagi": {
+    "lat": 38.7868903,
+    "lng": 140.6394049,
+    "formatted": "Komukaihara-9-55 Narukoonsen Onikōbe, Ōsaki, Miyagi 989-6941, Japan"
+  },
+  "Indy|Palcall Tsumagoi Resort|Gunma": {
+    "lat": 36.5557618,
+    "lng": 138.4639807,
+    "formatted": "吾妻郡嬬恋村大字干俣 バラギ高原, Hoshimata, Tsumagoi, Agatsuma District, Gunma 377-1611, Japan"
+  },
+  "Indy|Pippu Ski Resort|Hokkaido": {
+    "lat": 43.9331104,
+    "lng": 142.4998309,
+    "formatted": "7 Sen-17号 Kita, Pippu, Kamikawa District, Hokkaido 078-0327, Japan"
+  },
+  "Indy|Shimokura|Iwate": {
+    "lat": 39.8990404,
+    "lng": 140.9568902,
+    "formatted": "Japan, 〒028-7302 Iwate, Hachimantai, Matsuoyoriki, 松川国有林５５９"
+  },
+  "Indy|Takasu Snow Park|Gifu": {
+    "lat": 35.9982091,
+    "lng": 136.8773292,
+    "formatted": "3086ｰ1 Takasuchō Nishibora, Gujo, Gifu 501-5305, Japan"
+  },
+  "Indy|Tangram Ski Circus|Nagano": {
+    "lat": 36.8533811,
+    "lng": 138.262998,
+    "formatted": "3575-8 Furumi, Shinano, Kamiminochi District, Nagano 389-1302, Japan"
+  },
+  "Indy|Tazawako|Akita": {
+    "lat": 39.7623337,
+    "lng": 140.7707131,
+    "formatted": "Shimotakano-73-2 Tazawako Obonai, Semboku, Akita 014-1201, Japan"
+  },
+  "Indy|Togakushi Ski Resort|Nagano": {
+    "lat": 36.754361,
+    "lng": 138.094631,
+    "formatted": "3682-3 Togakushi, Nagano, 381-4101, Japan"
+  },
+  "Indy|Washigatake Ski Resort|Gifu": {
+    "lat": 35.9432183,
+    "lng": 136.9197344,
+    "formatted": "3250 Takasuchō Ōwashi, Gujo, Gifu 501-5303, Japan"
+  },
+  "Indy|WhitePIA Takasu|Gifu": {
+    "lat": 35.95581689999999,
+    "lng": 136.9348753,
+    "formatted": "512 Takasuchō Washimi, Gujo, Gifu 501-5302, Japan"
+  },
+  "Indy|Yuzawa Nakazato Snow Resort|Niigata": {
+    "lat": 36.9141426,
+    "lng": 138.8490268,
+    "formatted": "5044-1 Tsuchidaru, Yuzawa, Minamiuonuma District, Niigata 949-6103, Japan"
+  },
+  "Indy|Corralco Mountain Resort|Araucanía": {
+    "lat": -38.418698,
+    "lng": -71.5473532,
+    "formatted": "Reserva Nacional Malalcahuello S/N, Curacautin, Curacautín, Araucanía, Chile"
+  },
+  "Indy|Baqueira/Beret|Catalonia": {
+    "lat": 42.683333,
+    "lng": 0.9333330000000001,
+    "formatted": "Vaquèira-Beret, 25599, Lérida, Spain"
+  },
+  "Indy|Bergbahnen Hohsaas|Valais": {
+    "lat": 46.12806399999999,
+    "lng": 7.938434,
+    "formatted": "Seilbahnstraße 18, 3910 Saas-Grund, Switzerland"
+  },
+  "Indy|Björkliden|Lapland": {
+    "lat": 67.9222304,
+    "lng": 26.5046438,
+    "formatted": "Lapland, Finland"
+  },
+  "Indy|Domaine skiable des Contamines|Haute-Savoie": {
+    "lat": 45.8115586,
+    "lng": 6.7232087,
+    "formatted": "604 Rte des Moranches, 74170 Les Contamines-Montjoie, France"
+  },
+  "Indy|Ejder3200 Palandoken|Erzurum": {
+    "lat": 39.8571688,
+    "lng": 41.2760082,
+    "formatted": "Yunusemre, Palandöken Yolu No:25000, 25080 Palandöken/Erzurum, Türkiye"
+  },
+  "Indy|Erciyes Ski Resort|Kayseri": {
+    "lat": 38.538985,
+    "lng": 35.5266161,
+    "formatted": "Hisarcık Bahçelievler, 38220 Melikgazi/Kayseri, Türkiye"
+  },
+  "Indy|Glencoe Mountain Resort|Scotland": {
+    "lat": 56.6324409,
+    "lng": -4.8278691,
+    "formatted": "Glencoe Ski Centre, 1 White Corries, Kingshouse, Glencoe, Ballachulish PH49 4HZ, UK"
+  },
+  "Indy|Glenshee Ski Centre|Scotland": {
+    "lat": 56.88666449999999,
+    "lng": -3.4146385,
+    "formatted": "Old Military Rd, Ballater AB35 5XU, UK"
+  },
+  "Indy|Hochzeiger Bergbahnen Pitztal|Tyrol": {
+    "lat": 47.1521721,
+    "lng": 10.7586005,
+    "formatted": "Liß 270, 6474 Jerzens, Austria"
+  },
+  "Indy|Innsbruck Ski & City Network|Tyrol": {
+    "lat": 47.1953877,
+    "lng": 11.3018839,
+    "formatted": "Lizum, Axamer Lizum 6, 6094 Axams, Austria"
+  },
+  "Indy|Kaunertaler Gletscher|Tyrol": {
+    "lat": 46.8513805,
+    "lng": 10.7055955,
+    "formatted": "6524, Austria"
+  },
+  "Indy|Kaya Palazzo Kartalkaya Ski & Mountain Resort|Bolu": {
+    "lat": 40.5940808,
+    "lng": 31.8055157,
+    "formatted": "Kartalkaya Mevkii, 14750 Tazılar, Gökpınar Yaylası, 14030 Gökpınar/Bolu Merkez/Bolu, Türkiye"
+  },
+  "Indy|Les 7 Laux|Isère": {
+    "lat": 45.2725375,
+    "lng": 6.0556877,
+    "formatted": "L'embruneraie Le Pleynet, 38580 Les Sept Laux le Pleynet, France"
+  },
+  "Indy|Leukerbad Torrent Ski Resort & Gemmi Resort|Valais": {
+    "lat": 46.3984,
+    "lng": 7.6145,
+    "formatted": "Gemmi Pass, 3954 Leukerbad, Switzerland"
+  },
+  "Indy|Levi|Lapland": {
+    "lat": 67.8040628,
+    "lng": 24.8082752,
+    "formatted": "Hissitie 8, 99130 Kittilä, Finland"
+  },
+  "Indy|Malá Úpa|Hradec Králové": {
+    "lat": 50.7445932,
+    "lng": 15.8202619,
+    "formatted": "542 21 Malá Úpa-Pec pod Sněžkou 1, Czechia"
+  },
+  "Indy|Norefjell Ski Resort|Viken": {
+    "lat": 60.2176514,
+    "lng": 9.5663637,
+    "formatted": "Norefjellveien 927, 3536 Noresund, Norway"
+  },
+  "Indy|Oberstdorf Kleinwalsertal Bergbahnen|Vorarlberg": {
+    "lat": 47.3558704,
+    "lng": 10.1847833,
+    "formatted": "Walserstraße 77, 6991 Riezlern, Austria"
+  },
+  "Indy|Pila|Aosta Valley": {
+    "lat": 45.7319652,
+    "lng": 7.3192279,
+    "formatted": "Strada-route Ponte Suaz, 4, 11100 Aosta AO, Italy"
+  },
+  "Indy|Pitztaler Gletscherbahn|Tyrol": {
+    "lat": 47.1202371,
+    "lng": 10.7832318,
+    "formatted": "Pitztal, 6481, Austria"
+  },
+  "Indy|Pizol|St. Gallen": {
+    "lat": 46.9591,
+    "lng": 9.38679,
+    "formatted": "Pizol, 7325 Mels, Switzerland"
+  },
+  "Indy|Portes du Soleil|France/Switzerland": {
+    "lat": 46.2552382,
+    "lng": 6.8417296,
+    "formatted": "1401 Rte de Vonnes, 74390 Châtel, France"
+  },
+  "Indy|Rauriser-Hochalmbahnen|Salzburg": {
+    "lat": 47.223734,
+    "lng": 12.991193,
+    "formatted": "Liftweg 2, 5661 Rauris, Austria"
+  },
+  "Indy|Riksgränsen|Lapland": {
+    "lat": 68.426591,
+    "lng": 18.1252633,
+    "formatted": "981 94 Riksgränsen, Sweden"
+  },
+  "Indy|SkiWelt|Tyrol": {
+    "lat": 47.5031128,
+    "lng": 12.1908727,
+    "formatted": "Marketing Büro, Dorf 84, 6306 Söll, Austria"
+  },
+  "Indy|Steinplatte|Tyrol": {
+    "lat": 47.59999999999999,
+    "lng": 12.5833333,
+    "formatted": "Steinplatte, 6384 Waidring, Austria"
+  },
+  "Indy|Stöten i Sälen|Dalarna": {
+    "lat": 61.2662712,
+    "lng": 12.8886274,
+    "formatted": "GRANFJÄLLSSTÖTEN, 780 91 Sälen, Sweden"
+  },
+  "Indy|Stranda Ski Resort|Møre og Romsdal": {
+    "lat": 62.3091141,
+    "lng": 6.9424091,
+    "formatted": "Stranda, Norway"
+  },
+  "Indy|The Krvavec Ski Resort|Upper Carniola": {
+    "lat": 46.2849476,
+    "lng": 14.4959366,
+    "formatted": "Grad 76, 4207 Cerklje na Gorenjskem, Slovenia"
+  },
+  "Indy|Valmorel Ski Resort|Savoie": {
+    "lat": 45.461583,
+    "lng": 6.443588699999999,
+    "formatted": "25 Bourg Morel, 73260 Les Avanchers-Valmorel, France"
+  },
+  "Mountain Collective|Niseko United|Hokkaido": {
+    "lat": 42.8469779,
+    "lng": 140.6843228,
+    "formatted": "温泉 Higashiyama, Niseko, Abuta District, Hokkaido 048-1592, Japan"
+  },
+  "Mountain Collective|Chamonix|Auvergne-Rhône-Alpes": {
+    "lat": 45.923697,
+    "lng": 6.869433,
+    "formatted": "Chamonix, France"
+  },
+  "Mountain Collective|Megève|Auvergne-Rhône-Alpes": {
+    "lat": 45.8498497,
+    "lng": 6.614984,
+    "formatted": "220 Rte du Téléphérique, 74120 Megève, France"
+  },
+  "Mountain Collective|Mt Buller|Victoria": {
+    "lat": -37.1465655,
+    "lng": 146.4506354,
+    "formatted": "Mount Buller VIC 3723, Australia"
+  },
+  "Mountain Collective|Coronet Peak|Otago": {
+    "lat": -44.9417098,
+    "lng": 168.7123016,
+    "formatted": "Coronet Peak 9371, New Zealand"
+  },
+  "Mountain Collective|The Remarkables|Otago": {
+    "lat": -45.0540695,
+    "lng": 168.8143041,
+    "formatted": "Queenstown 9300, New Zealand"
+  },
+  "Mountain Collective|Valle Nevado|Santiago Metropolitan": {
+    "lat": -33.3531835,
+    "lng": -70.24888539999999,
+    "formatted": "Cam. Valle Nevado S/N, Farellones, Lo Barnechea, Región Metropolitana, Chile"
+  },
+  "Club Med|Kiroro Grand|Hokkaido, Japan": {
+    "lat": 43.0752266,
+    "lng": 140.9829455,
+    "formatted": "128-1 Tokiwa, Akaigawa, Yoichi District, Hokkaido 046-0571, Japan"
   }
 }
