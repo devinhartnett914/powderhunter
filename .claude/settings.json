@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node /Users/clawdnett/Projects/powderhunter/scripts/geocode-new.mjs)",
+      "Bash(node /Users/clawdnett/Projects/powderhunter/scripts/generate-latlng-backfill.mjs)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('/private/tmp/indy_resorts.json'\\)\\); print\\(len\\(d\\), 'entries'\\); print\\(json.dumps\\(d[0], indent=2\\)\\)\")",
+      "Bash(node /Users/clawdnett/Projects/powderhunter/scripts/generate-vertical-airports-sql.mjs)",
+      "Bash(python3 -c \"import json, sys; data=json.load\\(sys.stdin\\); print\\(list\\(data[0].keys\\(\\)\\) if data else 'empty'\\)\")",
+      "Bash(python3 -c \"import json, sys; data=json.load\\(sys.stdin\\); record = data[0] if data else {}; print\\(json.dumps\\(record, indent=2\\)\\)\")",
+      "Bash(grep -r \"ski_school_min_age\" data/scraped/enrich-*.json)",
+      "Bash(ls -la /Users/clawdnett/Projects/powderhunter/*.md /Users/clawdnett/Projects/powderhunter/*.txt)",
+      "Bash(ls -la /Users/clawdnett/Projects/powderhunter/netlify*)",
+      "Bash(grep -h \"ski_school_min_age\\\\|kids_ski_free\" /Users/clawdnett/Projects/powderhunter/db/migrations/*.sql)",
+      "Bash(node -e \"console.log\\(JSON.parse\\(require\\('fs'\\).readFileSync\\('data/scraped/current-db.json'\\)\\).length + ' resorts'\\)\")",
+      "Bash(node -e \"console.log\\(JSON.parse\\(require\\('fs'\\).readFileSync\\('data/scraped/to-insert.json'\\)\\).length + ' resorts'\\)\")",
+      "Bash(nohup node *)",
+      "Bash(echo \"Launched PID: $!\")",
+      "mcp__Claude_Preview__preview_logs",
+      "mcp__Claude_Preview__preview_snapshot",
+      "mcp__Claude_Preview__preview_start"
+    ],
+    "additionalDirectories": [
+      "/tmp"
+    ]
+  }
+}

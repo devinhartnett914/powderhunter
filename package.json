@@ -8,10 +8,12 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.89.0",
     "@astrojs/netlify": "^6.0.0",
     "@netlify/functions": "^5.2.0",
     "@supabase/supabase-js": "^2.49.0",
-    "astro": "^5.7.0"
+    "astro": "^5.7.0",
+    "dotenv": "^17.4.2"
   },
   "devDependencies": {
     "tsx": "^4.19.0"

@@ -1,0 +1,2630 @@
+[
+  {
+    "name": "Alpe d'Huez",
+    "pass_type": "Club Med",
+    "location": "France",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.co.uk/r/alpe-d-huez/w"
+  },
+  {
+    "name": "Beidahu",
+    "pass_type": "Club Med",
+    "location": "China",
+    "daycare_min_age": "2 years",
+    "source_url": "https://travelclubelite.com/destinations/asia/china/club-med-beidahu/"
+  },
+  {
+    "name": "Changbaishan",
+    "pass_type": "Club Med",
+    "location": "China",
+    "daycare_min_age": "2 years",
+    "source_url": "https://www.tripadvisor.com/ShowUserReviews-g1017071-d23813453-r1044350307-Club_Med_Changbaishan-Baishan_Jilin.html",
+    "_audit": "2026-04-22 manual Club Med audit"
+  },
+  {
+    "name": "Grand Massif Samoëns Morillon",
+    "pass_type": "Club Med",
+    "location": "France",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/grand-massif-samoens-morillon/w",
+    "_audit": "2026-04-22 manual Club Med audit"
+  },
+  {
+    "name": "Kiroro Grand",
+    "pass_type": "Club Med",
+    "location": "Hokkaido, Japan",
+    "daycare_min_age": "2 years",
+    "source_url": "https://www.clubmed.asia/l/kids",
+    "_audit": "2026-04-22 manual Club Med audit"
+  },
+  {
+    "name": "Kiroro Peak",
+    "pass_type": "Club Med",
+    "location": "Japan",
+    "daycare_min_age": "None",
+    "source_url": "https://www.clubmed.us/r/kiroro-peak/w"
+  },
+  {
+    "name": "La Plagne 2100",
+    "pass_type": "Club Med",
+    "location": "France",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/la-plagne-2100/y"
+  },
+  {
+    "name": "La Rosière",
+    "pass_type": "Club Med",
+    "location": "France",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/la-rosiere/w",
+    "_audit": "2026-04-22 manual Club Med audit"
+  },
+  {
+    "name": "Les Arcs Panorama",
+    "pass_type": "Club Med",
+    "location": "France",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/les-arcs-panorama/w",
+    "_audit": "2026-04-22 manual Club Med audit"
+  },
+  {
+    "name": "Peisey-Vallandry",
+    "pass_type": "Club Med",
+    "location": "France",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/peisey-vallandry/w",
+    "_audit": "2026-04-22 manual Club Med audit"
+  },
+  {
+    "name": "Pragelato Sestriere",
+    "pass_type": "Club Med",
+    "location": "Italy",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/pragelato-sestriere/w"
+  },
+  {
+    "name": "Québec Charlevoix",
+    "pass_type": "Club Med",
+    "location": "Canada",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/quebec-charlevoix/w"
+  },
+  {
+    "name": "Sahoro Hokkaido",
+    "pass_type": "Club Med",
+    "location": "Japan",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/sahoro-hokkaido/w",
+    "_audit": "2026-04-22 manual Club Med audit"
+  },
+  {
+    "name": "Saint-Moritz Roi Soleil",
+    "pass_type": "Club Med",
+    "location": "Switzerland",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/saint-moritz-roi-soleil/y"
+  },
+  {
+    "name": "Serre Chevalier",
+    "pass_type": "Club Med",
+    "location": "France",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/serre-chevalier/w"
+  },
+  {
+    "name": "Tignes",
+    "pass_type": "Club Med",
+    "location": "France",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/tignes/w"
+  },
+  {
+    "name": "Tomamu Hokkaido",
+    "pass_type": "Club Med",
+    "location": "Japan",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/tomamu-hokkaido/w",
+    "_audit": "2026-04-22 manual Club Med audit"
+  },
+  {
+    "name": "Val d'Isère",
+    "pass_type": "Club Med",
+    "location": "France",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/val-d-isere/w",
+    "_audit": "2026-04-22 manual Club Med audit"
+  },
+  {
+    "name": "Val Thorens Sensations",
+    "pass_type": "Club Med",
+    "location": "France",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.clubmed.us/r/val-thorens-sensations/y"
+  },
+  {
+    "name": "Valmorel",
+    "pass_type": "Club Med",
+    "location": "France",
+    "daycare_min_age": "4 months",
+    "source_url": "https://www.clubmed.us/r/valmorel/w",
+    "_audit": "2026-04-22 manual Club Med audit"
+  },
+  {
+    "name": "Yabuli Sun Mountain",
+    "pass_type": "Club Med",
+    "location": "China",
+    "daycare_min_age": "2 years",
+    "source_url": "https://www.littlestepsasia.com/travel/china/skiing-club-med-yabuli/"
+  },
+  {
+    "name": "Afton Alps",
+    "pass_type": "Epic",
+    "location": "MN",
+    "daycare_min_age": "None",
+    "source_url": "http://www.skisite.com/childcare-daycare.cfm?id=439"
+  },
+  {
+    "name": "Alpine Valley",
+    "pass_type": "Epic",
+    "location": "OH",
+    "daycare_min_age": "None",
+    "source_url": "https://www.alpinevalleyohio.com"
+  },
+  {
+    "name": "Andermatt-Sedrun-Disentis",
+    "pass_type": "Epic",
+    "location": "Switzerland",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Attitash",
+    "pass_type": "Epic",
+    "location": "NH",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Beaver Creek",
+    "pass_type": "Epic",
+    "location": "CO",
+    "daycare_min_age": "24 months",
+    "source_url": "https://beavercreek.zendesk.com/hc/en-us/articles/10739374825499-Is-childcare-offered"
+  },
+  {
+    "name": "Big Boulder",
+    "pass_type": "Epic",
+    "location": "PA",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Boston Mills/Brandywine",
+    "pass_type": "Epic",
+    "location": "OH",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Brandywine",
+    "pass_type": "Epic",
+    "location": "OH",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Breckenridge",
+    "pass_type": "Epic",
+    "location": "CO",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Crans-Montana",
+    "pass_type": "Epic",
+    "location": "Switzerland",
+    "daycare_min_age": "18 months",
+    "source_url": "https://www.crans-montana.ch/en/?idcmt=Partenaire_Service_c7752cd6911062c321a427b8b4bf20a5"
+  },
+  {
+    "name": "Crested Butte",
+    "pass_type": "Epic",
+    "location": "CO",
+    "daycare_min_age": "2 months",
+    "source_url": "https://www.powderhounds.com/USA/Colorado/CrestedButte/Facilities-Services.aspx"
+  },
+  {
+    "name": "Crotched Mountain",
+    "pass_type": "Epic",
+    "location": "NH",
+    "daycare_min_age": "None",
+    "source_url": "https://www.crotchedmtn.com"
+  },
+  {
+    "name": "Fairmont Hot Springs",
+    "pass_type": "Epic",
+    "location": "MT",
+    "daycare_min_age": "None",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "Falls Creek",
+    "pass_type": "Epic",
+    "location": "Australia",
+    "daycare_min_age": "None",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "Hakuba Valley",
+    "pass_type": "Epic",
+    "location": "Japan",
+    "daycare_min_age": "18 months",
+    "source_url": "https://hakuba.com/plan-your-trip/lessons/evergreen-ski-school/"
+  },
+  {
+    "name": "Heavenly",
+    "pass_type": "Epic",
+    "location": "CA",
+    "daycare_min_age": "6 weeks",
+    "source_url": "https://www.skiheavenly.com/plan-your-trip/childcare.aspx"
+  },
+  {
+    "name": "Hotham",
+    "pass_type": "Epic",
+    "location": "Australia",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Hunter Mountain",
+    "pass_type": "Epic",
+    "location": "NY",
+    "daycare_min_age": "2 years",
+    "source_url": "https://www.huntermtn.com/learning-center/playcare/"
+  },
+  {
+    "name": "Jack Frost",
+    "pass_type": "Epic",
+    "location": "PA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.jfbb.com"
+  },
+  {
+    "name": "Keystone",
+    "pass_type": "Epic",
+    "location": "CO",
+    "daycare_min_age": "3 months",
+    "source_url": "https://www.keystoneresort.com/plan-your-trip/childcare.aspx"
+  },
+  {
+    "name": "Kirkwood",
+    "pass_type": "Epic",
+    "location": "CA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.kirkwood.com"
+  },
+  {
+    "name": "Laurel Mountain",
+    "pass_type": "Epic",
+    "location": "PA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.laurelmountainski.com"
+  },
+  {
+    "name": "Les 3 Vallées",
+    "pass_type": "Epic",
+    "location": "France",
+    "daycare_min_age": "18 months",
+    "source_url": "https://www.esf-3vallees.com/childcare/"
+  },
+  {
+    "name": "Liberty Mountain",
+    "pass_type": "Epic",
+    "location": "PA",
+    "daycare_min_age": "6 months",
+    "source_url": "https://www.libertymountainresort.com"
+  },
+  {
+    "name": "Mad River Mountain",
+    "pass_type": "Epic",
+    "location": "OH",
+    "daycare_min_age": "None",
+    "source_url": "https://www.skimadriver.com"
+  },
+  {
+    "name": "Mount Brighton",
+    "pass_type": "Epic",
+    "location": "MI",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.mtbrighton.com"
+  },
+  {
+    "name": "Mount Snow",
+    "pass_type": "Epic",
+    "location": "VT",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.mountsnow.com"
+  },
+  {
+    "name": "Mount Sunapee",
+    "pass_type": "Epic",
+    "location": "NH",
+    "daycare_min_age": "None",
+    "source_url": "https://www.mountsunapee.com"
+  },
+  {
+    "name": "Mt. Brighton",
+    "pass_type": "Epic",
+    "location": "MI",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.mtbrightton.com"
+  },
+  {
+    "name": "Northstar",
+    "pass_type": "Epic",
+    "location": "CA",
+    "daycare_min_age": "2 years",
+    "source_url": "https://www.littlegemstruckee.org/program"
+  },
+  {
+    "name": "Nozawa Onsen",
+    "pass_type": "Epic",
+    "location": "Japan",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.nozawa-onsen.com"
+  },
+  {
+    "name": "Okemo",
+    "pass_type": "Epic",
+    "location": "VT",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.okemo.com"
+  },
+  {
+    "name": "Paoli Peaks",
+    "pass_type": "Epic",
+    "location": "IN",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.paolipeaks.com"
+  },
+  {
+    "name": "Paradiski",
+    "pass_type": "Epic",
+    "location": "France",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Park City Mountain",
+    "pass_type": "Epic",
+    "location": "UT",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.parkcitymountain.com"
+  },
+  {
+    "name": "Perfect North Slopes",
+    "pass_type": "Epic",
+    "location": "IN",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Perisher",
+    "pass_type": "Epic",
+    "location": "Australia",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Roundtop Mountain",
+    "pass_type": "Epic",
+    "location": "PA",
+    "daycare_min_age": "None",
+    "source_url": "https://www.skiroundtop.com"
+  },
+  {
+    "name": "Rusutsu",
+    "pass_type": "Epic",
+    "location": "Japan",
+    "daycare_min_age": "1 year",
+    "source_url": "https://rusutsu.com/en/nursery-school/"
+  },
+  {
+    "name": "Seven Springs",
+    "pass_type": "Epic",
+    "location": "PA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.7springs.com"
+  },
+  {
+    "name": "Ski Arlberg",
+    "pass_type": "Epic",
+    "location": "Austria",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.skiarlberg.at"
+  },
+  {
+    "name": "Skirama Dolomiti",
+    "pass_type": "Epic",
+    "location": "Italy",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.skiramaedolomiti.com"
+  },
+  {
+    "name": "Snow Creek",
+    "pass_type": "Epic",
+    "location": "MO",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.skisnowcreek.com"
+  },
+  {
+    "name": "Stevens Pass",
+    "pass_type": "Epic",
+    "location": "WA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.stevenspass.com"
+  },
+  {
+    "name": "Stowe",
+    "pass_type": "Epic",
+    "location": "VT",
+    "daycare_min_age": "24 months",
+    "source_url": "https://www.stowe.com/explore-the-resort/during-your-stay/cubs-care-information.aspx"
+  },
+  {
+    "name": "Thredbo",
+    "pass_type": "Epic",
+    "location": "Australia",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.thredbo.com.au"
+  },
+  {
+    "name": "Tignes-Val d'Isère",
+    "pass_type": "Epic",
+    "location": "France",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.tignes.net"
+  },
+  {
+    "name": "Vail",
+    "pass_type": "Epic",
+    "location": "CO",
+    "daycare_min_age": "2 months",
+    "source_url": "https://www.vail.com"
+  },
+  {
+    "name": "Verbier 4 Vallées",
+    "pass_type": "Epic",
+    "location": "Switzerland",
+    "daycare_min_age": "3 months",
+    "source_url": "https://www.verbier.ch"
+  },
+  {
+    "name": "Whistler Blackcomb",
+    "pass_type": "Epic",
+    "location": "BC",
+    "daycare_min_age": "None",
+    "source_url": "https://www.whistlerblackcomb.com"
+  },
+  {
+    "name": "Whitetail Resort",
+    "pass_type": "Epic",
+    "location": "MD",
+    "daycare_min_age": "None",
+    "source_url": "https://www.skiwhitetail.com"
+  },
+  {
+    "name": "Wildcat",
+    "pass_type": "Epic",
+    "location": "NH",
+    "daycare_min_age": "None",
+    "source_url": "https://www.skiwildcat.com"
+  },
+  {
+    "name": "Wilmot Mountain",
+    "pass_type": "Epic",
+    "location": "WI",
+    "daycare_min_age": "None",
+    "source_url": "https://www.wilmotmountain.com"
+  },
+  {
+    "name": "Alta",
+    "pass_type": "Ikon",
+    "location": "UT",
+    "daycare_min_age": "2 months",
+    "source_url": "https://www.altachildrenscenter.com/"
+  },
+  {
+    "name": "Alyeska Resort",
+    "pass_type": "Ikon",
+    "location": "AK",
+    "daycare_min_age": "None",
+    "source_url": "https://www.alyeskaresort.com"
+  },
+  {
+    "name": "APPI Resort",
+    "pass_type": "Ikon",
+    "location": "Japan",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.appi.co.jp"
+  },
+  {
+    "name": "Arai Mountain Resort",
+    "pass_type": "Ikon",
+    "location": "Japan",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.arai-ski.com"
+  },
+  {
+    "name": "Arapahoe Basin",
+    "pass_type": "Ikon",
+    "location": "CO",
+    "daycare_min_age": "None",
+    "source_url": "https://www.snowpak.com/colorado/arapahoe-basin/facilities-and-activities"
+  },
+  {
+    "name": "Aspen Snowmass",
+    "pass_type": "Ikon",
+    "location": "CO",
+    "daycare_min_age": "8 weeks",
+    "source_url": "https://aspenchamber.org/business-directory/treehouse-kids-adventure-center/"
+  },
+  {
+    "name": "Banff Sunshine",
+    "pass_type": "Ikon",
+    "location": "AB",
+    "daycare_min_age": "19 months",
+    "source_url": "https://shop.skibanff.com/en/catalogue/category/400-daycare-tiny-tiger-lessons_294/"
+  },
+  {
+    "name": "Big Bear Mountain",
+    "pass_type": "Ikon",
+    "location": "CA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.bigbearmountainresort.com"
+  },
+  {
+    "name": "Big Sky",
+    "pass_type": "Ikon",
+    "location": "MT",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.bigskyresort.com"
+  },
+  {
+    "name": "Blue Mountain",
+    "pass_type": "Ikon",
+    "location": "ON",
+    "daycare_min_age": "None",
+    "source_url": "https://www.bluemountain.ca"
+  },
+  {
+    "name": "Boyne Highlands",
+    "pass_type": "Ikon",
+    "location": "MI",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.boyne.com/boyne-highlands"
+  },
+  {
+    "name": "Boyne Mountain",
+    "pass_type": "Ikon",
+    "location": "MI",
+    "daycare_min_age": "3 months",
+    "source_url": "http://www.skisite.com/childcare-daycare.cfm?id=366"
+  },
+  {
+    "name": "Brighton",
+    "pass_type": "Ikon",
+    "location": "UT",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.brightonresort.com"
+  },
+  {
+    "name": "Camelback",
+    "pass_type": "Ikon",
+    "location": "PA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.camelbackresort.com"
+  },
+  {
+    "name": "Chamonix Mont-Blanc Valley",
+    "pass_type": "Ikon",
+    "location": "France",
+    "daycare_min_age": "None",
+    "source_url": "N/A - no resort-operated on-mountain childcare found"
+  },
+  {
+    "name": "CMH Heli-Skiing",
+    "pass_type": "Ikon",
+    "location": "BC",
+    "daycare_min_age": "None",
+    "source_url": "N/A - heli-skiing operation without traditional resort childcare"
+  },
+  {
+    "name": "Copper Mountain",
+    "pass_type": "Ikon",
+    "location": "CO",
+    "daycare_min_age": "8 weeks",
+    "source_url": "https://business.summitchamber.org/list/member/copper-mountain-childcare-6355"
+  },
+  {
+    "name": "Coronet Peak, The Remarkables & Mt Hutt",
+    "pass_type": "Ikon",
+    "location": "New Zealand",
+    "daycare_min_age": "Unknown",
+    "source_url": "Search limit reached - unable to verify"
+  },
+  {
+    "name": "Crystal Mountain",
+    "pass_type": "Ikon",
+    "location": "WA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://dottingthemap.com/ski-resorts-that-offer-daycares/ - minimum age not specified"
+  },
+  {
+    "name": "Cypress Mountain",
+    "pass_type": "Ikon",
+    "location": "BC",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.cypressmountain.com"
+  },
+  {
+    "name": "Deer Valley",
+    "pass_type": "Ikon",
+    "location": "UT",
+    "daycare_min_age": "2 months",
+    "source_url": "https://www.deervalley.com/things-to-do/activities/childrens-center"
+  },
+  {
+    "name": "Dolomiti Superski",
+    "pass_type": "Ikon",
+    "location": "Italy",
+    "daycare_min_age": "3 months",
+    "source_url": "https://www.dolomitisuperski.com"
+  },
+  {
+    "name": "Eldora",
+    "pass_type": "Ikon",
+    "location": "CO",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.eldora.com"
+  },
+  {
+    "name": "Furano Ski Resort",
+    "pass_type": "Ikon",
+    "location": "Japan",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://furano.jp"
+  },
+  {
+    "name": "Grandvalira Resorts Andorra",
+    "pass_type": "Ikon",
+    "location": "Andorra",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Granite Peak",
+    "pass_type": "Ikon",
+    "location": "WI",
+    "daycare_min_age": "None",
+    "source_url": "https://www.skigranitepeak.com"
+  },
+  {
+    "name": "Ischgl",
+    "pass_type": "Ikon",
+    "location": "Austria",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Jackson Hole",
+    "pass_type": "Ikon",
+    "location": "WY",
+    "daycare_min_age": "5 months",
+    "source_url": "https://www.jacksonhole.com/age-6-mos-to-3-years"
+  },
+  {
+    "name": "June Mountain",
+    "pass_type": "Ikon",
+    "location": "CA",
+    "daycare_min_age": "None",
+    "source_url": "https://www.junemountain.com"
+  },
+  {
+    "name": "Killington",
+    "pass_type": "Ikon",
+    "location": "VT",
+    "daycare_min_age": "12 weeks",
+    "source_url": "https://www.skiresort.info/ski-resort/killington/test-result/families-children/"
+  },
+  {
+    "name": "Kitzbühel",
+    "pass_type": "Ikon",
+    "location": "Austria",
+    "daycare_min_age": "None",
+    "source_url": "N/A - No on-mountain resort-operated daycare facility found"
+  },
+  {
+    "name": "Lake Louise",
+    "pass_type": "Ikon",
+    "location": "AB",
+    "daycare_min_age": "18 days",
+    "source_url": "https://www.skilouise.com/tickets-passes/other-products/daycare-centre/"
+  },
+  {
+    "name": "Le Massif",
+    "pass_type": "Ikon",
+    "location": "QC",
+    "daycare_min_age": "Unknown",
+    "source_url": "N/A - Unable to search"
+  },
+  {
+    "name": "Loon Mountain",
+    "pass_type": "Ikon",
+    "location": "NH",
+    "daycare_min_age": "Unknown",
+    "source_url": "N/A - Unable to search"
+  },
+  {
+    "name": "Lutsen Mountains",
+    "pass_type": "Ikon",
+    "location": "MN",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Megève Ski Area",
+    "pass_type": "Ikon",
+    "location": "France",
+    "daycare_min_age": "10 months",
+    "source_url": "https://www.megeve-tourisme.fr/en/organiser-mon-sejour/station-familiale/creches-et-garderies/"
+  },
+  {
+    "name": "Mike Wiegele Helicopter Skiing",
+    "pass_type": "Ikon",
+    "location": "BC",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "MONA Yongpyong",
+    "pass_type": "Ikon",
+    "location": "South Korea",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Mont Tremblant",
+    "pass_type": "Ikon",
+    "location": "QC",
+    "daycare_min_age": "1 year",
+    "source_url": "http://www.skisite.com/childcare-daycare.cfm?id=4254"
+  },
+  {
+    "name": "Mt Buller",
+    "pass_type": "Ikon",
+    "location": "Australia",
+    "daycare_min_age": "3 months",
+    "source_url": "https://holidayswithkids.com.au/mt-buller/"
+  },
+  {
+    "name": "Mt. Bachelor",
+    "pass_type": "Ikon",
+    "location": "OR",
+    "daycare_min_age": "6 weeks",
+    "source_url": "https://www.mtbachelor.com/amenities-groups/childcare/"
+  },
+  {
+    "name": "Mt. Norquay",
+    "pass_type": "Ikon",
+    "location": "AB",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.banffnorquay.com"
+  },
+  {
+    "name": "Myoko Suginohara Ski Resort",
+    "pass_type": "Ikon",
+    "location": "Japan",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Nekoma Mountain",
+    "pass_type": "Ikon",
+    "location": "Japan",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Niseko United",
+    "pass_type": "Ikon",
+    "location": "Japan",
+    "daycare_min_age": "12 months",
+    "source_url": "https://www.nisekokidsclub.com/daycare/"
+  },
+  {
+    "name": "Palisades Tahoe",
+    "pass_type": "Ikon",
+    "location": "CA",
+    "daycare_min_age": "None",
+    "source_url": "https://www.palisadestahoe.com/plan-your-visit/parent-tips"
+  },
+  {
+    "name": "Panorama",
+    "pass_type": "Ikon",
+    "location": "BC",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Red Mountain",
+    "pass_type": "Ikon",
+    "location": "BC",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Revelstoke",
+    "pass_type": "Ikon",
+    "location": "BC",
+    "daycare_min_age": "18 months",
+    "source_url": "https://www.revelstokemountainresort.com/mountain-sports-school/childcare/"
+  },
+  {
+    "name": "Schweitzer",
+    "pass_type": "Ikon",
+    "location": "ID",
+    "daycare_min_age": "6 months",
+    "source_url": "https://www.schweitzer.com/things-to-do/activities/kids-night-out"
+  },
+  {
+    "name": "Shiga Kogen Mountain Resort",
+    "pass_type": "Ikon",
+    "location": "Japan",
+    "daycare_min_age": "3 months",
+    "source_url": "https://theprojectpowder.com/japan/shiga-kogen/"
+  },
+  {
+    "name": "Sierra-at-Tahoe",
+    "pass_type": "Ikon",
+    "location": "CA",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "SilverStar",
+    "pass_type": "Ikon",
+    "location": "BC",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "SkiBig3",
+    "pass_type": "Ikon",
+    "location": "AB",
+    "daycare_min_age": "1 day",
+    "source_url": "https://www.skilouise.com/tickets-passes/other-products/daycare-centre/"
+  },
+  {
+    "name": "Snow Valley",
+    "pass_type": "Ikon",
+    "location": "CA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.snow-valley.com"
+  },
+  {
+    "name": "Snowbasin",
+    "pass_type": "Ikon",
+    "location": "UT",
+    "daycare_min_age": "8 weeks",
+    "source_url": "https://develop.snowbasin.com/resort-services/childrens-center/"
+  },
+  {
+    "name": "Snowbird",
+    "pass_type": "Ikon",
+    "location": "UT",
+    "daycare_min_age": "6 weeks",
+    "source_url": "https://www.snowbird.com/guiding-lessons/childcare/"
+  },
+  {
+    "name": "Snowriver Mountain Resort",
+    "pass_type": "Ikon",
+    "location": "MI",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "St. Moritz",
+    "pass_type": "Ikon",
+    "location": "Switzerland",
+    "daycare_min_age": "None",
+    "source_url": "https://www.stmoritz.ch"
+  },
+  {
+    "name": "Steamboat",
+    "pass_type": "Ikon",
+    "location": "CO",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.steamboat.com"
+  },
+  {
+    "name": "Sugarbush",
+    "pass_type": "Ikon",
+    "location": "VT",
+    "daycare_min_age": "6 weeks",
+    "source_url": "https://www.sugarbush.com/plan-your-trip/lessons-and-camps/day-care-or-school"
+  },
+  {
+    "name": "Sugarloaf",
+    "pass_type": "Ikon",
+    "location": "ME",
+    "daycare_min_age": "18 months",
+    "source_url": "https://www.sugarloaf.com/childcare"
+  },
+  {
+    "name": "Summit at Snoqualmie",
+    "pass_type": "Ikon",
+    "location": "WA",
+    "daycare_min_age": "None",
+    "source_url": "http://www.skisite.com/childcare-daycare.cfm?id=5137"
+  },
+  {
+    "name": "Sun Peaks",
+    "pass_type": "Ikon",
+    "location": "BC",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Sun Valley",
+    "pass_type": "Ikon",
+    "location": "ID",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Sunday River",
+    "pass_type": "Ikon",
+    "location": "ME",
+    "daycare_min_age": "6 weeks",
+    "source_url": "https://www.sundayriver.com/day-care"
+  },
+  {
+    "name": "Taos Ski Valley",
+    "pass_type": "Ikon",
+    "location": "NM",
+    "daycare_min_age": "6 weeks",
+    "source_url": "https://www.skitaos.com/things-to-do/snowsports-programs/childcare"
+  },
+  {
+    "name": "The Highlands",
+    "pass_type": "Ikon",
+    "location": "MI",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "The Summit at Snoqualmie",
+    "pass_type": "Ikon",
+    "location": "WA",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Thredbo",
+    "pass_type": "Ikon",
+    "location": "Australia",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Tremblant",
+    "pass_type": "Ikon",
+    "location": "QC",
+    "daycare_min_age": "1 year",
+    "source_url": "https://www.skiresort.info/ski-resort/tremblant/test-result/families-children/"
+  },
+  {
+    "name": "Valle d'Aosta",
+    "pass_type": "Ikon",
+    "location": "Italy",
+    "daycare_min_age": "Newborn",
+    "source_url": "https://familytraveller.com/ski-holidays/aosta-valley-family-ski-holidays/"
+  },
+  {
+    "name": "Valle Nevado",
+    "pass_type": "Ikon",
+    "location": "Chile",
+    "daycare_min_age": "3 years",
+    "source_url": "https://www.vallenevado.com/en/service/additional-services/"
+  },
+  {
+    "name": "Windham Mountain",
+    "pass_type": "Ikon",
+    "location": "NY",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Winter Park",
+    "pass_type": "Ikon",
+    "location": "CO",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Yunding Snow Park",
+    "pass_type": "Ikon",
+    "location": "China",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Zao Onsen Ski Resort",
+    "pass_type": "Ikon",
+    "location": "Japan",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://powderskijapan.com/zao/"
+  },
+  {
+    "name": "Zermatt Matterhorn",
+    "pass_type": "Ikon",
+    "location": "Switzerland",
+    "daycare_min_age": "3 months",
+    "source_url": "https://gozermatt.com/kinderparadies-zermatt/"
+  },
+  {
+    "name": "49 Degrees North",
+    "pass_type": "Indy",
+    "location": "WA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://ski49n.com"
+  },
+  {
+    "name": "Amihari Onsen Ski Resort",
+    "pass_type": "Indy",
+    "location": "Iwate",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Andes Tower Hills",
+    "pass_type": "Indy",
+    "location": "Minnesota",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Ani Ski Resort",
+    "pass_type": "Indy",
+    "location": "Akita",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Antelope Butte",
+    "pass_type": "Indy",
+    "location": "WY",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.skiantelopebutte.com"
+  },
+  {
+    "name": "Aomori Spring Ski Resort",
+    "pass_type": "Indy",
+    "location": "Aomori",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Apex Mountain Resort",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Arctic Valley",
+    "pass_type": "Indy",
+    "location": "AK",
+    "daycare_min_age": "None",
+    "source_url": "https://arcticvalley.org"
+  },
+  {
+    "name": "Baldy Mountain Resort",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Baqueira/Beret",
+    "pass_type": "Indy",
+    "location": "Catalonia",
+    "daycare_min_age": "6 months",
+    "source_url": "https://menu.baqueira.es/servicios/parque-infantil/"
+  },
+  {
+    "name": "Bear Creek",
+    "pass_type": "Indy",
+    "location": "Pennsylvania",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Bear Valley Adventure Company",
+    "pass_type": "Indy",
+    "location": "California",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Bruce Mound Winter Sports Area",
+    "pass_type": "Indy",
+    "location": "Wisconsin",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Brundage Mountain",
+    "pass_type": "Indy",
+    "location": "ID",
+    "daycare_min_age": "18 months",
+    "source_url": "https://brundage.com/daycare/"
+  },
+  {
+    "name": "Bryce Resort",
+    "pass_type": "Indy",
+    "location": "VA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://bryceresort.com"
+  },
+  {
+    "name": "Burke Mountain",
+    "pass_type": "Indy",
+    "location": "VT",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://skiburke.com"
+  },
+  {
+    "name": "Caberfae Peaks",
+    "pass_type": "Indy",
+    "location": "Michigan",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Calabogie Peaks Resort",
+    "pass_type": "Indy",
+    "location": "Ontario",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Caledonia Nordic Ski Club",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Camden Snow Bowl",
+    "pass_type": "Indy",
+    "location": "Maine",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Camp 10 Ski Area",
+    "pass_type": "Indy",
+    "location": "Wisconsin",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Camp Fortune",
+    "pass_type": "Indy",
+    "location": "Quebec",
+    "daycare_min_age": "Unknown",
+    "source_url": "N/A"
+  },
+  {
+    "name": "Canaan Valley",
+    "pass_type": "Indy",
+    "location": "WV",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://canaanvalley.org"
+  },
+  {
+    "name": "Cannon Mountain",
+    "pass_type": "Indy",
+    "location": "NH",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.cannonmt.com"
+  },
+  {
+    "name": "Castle Mountain Resort",
+    "pass_type": "Indy",
+    "location": "Alberta",
+    "daycare_min_age": "Unknown",
+    "source_url": "N/A"
+  },
+  {
+    "name": "Cataloochee Ski Area",
+    "pass_type": "Indy",
+    "location": "North Carolina",
+    "daycare_min_age": "Unknown",
+    "source_url": "N/A"
+  },
+  {
+    "name": "Catamount Mountain Resort",
+    "pass_type": "Indy",
+    "location": "Massachusetts",
+    "daycare_min_age": "2 years",
+    "source_url": "https://www.parkslopeparents.com/reviews/catamount-mountain-resort"
+  },
+  {
+    "name": "Centre Vorlage",
+    "pass_type": "Indy",
+    "location": "QC",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.centrevorlage.com"
+  },
+  {
+    "name": "Cherry Peak",
+    "pass_type": "Indy",
+    "location": "Utah",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Chestnut Mountain",
+    "pass_type": "Indy",
+    "location": "IL",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.chestnutmtn.com"
+  },
+  {
+    "name": "China Peak",
+    "pass_type": "Indy",
+    "location": "CA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.skichinapeak.com"
+  },
+  {
+    "name": "Christie Mountain",
+    "pass_type": "Indy",
+    "location": "WI",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://christiemountain.com"
+  },
+  {
+    "name": "Coffee Mill Ski Area",
+    "pass_type": "Indy",
+    "location": "Minnesota",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Cooper Spur",
+    "pass_type": "Indy",
+    "location": "OR",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://cooperspur.com"
+  },
+  {
+    "name": "Corralco Mountain Resort",
+    "pass_type": "Indy",
+    "location": "Araucanía",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Crystal Mountain",
+    "pass_type": "Indy",
+    "location": "Michigan",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Crystal Ridge",
+    "pass_type": "Indy",
+    "location": "WI",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.crystalridgeski.com"
+  },
+  {
+    "name": "Cuchara",
+    "pass_type": "Indy",
+    "location": "Colorado",
+    "daycare_min_age": "None",
+    "source_url": "https://cucharamountainpark.org/"
+  },
+  {
+    "name": "Cupid Valley",
+    "pass_type": "Indy",
+    "location": "Niigata",
+    "daycare_min_age": "None",
+    "source_url": "https://joetsu-myoko.com/joetsu-myoko-ski-resorts/cupid-valley-ski-resort/"
+  },
+  {
+    "name": "Dartmouth Skiway",
+    "pass_type": "Indy",
+    "location": "New Hampshire",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Detroit Mountain",
+    "pass_type": "Indy",
+    "location": "Minnesota",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Dodge Ridge",
+    "pass_type": "Indy",
+    "location": "CA",
+    "daycare_min_age": "None",
+    "source_url": "https://dodgeridge.com"
+  },
+  {
+    "name": "Domaine skiable des Contamines",
+    "pass_type": "Indy",
+    "location": "Haute-Savoie",
+    "daycare_min_age": "2 years",
+    "source_url": "https://www.lescontamines.com/winter/pratique-english/nursery-playschemes"
+  },
+  {
+    "name": "Donner Ski Ranch",
+    "pass_type": "Indy",
+    "location": "CA",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Dry Hill Ski Area",
+    "pass_type": "Indy",
+    "location": "New York",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Dynaland",
+    "pass_type": "Indy",
+    "location": "Gifu",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Eaglecrest",
+    "pass_type": "Indy",
+    "location": "AK",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://skieaglecrest.com"
+  },
+  {
+    "name": "Echo Mountain",
+    "pass_type": "Indy",
+    "location": "CO",
+    "daycare_min_age": "None",
+    "source_url": "https://echomtn.com"
+  },
+  {
+    "name": "Ejder3200 Palandoken",
+    "pass_type": "Indy",
+    "location": "Erzurum",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Erciyes Ski Resort",
+    "pass_type": "Indy",
+    "location": "Kayseri",
+    "daycare_min_age": "None",
+    "source_url": "https://erciyesdagkayakmerkezi.com/"
+  },
+  {
+    "name": "Fairmont Hot Springs",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "None",
+    "source_url": "https://www.fairmonthotsprings.com/"
+  },
+  {
+    "name": "Geto Kogen",
+    "pass_type": "Indy",
+    "location": "Iwate",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.getokogen.com/"
+  },
+  {
+    "name": "Glencoe Mountain Resort",
+    "pass_type": "Indy",
+    "location": "Scotland",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.glencoe.scot/"
+  },
+  {
+    "name": "Glenshee Ski Centre",
+    "pass_type": "Indy",
+    "location": "Scotland",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.glenshee.com/"
+  },
+  {
+    "name": "Hardwood Ski and Bike",
+    "pass_type": "Indy",
+    "location": "Ontario",
+    "daycare_min_age": "Unknown",
+    "source_url": "N/A"
+  },
+  {
+    "name": "Hatley Pointe",
+    "pass_type": "Indy",
+    "location": "North Carolina",
+    "daycare_min_age": "Unknown",
+    "source_url": "N/A"
+  },
+  {
+    "name": "Hilltop",
+    "pass_type": "Indy",
+    "location": "AK",
+    "daycare_min_age": "None",
+    "source_url": "https://www.hilltopskiarea.org"
+  },
+  {
+    "name": "Hirugano Kogen Ski Resort",
+    "pass_type": "Indy",
+    "location": "Gifu",
+    "daycare_min_age": "Unknown",
+    "source_url": "N/A"
+  },
+  {
+    "name": "Hochzeiger Bergbahnen Pitztal",
+    "pass_type": "Indy",
+    "location": "Tyrol",
+    "daycare_min_age": "Unknown",
+    "source_url": "N/A"
+  },
+  {
+    "name": "Hockley Valley Resort",
+    "pass_type": "Indy",
+    "location": "Ontario",
+    "daycare_min_age": "None",
+    "source_url": "http://www.skisite.com/childcare-daycare.cfm?id=4244"
+  },
+  {
+    "name": "Hodaigi Mountain Resort",
+    "pass_type": "Indy",
+    "location": "Gunma",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.wamazing.com/snow/articles/63"
+  },
+  {
+    "name": "Hoodoo",
+    "pass_type": "Indy",
+    "location": "OR",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://hoodoo.com/"
+  },
+  {
+    "name": "Howelsen Hill",
+    "pass_type": "Indy",
+    "location": "CO",
+    "daycare_min_age": "None",
+    "source_url": "https://steamboatsprings.net/131/Howelsen-Hill-Ski-Area"
+  },
+  {
+    "name": "Hudson Bay Mountain",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "None",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "Huff Hills Ski Area",
+    "pass_type": "Indy",
+    "location": "North Dakota",
+    "daycare_min_age": "None",
+    "source_url": "https://www.huffhills.com/"
+  },
+  {
+    "name": "Hunt Hollow",
+    "pass_type": "Indy",
+    "location": "NY",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.hunthollowskiclub.com"
+  },
+  {
+    "name": "Hurricane Ridge",
+    "pass_type": "Indy",
+    "location": "WA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.hurricaneridge.com"
+  },
+  {
+    "name": "Hyland Hills",
+    "pass_type": "Indy",
+    "location": "MN",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.skihy.com"
+  },
+  {
+    "name": "Innsbruck Ski & City Network",
+    "pass_type": "Indy",
+    "location": "Tyrol",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Kamui Ski Links",
+    "pass_type": "Indy",
+    "location": "Hokkaido",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Kaunertaler Gletscher",
+    "pass_type": "Indy",
+    "location": "Tyrol",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Kaya Palazzo Kartalkaya Ski & Mountain Resort",
+    "pass_type": "Indy",
+    "location": "Bolu",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Kimberley Nordic Club",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://skikimberley.com/purchase/child-care/"
+  },
+  {
+    "name": "King Pine",
+    "pass_type": "Indy",
+    "location": "New Hampshire",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Kiroro Snow World",
+    "pass_type": "Indy",
+    "location": "Hokkaido",
+    "daycare_min_age": "2 years",
+    "source_url": "https://www.samuraisnow.com/kiroro-child-care"
+  },
+  {
+    "name": "Leavenworth Ski Hill",
+    "pass_type": "Indy",
+    "location": "WA",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://skileavenworth.com"
+  },
+  {
+    "name": "Leavenworth Winter Sports Club",
+    "pass_type": "Indy",
+    "location": "Washington",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Lost Trail",
+    "pass_type": "Indy",
+    "location": "MT",
+    "daycare_min_age": "None",
+    "source_url": "https://losttrail.com"
+  },
+  {
+    "name": "Lost Valley",
+    "pass_type": "Indy",
+    "location": "Maine",
+    "daycare_min_age": "None",
+    "source_url": "https://www.lostvalleyski.com/"
+  },
+  {
+    "name": "Loup Loup",
+    "pass_type": "Indy",
+    "location": "WA",
+    "daycare_min_age": "None",
+    "source_url": "https://skitheloup.org"
+  },
+  {
+    "name": "Loveland",
+    "pass_type": "Indy",
+    "location": "CO",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://skiloveland.com"
+  },
+  {
+    "name": "Lutsen Mountains",
+    "pass_type": "Indy",
+    "location": "Minnesota",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Maiko Resort",
+    "pass_type": "Indy",
+    "location": "Niigata",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://snow.tohokukanko.jp/en/resorts/detail_maiko.html"
+  },
+  {
+    "name": "Malá Úpa",
+    "pass_type": "Indy",
+    "location": "Hradec Králové",
+    "daycare_min_age": "None",
+    "source_url": "https://www.skiresort.info/ski-resort/mala-upa/"
+  },
+  {
+    "name": "Manning Park",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "None",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "Manning Park XC",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "None",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "McIntyre Ski Area",
+    "pass_type": "Indy",
+    "location": "New Hampshire",
+    "daycare_min_age": "None",
+    "source_url": "https://www.mcintyreskiarea.com/school-programs/"
+  },
+  {
+    "name": "Meadowlark",
+    "pass_type": "Indy",
+    "location": "WY",
+    "daycare_min_age": "None",
+    "source_url": "https://meadowlarklakeresort.com"
+  },
+  {
+    "name": "Middlebury Snowbowl",
+    "pass_type": "Indy",
+    "location": "Vermont",
+    "daycare_min_age": "None",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "Minocqua Winter Park",
+    "pass_type": "Indy",
+    "location": "Wisconsin",
+    "daycare_min_age": "None",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "Mission Ridge",
+    "pass_type": "Indy",
+    "location": "Washington",
+    "daycare_min_age": "None",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "Mohawk Mountain",
+    "pass_type": "Indy",
+    "location": "Connecticut",
+    "daycare_min_age": "None",
+    "source_url": "No on-mountain daycare found"
+  },
+  {
+    "name": "Mont Edouard",
+    "pass_type": "Indy",
+    "location": "Quebec",
+    "daycare_min_age": "None",
+    "source_url": "No on-mountain daycare found"
+  },
+  {
+    "name": "Mont Habitant",
+    "pass_type": "Indy",
+    "location": "Quebec",
+    "daycare_min_age": "None",
+    "source_url": "No on-mountain daycare found"
+  },
+  {
+    "name": "Mont Rigaud",
+    "pass_type": "Indy",
+    "location": "Quebec",
+    "daycare_min_age": "None",
+    "source_url": "No on-mountain daycare found"
+  },
+  {
+    "name": "Mont Sutton",
+    "pass_type": "Indy",
+    "location": "QC",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://montsutton.com"
+  },
+  {
+    "name": "Montage Mountain",
+    "pass_type": "Indy",
+    "location": "Pennsylvania",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Montana Snowbowl",
+    "pass_type": "Indy",
+    "location": "MT",
+    "daycare_min_age": "None",
+    "source_url": "https://www.montanasnowbowl.com/kids-programs/"
+  },
+  {
+    "name": "Moose Mountain",
+    "pass_type": "Indy",
+    "location": "Alaska",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Mount Baldy Ski Area",
+    "pass_type": "Indy",
+    "location": "Ontario",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Mount Kato",
+    "pass_type": "Indy",
+    "location": "Minnesota",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Mount Racey Ski Resort",
+    "pass_type": "Indy",
+    "location": "Hokkaido",
+    "daycare_min_age": "None",
+    "source_url": "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-asahikawa/spot-lj0013930/"
+  },
+  {
+    "name": "Mount Washington Alpine Resort Nordic Centre at Raven Lodge",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "18 months",
+    "source_url": "https://www.mountwashington.ca/stay/lodging/slopeside"
+  },
+  {
+    "name": "Mountain High",
+    "pass_type": "Indy",
+    "location": "California",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Mt La Crosse",
+    "pass_type": "Indy",
+    "location": "Wisconsin",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Mt. Abram",
+    "pass_type": "Indy",
+    "location": "Maine",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Mt. Shasta",
+    "pass_type": "Indy",
+    "location": "California",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Mt. Washington",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://mountwashington.ca/play/families-kids/bears-den-daycare.html"
+  },
+  {
+    "name": "Muica Snow Resort",
+    "pass_type": "Indy",
+    "location": "Niigata",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Murray Ridge Ski Area",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Nayoro Piyashiri Ski Resort",
+    "pass_type": "Indy",
+    "location": "Hokkaido",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Nelson Nordic Ski Club",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "None",
+    "source_url": "https://www.nelsonnordicski.ca/"
+  },
+  {
+    "name": "Nickel Plate Cross Country Ski Club",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "None",
+    "source_url": "https://www.nickelplatenordic.org/"
+  },
+  {
+    "name": "Ninox Snow Park",
+    "pass_type": "Indy",
+    "location": "Niigata",
+    "daycare_min_age": "None",
+    "source_url": "https://www.indyskipass.com/our-resorts/ninox-snow-park"
+  },
+  {
+    "name": "Nordic Mountain",
+    "pass_type": "Indy",
+    "location": "WI",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.nordicmountainwi.com"
+  },
+  {
+    "name": "Norefjell Ski Resort",
+    "pass_type": "Indy",
+    "location": "Viken",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.indyskipass.com/our-resorts/norefjell"
+  },
+  {
+    "name": "Norway Mountain",
+    "pass_type": "Indy",
+    "location": "Michigan",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Nub's Nob",
+    "pass_type": "Indy",
+    "location": "MI",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.nubsnob.com/nubs-cubs-daycare/"
+  },
+  {
+    "name": "Ober Mountain",
+    "pass_type": "Indy",
+    "location": "Tennessee",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Oberstdorf Kleinwalsertal Bergbahnen",
+    "pass_type": "Indy",
+    "location": "Vorarlberg",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Okunakayama Kogen",
+    "pass_type": "Indy",
+    "location": "Iwate",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Onikoube Ski Resort",
+    "pass_type": "Indy",
+    "location": "Miyagi",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Owl's Head",
+    "pass_type": "Indy",
+    "location": "QC",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://owlshead.com"
+  },
+  {
+    "name": "Palcall Tsumagoi Resort",
+    "pass_type": "Indy",
+    "location": "Gunma",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://en-1075.site-translation.com/karuizawa/specialcontents/palcolltumagoi/"
+  },
+  {
+    "name": "Pass Powderkeg",
+    "pass_type": "Indy",
+    "location": "Alberta",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Pats Peak",
+    "pass_type": "Indy",
+    "location": "NH",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.patspeak.com"
+  },
+  {
+    "name": "Paul Bunyan Ski Hill",
+    "pass_type": "Indy",
+    "location": "Wisconsin",
+    "daycare_min_age": "None",
+    "source_url": "https://skipaulbunyan.com/"
+  },
+  {
+    "name": "Pebble Creek Ski Area",
+    "pass_type": "Indy",
+    "location": "Idaho",
+    "daycare_min_age": "None",
+    "source_url": "https://pebblecreekskiarea.com/"
+  },
+  {
+    "name": "Peek 'n Peak",
+    "pass_type": "Indy",
+    "location": "New York",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://peekapeakresort.com/"
+  },
+  {
+    "name": "Phoenix Mountain",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Pila",
+    "pass_type": "Indy",
+    "location": "Aosta Valley",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Pine Mountain",
+    "pass_type": "Indy",
+    "location": "Michigan",
+    "daycare_min_age": "None",
+    "source_url": "Unable to confirm"
+  },
+  {
+    "name": "Pippu Ski Resort",
+    "pass_type": "Indy",
+    "location": "Hokkaido",
+    "daycare_min_age": "None",
+    "source_url": "Unable to confirm"
+  },
+  {
+    "name": "Pitztaler Gletscherbahn",
+    "pass_type": "Indy",
+    "location": "Tyrol",
+    "daycare_min_age": "None",
+    "source_url": "Unable to confirm"
+  },
+  {
+    "name": "Pizol",
+    "pass_type": "Indy",
+    "location": "St. Gallen",
+    "daycare_min_age": "Unknown",
+    "source_url": "Search not completed"
+  },
+  {
+    "name": "Pomerelle",
+    "pass_type": "Indy",
+    "location": "ID",
+    "daycare_min_age": "Unknown",
+    "source_url": "Search not completed"
+  },
+  {
+    "name": "Portes du Soleil",
+    "pass_type": "Indy",
+    "location": "France/Switzerland",
+    "daycare_min_age": "6 months",
+    "source_url": "https://www.igluski.com/guides/family-skiing/skiing-with-toddlers"
+  },
+  {
+    "name": "Powder Ridge",
+    "pass_type": "Indy",
+    "location": "Minnesota",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Powderhorn",
+    "pass_type": "Indy",
+    "location": "CO",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.powderhorn.com"
+  },
+  {
+    "name": "Ragged Mountain",
+    "pass_type": "Indy",
+    "location": "NH",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.raggedmountainresort.com"
+  },
+  {
+    "name": "Rauriser-Hochalmbahnen",
+    "pass_type": "Indy",
+    "location": "Salzburg",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Red Lodge Mountain",
+    "pass_type": "Indy",
+    "location": "MT",
+    "daycare_min_age": "None",
+    "source_url": "https://www.redlodgemountain.com"
+  },
+  {
+    "name": "Riksgränsen",
+    "pass_type": "Indy",
+    "location": "Lapland",
+    "daycare_min_age": "None",
+    "source_url": "https://www.snowmagazine.com/ski-resort-guide/sweden/riksgraensen"
+  },
+  {
+    "name": "Saddleback Mountain",
+    "pass_type": "Indy",
+    "location": "ME",
+    "daycare_min_age": "None",
+    "source_url": "https://www.saddlebackmaine.com"
+  },
+  {
+    "name": "Saskadena Six Ski Area",
+    "pass_type": "Indy",
+    "location": "Vermont",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Sasquatch Mountain Resort",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Schuss Mountain at Shanty Creek",
+    "pass_type": "Indy",
+    "location": "Michigan",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.shantycreek.com"
+  },
+  {
+    "name": "Shames Mountain",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "Unknown",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "Shawnee Mountain",
+    "pass_type": "Indy",
+    "location": "PA",
+    "daycare_min_age": "None",
+    "source_url": "https://www.shawneemountain.com"
+  },
+  {
+    "name": "Shimokura",
+    "pass_type": "Indy",
+    "location": "Iwate",
+    "daycare_min_age": "Unknown",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "Silver Mountain",
+    "pass_type": "Indy",
+    "location": "ID",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://silvermt.com"
+  },
+  {
+    "name": "Smokey Mountain Ski Club",
+    "pass_type": "Indy",
+    "location": "Newfoundland and Labrador",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Snow King",
+    "pass_type": "Indy",
+    "location": "WY",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://snowkingmountain.com"
+  },
+  {
+    "name": "Snow Ridge",
+    "pass_type": "Indy",
+    "location": "New York",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Snowriver",
+    "pass_type": "Indy",
+    "location": "Michigan",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Snowstar",
+    "pass_type": "Indy",
+    "location": "Illinois",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Soldier Mountain",
+    "pass_type": "Indy",
+    "location": "ID",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://soldiermountain.com"
+  },
+  {
+    "name": "Sovereign Lake Nordic Club",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "None",
+    "source_url": "https://www.sovereignlake.com"
+  },
+  {
+    "name": "Spirit Mountain",
+    "pass_type": "Indy",
+    "location": "Minnesota",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://spiritmtn.com"
+  },
+  {
+    "name": "Steinplatte",
+    "pass_type": "Indy",
+    "location": "Tyrol",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.steinplatte.at"
+  },
+  {
+    "name": "Stöten i Sälen",
+    "pass_type": "Indy",
+    "location": "Dalarna",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.stoten.se"
+  },
+  {
+    "name": "Stranda Ski Resort",
+    "pass_type": "Indy",
+    "location": "Møre og Romsdal",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.visitnorway.com/listings//stranda-ski-resort/18832/"
+  },
+  {
+    "name": "Sunburst Ski Area",
+    "pass_type": "Indy",
+    "location": "Wisconsin",
+    "daycare_min_age": "Unknown",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "Sundown Mountain",
+    "pass_type": "Indy",
+    "location": "Iowa",
+    "daycare_min_age": "Unknown",
+    "source_url": "Unknown"
+  },
+  {
+    "name": "Sunlight Mountain",
+    "pass_type": "Indy",
+    "location": "CO",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://sunlightmtn.com"
+  },
+  {
+    "name": "Sunrise Park",
+    "pass_type": "Indy",
+    "location": "AZ",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://sunrise.ski"
+  },
+  {
+    "name": "Swain Resort",
+    "pass_type": "Indy",
+    "location": "New York",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://swain.com/childcare/"
+  },
+  {
+    "name": "Takasu Snow Park",
+    "pass_type": "Indy",
+    "location": "Gifu",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Tamarack Mountain Resort",
+    "pass_type": "Indy",
+    "location": "Idaho",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Tamarack Resort",
+    "pass_type": "Indy",
+    "location": "ID",
+    "daycare_min_age": "6 weeks",
+    "source_url": "https://tamarackidaho.com/basecamp"
+  },
+  {
+    "name": "Tangram Ski Circus",
+    "pass_type": "Indy",
+    "location": "Nagano",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Tazawako",
+    "pass_type": "Indy",
+    "location": "Akita",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://thesnowshow.tv/destination/tazawako-ski-resort/"
+  },
+  {
+    "name": "Telemark Nordic Center",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "None",
+    "source_url": "https://telemarknordic.com/"
+  },
+  {
+    "name": "Tenney Mountain",
+    "pass_type": "Indy",
+    "location": "NH",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.tenneymountain.com"
+  },
+  {
+    "name": "Teton Pass",
+    "pass_type": "Indy",
+    "location": "Wyoming",
+    "daycare_min_age": "None",
+    "source_url": "Unable to verify"
+  },
+  {
+    "name": "Thrill Hills",
+    "pass_type": "Indy",
+    "location": "North Dakota",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Titus Mountain",
+    "pass_type": "Indy",
+    "location": "New York",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Togakushi Ski Resort",
+    "pass_type": "Indy",
+    "location": "Nagano",
+    "daycare_min_age": "1.5 years",
+    "source_url": "https://www.togakusi.com/ski/en/kids_family/"
+  },
+  {
+    "name": "Trollhaugen",
+    "pass_type": "Indy",
+    "location": "Wisconsin",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Tyrol Basin Ski and Snowboard",
+    "pass_type": "Indy",
+    "location": "Wisconsin",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Valmorel Ski Resort",
+    "pass_type": "Indy",
+    "location": "Savoie",
+    "daycare_min_age": "18 months",
+    "source_url": "https://welove2ski.com/valmorel-ideal-family-resort/"
+  },
+  {
+    "name": "Washigatake Ski Resort",
+    "pass_type": "Indy",
+    "location": "Gifu",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Waterville Valley",
+    "pass_type": "Indy",
+    "location": "NH",
+    "daycare_min_age": "2 years",
+    "source_url": "https://shop2.waterville.com/childcare"
+  },
+  {
+    "name": "West Mountain",
+    "pass_type": "Indy",
+    "location": "New York",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Whaleback Mountain",
+    "pass_type": "Indy",
+    "location": "New Hampshire",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "White Grass Ski Touring",
+    "pass_type": "Indy",
+    "location": "West Virginia",
+    "daycare_min_age": "None",
+    "source_url": "https://whitegrass.com/"
+  },
+  {
+    "name": "White Pass",
+    "pass_type": "Indy",
+    "location": "Washington",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://skiwhitepass.com/"
+  },
+  {
+    "name": "Whitecap Mountains Resort",
+    "pass_type": "Indy",
+    "location": "Wisconsin",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Whitehorse Nordic Centre",
+    "pass_type": "Indy",
+    "location": "Yukon",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "WhitePIA Takasu",
+    "pass_type": "Indy",
+    "location": "Gifu",
+    "daycare_min_age": "None",
+    "source_url": null
+  },
+  {
+    "name": "Williams Lake Cross Country Ski Club",
+    "pass_type": "Indy",
+    "location": "British Columbia",
+    "daycare_min_age": "None",
+    "source_url": "https://www.williamslakecrosscountryskiclub.ca/"
+  },
+  {
+    "name": "Wintergreen",
+    "pass_type": "Indy",
+    "location": "Virginia",
+    "daycare_min_age": "2.5 years",
+    "source_url": "https://www.tripadvisor.com/ShowTopic-g58322-i3871-k5113107-Infant_care_while_skiing-Wintergreen_Virginia.html"
+  },
+  {
+    "name": "Winterplace",
+    "pass_type": "Indy",
+    "location": "WV",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.winterplaceresort.com"
+  },
+  {
+    "name": "Wisp",
+    "pass_type": "Indy",
+    "location": "Maryland",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Yuzawa Nakazato Snow Resort",
+    "pass_type": "Indy",
+    "location": "Niigata",
+    "daycare_min_age": "Unknown",
+    "source_url": "Unable to confirm on-mountain daycare program"
+  },
+  {
+    "name": "Alta",
+    "pass_type": "Mountain Collective",
+    "location": "UT",
+    "daycare_min_age": "2 months",
+    "source_url": "https://www.altachildrenscenter.com/"
+  },
+  {
+    "name": "Aspen Snowmass",
+    "pass_type": "Mountain Collective",
+    "location": "CO",
+    "daycare_min_age": "8 weeks",
+    "source_url": "https://www.aspensnowmass.com/visit/lessons/child-care"
+  },
+  {
+    "name": "Banff Sunshine",
+    "pass_type": "Mountain Collective",
+    "location": "AB",
+    "daycare_min_age": "Unknown",
+    "source_url": "Unable to search due to tool limit"
+  },
+  {
+    "name": "Big Sky",
+    "pass_type": "Mountain Collective",
+    "location": "MT",
+    "daycare_min_age": "6 months",
+    "source_url": "https://skiingkid.com/ski-resorts-with-childcare/"
+  },
+  {
+    "name": "Bromont",
+    "pass_type": "Mountain Collective",
+    "location": "QC",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.bromontmontagne.com/en"
+  },
+  {
+    "name": "Chamonix",
+    "pass_type": "Mountain Collective",
+    "location": "Auvergne-Rhône-Alpes",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://en.chamonix.com/usual-information-services/family-children-care-babysitting"
+  },
+  {
+    "name": "Coronet Peak",
+    "pass_type": "Mountain Collective",
+    "location": "Otago",
+    "daycare_min_age": "2 years",
+    "source_url": "https://www.coronetpeak.co.nz/kids/"
+  },
+  {
+    "name": "Grand Targhee",
+    "pass_type": "Mountain Collective",
+    "location": "WY",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.grandtarghee.com"
+  },
+  {
+    "name": "Jackson Hole",
+    "pass_type": "Mountain Collective",
+    "location": "WY",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.jacksonhole.com"
+  },
+  {
+    "name": "Lake Louise",
+    "pass_type": "Mountain Collective",
+    "location": "AB",
+    "daycare_min_age": "18 days",
+    "source_url": "https://www.skilouise.com/tickets-passes/other-products/daycare-centre/"
+  },
+  {
+    "name": "Le Massif de Charlevoix",
+    "pass_type": "Mountain Collective",
+    "location": "QC",
+    "daycare_min_age": "2 years",
+    "source_url": "https://www.skiresort.info/ski-resort/le-massif-de-charlevoix/test-result/families-children/"
+  },
+  {
+    "name": "Marmot Basin",
+    "pass_type": "Mountain Collective",
+    "location": "AB",
+    "daycare_min_age": "19 months",
+    "source_url": "https://www.skimarmot.com/plan-your-visit/child-care/"
+  },
+  {
+    "name": "Megève",
+    "pass_type": "Mountain Collective",
+    "location": "Auvergne-Rhône-Alpes",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Mt Buller",
+    "pass_type": "Mountain Collective",
+    "location": "Victoria",
+    "daycare_min_age": "Unknown",
+    "source_url": null
+  },
+  {
+    "name": "Niseko United",
+    "pass_type": "Mountain Collective",
+    "location": "Hokkaido",
+    "daycare_min_age": "12 months",
+    "source_url": "https://www.nisekokidsclub.com/daycare/"
+  },
+  {
+    "name": "Panorama",
+    "pass_type": "Mountain Collective",
+    "location": "BC",
+    "daycare_min_age": "18 months",
+    "source_url": "https://www.panoramaresort.com/explore/childcare-1"
+  },
+  {
+    "name": "Revelstoke",
+    "pass_type": "Mountain Collective",
+    "location": "BC",
+    "daycare_min_age": "18 months",
+    "source_url": "https://www.revelstokemountainresort.com/mountain-sports-school/childcare/"
+  },
+  {
+    "name": "Snowbasin",
+    "pass_type": "Mountain Collective",
+    "location": "UT",
+    "daycare_min_age": "Unknown",
+    "source_url": "Unable to search - quota exceeded"
+  },
+  {
+    "name": "Snowbird",
+    "pass_type": "Mountain Collective",
+    "location": "UT",
+    "daycare_min_age": "Unknown",
+    "source_url": "Unable to search - quota exceeded"
+  },
+  {
+    "name": "Sugar Bowl",
+    "pass_type": "Mountain Collective",
+    "location": "CA",
+    "daycare_min_age": "None",
+    "source_url": "https://www.sugarbowl.com"
+  },
+  {
+    "name": "Sugarloaf",
+    "pass_type": "Mountain Collective",
+    "location": "ME",
+    "daycare_min_age": "18 months",
+    "source_url": "https://www.sugarloaf.com/childcare"
+  },
+  {
+    "name": "Sun Peaks",
+    "pass_type": "Mountain Collective",
+    "location": "BC",
+    "daycare_min_age": "18 months",
+    "source_url": "https://www.sunpeaksresort.com/ski-ride/sports-school-rentals/sundance-kids-centre"
+  },
+  {
+    "name": "Sun Valley",
+    "pass_type": "Mountain Collective",
+    "location": "ID",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.sunvalley.com"
+  },
+  {
+    "name": "Sunday River",
+    "pass_type": "Mountain Collective",
+    "location": "ME",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.sundayriver.com"
+  },
+  {
+    "name": "The Remarkables",
+    "pass_type": "Mountain Collective",
+    "location": "Otago",
+    "daycare_min_age": "None",
+    "source_url": "https://theprojectpowder.com/new-zealand/the-remarkables/directory/childcare/"
+  },
+  {
+    "name": "Valle Nevado",
+    "pass_type": "Mountain Collective",
+    "location": "Santiago Metropolitan",
+    "daycare_min_age": "3 years",
+    "source_url": "https://www.vallenevado.com/en/service/additional-services/"
+  },
+  {
+    "name": "Whiteface",
+    "pass_type": "Mountain Collective",
+    "location": "NY",
+    "daycare_min_age": "Unknown",
+    "source_url": "https://www.whiteface.com"
+  }
+]

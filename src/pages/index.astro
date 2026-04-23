@@ -615,23 +615,34 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
         : '-';
 
       // Ski school cost with link
-      const schoolCost = r.ski_school_max_cost
-        ? (r.ski_school_cost_url
-          ? `<a href="${r.ski_school_cost_url}" target="_blank">$${r.ski_school_max_cost}</a>`
-          : '$' + r.ski_school_max_cost)
-        : '-';
+      const schoolCost = r.pass_type === 'Club Med'
+        ? '<span class="badge badge-yes">Included</span>'
+        : r.ski_school_max_cost
+          ? (r.ski_school_cost_url
+            ? `<a href="${r.ski_school_cost_url}" target="_blank">$${r.ski_school_max_cost}</a>`
+            : '$' + r.ski_school_max_cost)
+          : '-';
 
-      // Daycare with link; add Baby Club Med line for Club Med resorts
-      const daycareBadge = r.daycare
-        ? `<span class="badge ${r.daycare.toLowerCase().startsWith('yes') ? 'badge-yes' : 'badge-no'}">${r.daycare}</span>`
-        : '-';
-      let daycare = r.daycare && r.daycare_url
-        ? `<a href="${r.daycare_url}" target="_blank">${daycareBadge}</a>`
-        : daycareBadge;
-      if (r.pass_type === 'Club Med' && r.baby_club_med) {
-        const bcm = String(r.baby_club_med);
-        const bcmBadge = `<span class="badge ${bcm.toLowerCase().startsWith('yes') ? 'badge-yes' : 'badge-no'}">Baby Club Med: ${bcm}</span>`;
-        daycare += `<br>${bcmBadge}`;
+      // Daycare: show minimum age ("4 months+", "2 years+") when known.
+      // Falls back to legacy Yes/No badge if daycare_min_age is not populated.
+      let daycare;
+      const minAge = r.daycare_min_age;
+      if (minAge && minAge !== 'Unknown') {
+        if (minAge === 'None') {
+          daycare = '<span class="badge badge-no">No</span>';
+        } else {
+          const ageBadge = `<span class="badge badge-yes">${minAge}+</span>`;
+          daycare = r.daycare_url
+            ? `<a href="${r.daycare_url}" target="_blank">${ageBadge}</a>`
+            : ageBadge;
+        }
+      } else if (r.daycare) {
+        const daycareBadge = `<span class="badge ${r.daycare.toLowerCase().startsWith('yes') ? 'badge-yes' : 'badge-no'}">${r.daycare}</span>`;
+        daycare = r.daycare_url
+          ? `<a href="${r.daycare_url}" target="_blank">${daycareBadge}</a>`
+          : daycareBadge;
+      } else {
+        daycare = '-';
       }
 
       // Airport + flight cells (split into Local and Major)
