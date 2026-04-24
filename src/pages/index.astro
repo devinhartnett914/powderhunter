@@ -182,6 +182,14 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
   let hasSearched = false;
   const activeFilters = { pass: 'all', daycare: 'all', kidsfree: 'all' };
 
+  // Returns the set of passes a resort belongs to. Falls back to the legacy
+  // single pass_type column for the transition period before migration 010
+  // drops it.
+  function passesOf(r) {
+    if (r.pass_types && r.pass_types.length) return r.pass_types;
+    return r.pass_type ? [r.pass_type] : [];
+  }
+
   // Parse airport code from text like "Reno (RNO)"
   function parseAirportCode(str) {
     if (!str) return null;
@@ -376,7 +384,9 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
       renderTable();
 
       const passCount = {};
-      currentResults.forEach(r => { passCount[r.pass_type] = (passCount[r.pass_type] || 0) + 1; });
+      currentResults.forEach(r => {
+        for (const p of passesOf(r)) passCount[p] = (passCount[p] || 0) + 1;
+      });
       const passSummary = Object.entries(passCount).map(([k, v]) => `${v} ${k}`).join(', ');
       document.getElementById('statusBar').textContent =
         `${currentResults.length} resorts within ${maxHours} hours: ${passSummary}`;
@@ -461,7 +471,9 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
     renderTable();
 
     const passCount = {};
-    currentResults.forEach(r => { passCount[r.pass_type] = (passCount[r.pass_type] || 0) + 1; });
+    currentResults.forEach(r => {
+      for (const p of passesOf(r)) passCount[p] = (passCount[p] || 0) + 1;
+    });
     const passSummary = Object.entries(passCount).map(([k, v]) => `${v} ${k}`).join(', ');
     document.getElementById('statusBar').textContent = currentResults.length === 0
       ? `No resorts within ${maxHours}h flight of ${homeAirport}.`
@@ -479,7 +491,7 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
 
   function getFilteredResults() {
     return currentResults.filter(r => {
-      if (activeFilters.pass !== 'all' && r.pass_type !== activeFilters.pass) return false;
+      if (activeFilters.pass !== 'all' && !passesOf(r).includes(activeFilters.pass)) return false;
       if (activeFilters.daycare === 'yes') {
         const dc = (r.daycare || '').toLowerCase();
         if (!dc.startsWith('yes')) return false;
@@ -502,7 +514,7 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
   function getSortVal(r, col) {
     switch(col) {
       case 'travelTime': return r.travelTime != null ? r.travelTime : 999999;
-      case 'pass': return r.pass_type || '';
+      case 'pass': return passesOf(r).slice().sort().join(',');
       case 'name': return r.name || '';
       case 'location': return r.location || '';
       case 'acreage': return r.acreage || 0;
@@ -615,7 +627,7 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
         : '-';
 
       // Ski school cost with link
-      const schoolCost = r.pass_type === 'Club Med'
+      const schoolCost = passesOf(r).includes('Club Med')
         ? '<span class="badge badge-yes">Included</span>'
         : r.ski_school_max_cost
           ? (r.ski_school_cost_url
@@ -673,9 +685,13 @@ const clientKey = import.meta.env.PUBLIC_GOOGLE_MAPS_CLIENT_KEY;
         ? combineAirport(r.major_airport, majorCode, r.majorFlightHrs)
         : '-';
 
+      const passBadges = passesOf(r)
+        .map(p => `<span class="badge badge-pass">${p}</span>`)
+        .join(' ');
+
       return `<tr>
         ${travelCell}
-        <td><span class="badge badge-pass">${r.pass_type}</span></td>
+        <td>${passBadges || '-'}</td>
         <td>${resortName}</td>
         <td>${r.location || ''}</td>
         <td>${r.acreage ? r.acreage.toLocaleString() : '-'}</td>
