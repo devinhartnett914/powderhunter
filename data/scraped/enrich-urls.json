@@ -1,0 +1,1516 @@
+[
+  {
+    "id": 389,
+    "name": "Alpe d'Huez",
+    "accepted": {
+      "kids_ski_free_url": "https://www.clubmed.us/r/alpe-d-huez/w"
+    },
+    "rejected": {},
+    "cost": 0.04554433333333333
+  },
+  {
+    "id": 565,
+    "name": "Amihari Onsen Ski Resort",
+    "accepted": {
+      "url": "https://hotel.qkamura.or.jp/en/iwate-amihari-onsen/"
+    },
+    "rejected": {},
+    "cost": 0.04554433333333333
+  },
+  {
+    "id": 440,
+    "name": "Andermatt-Sedrun-Disentis",
+    "accepted": {
+      "url": "https://www.andermatt-sedrun-disentis.ch/en/",
+      "ski_school_url": "https://www.andermatt-sedrun-disentis.ch/en/stories/swiss-snowsport-schools"
+    },
+    "rejected": {},
+    "cost": 0.04554433333333333
+  },
+  {
+    "id": 468,
+    "name": "Andes Tower Hills",
+    "accepted": {
+      "url": "https://www.andestowerhills.com/",
+      "ski_school_url": "https://www.andestowerhills.com/ski-school-lessons-1",
+      "ski_school_cost_url": "https://www.andestowerhills.com/ski-school-lessons-1"
+    },
+    "rejected": {},
+    "cost": 0.038761333333333335
+  },
+  {
+    "id": 566,
+    "name": "Ani Ski Resort",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.038761333333333335
+  },
+  {
+    "id": 567,
+    "name": "Aomori Spring Ski Resort",
+    "accepted": {
+      "url": "https://aomorispring.com/",
+      "ski_school_url": "https://aomorispring.com/ski/ski-snowboard-school",
+      "ski_school_cost_url": "https://aomorispring.com/ski/ski-snowboard-school"
+    },
+    "rejected": {},
+    "cost": 0.038761333333333335
+  },
+  {
+    "id": 530,
+    "name": "Apex Mountain Resort",
+    "accepted": {
+      "url": "https://apexresort.com/",
+      "ski_school_url": "https://apexresort.com/junior-lessons/",
+      "ski_school_cost_url": "https://apexresort.com/junior-lessons/"
+    },
+    "rejected": {},
+    "cost": 0.04792066666666667
+  },
+  {
+    "id": 403,
+    "name": "APPI Resort",
+    "accepted": {
+      "url": "https://www.appi.co.jp/en/"
+    },
+    "rejected": {
+      "ski_school_url": "cross-domain (appi-japan.com vs appi.co.jp): https://www.appi-japan.com/ski-snowboard/ski-snowboard-school/"
+    },
+    "cost": 0.04792066666666667
+  },
+  {
+    "id": 404,
+    "name": "Arai Mountain Resort",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.04792066666666667
+  },
+  {
+    "id": 266,
+    "name": "Attitash",
+    "accepted": {
+      "daycare_url": "https://www.attitash.com/child-care/"
+    },
+    "rejected": {},
+    "cost": 0.044675333333333324
+  },
+  {
+    "id": 531,
+    "name": "Baldy Mountain Resort",
+    "accepted": {
+      "url": "https://baldyresort.com/",
+      "ski_school_url": "https://baldyresort.com/rentals-and-snow-school/"
+    },
+    "rejected": {},
+    "cost": 0.044675333333333324
+  },
+  {
+    "id": 593,
+    "name": "Baqueira/Beret",
+    "accepted": {
+      "ski_school_url": "https://reservas.baqueira.es/en/clases.html"
+    },
+    "rejected": {
+      "url": "head 403: https://www.baqueira.es/en"
+    },
+    "cost": 0.044675333333333324
+  },
+  {
+    "id": 455,
+    "name": "Bear Valley Adventure Company",
+    "accepted": {
+      "url": "https://www.bvadventures.com/",
+      "ski_school_url": "https://www.bvadventures.com/cross-country-skiing"
+    },
+    "rejected": {},
+    "cost": 0.03927166666666667
+  },
+  {
+    "id": 456,
+    "name": "Bear Valley Mountain Resort",
+    "accepted": {
+      "url": "https://www.bearvalley.com/"
+    },
+    "rejected": {},
+    "cost": 0.03927166666666667
+  },
+  {
+    "id": 302,
+    "name": "Beaver Mountain",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.047135
+  },
+  {
+    "id": 398,
+    "name": "Beidahu",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.047135
+  },
+  {
+    "id": 594,
+    "name": "Bergbahnen Hohsaas",
+    "accepted": {
+      "url": "https://www.hohsaas.ch"
+    },
+    "rejected": {},
+    "cost": 0.047135
+  },
+  {
+    "id": 328,
+    "name": "Berkshire East",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.032412666666666666
+  },
+  {
+    "id": 285,
+    "name": "Big Boulder",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.032412666666666666
+  },
+  {
+    "id": 469,
+    "name": "Big Powderhorn",
+    "accepted": {
+      "url": "https://bigpowderhorn.net",
+      "kids_ski_free_url": "https://bigpowderhorn.net/plan-your-stay/lift-tickets/",
+      "ski_school_url": "https://bigpowderhorn.net/plan-your-stay/snow-sports-school/"
+    },
+    "rejected": {},
+    "cost": 0.032412666666666666
+  },
+  {
+    "id": 353,
+    "name": "Big Rock",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.047675
+  },
+  {
+    "id": 532,
+    "name": "Big White Ski Resort",
+    "accepted": {
+      "url": "https://www.bigwhite.com/",
+      "kids_ski_free_url": "https://www.bigwhite.com/tickets-passes/lift-tickets",
+      "ski_school_url": "https://www.bigwhite.com/learn/kids-lessons-programs",
+      "ski_school_cost_url": "https://www.bigwhite.com/learn/kids-lessons-programs"
+    },
+    "rejected": {},
+    "cost": 0.047675
+  },
+  {
+    "id": 595,
+    "name": "Björkliden",
+    "accepted": {
+      "url": "https://bjorkliden.com/en/"
+    },
+    "rejected": {
+      "ski_school_url": "head 404: https://bjorkliden.com/en/skidakning/ski-school-guided-tours/",
+      "ski_school_cost_url": "head 404: https://bjorkliden.com/en/skidakning/ski-school-guided-tours/"
+    },
+    "cost": 0.047675
+  },
+  {
+    "id": 343,
+    "name": "Black Mountain",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.033058333333333335
+  },
+  {
+    "id": 358,
+    "name": "Black Mountain ME",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.033058333333333335
+  },
+  {
+    "id": 334,
+    "name": "Blacktail Mountain",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.033058333333333335
+  },
+  {
+    "id": 322,
+    "name": "Blue Knob",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.03696833333333333
+  },
+  {
+    "id": 319,
+    "name": "Bolton Valley",
+    "accepted": {},
+    "rejected": {
+      "daycare_url": "head 404: https://www.boltonvalley.com/plan-your-trip/childcare/"
+    },
+    "cost": 0.03696833333333333
+  },
+  {
+    "id": 280,
+    "name": "Boston Mills/Brandywine",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.03696833333333333
+  },
+  {
+    "id": 470,
+    "name": "Bottineau Winter Park",
+    "accepted": {
+      "url": "https://skibwp.com/",
+      "ski_school_cost_url": "https://skibwp.com/prices/"
+    },
+    "rejected": {},
+    "cost": 0.04416300000000001
+  },
+  {
+    "id": 338,
+    "name": "Bousquet",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.04416300000000001
+  },
+  {
+    "id": 436,
+    "name": "Brandywine",
+    "accepted": {
+      "url": "https://www.bmbw.com/"
+    },
+    "rejected": {},
+    "cost": 0.04416300000000001
+  },
+  {
+    "id": 471,
+    "name": "Bruce Mound Winter Sports Area",
+    "accepted": {
+      "url": "https://www.clarkcountywi.gov/brucemound",
+      "ski_school_url": "https://www.clarkcountywi.gov/bruce-mound-tickets-passes-rentals",
+      "ski_school_cost_url": "https://www.clarkcountywi.gov/bruce-mound-tickets-passes-rentals"
+    },
+    "rejected": {},
+    "cost": 0.042126
+  },
+  {
+    "id": 472,
+    "name": "Caberfae Peaks",
+    "accepted": {
+      "url": "https://caberfaepeaks.com/",
+      "ski_school_url": "https://caberfaepeaks.com/home/childrens-lessons/",
+      "ski_school_cost_url": "https://caberfaepeaks.com/home/lesson-rates-2/"
+    },
+    "rejected": {},
+    "cost": 0.042126
+  },
+  {
+    "id": 534,
+    "name": "Calabogie Peaks Resort",
+    "accepted": {
+      "url": "https://calabogie.com/"
+    },
+    "rejected": {},
+    "cost": 0.042126
+  },
+  {
+    "id": 506,
+    "name": "Camden Snow Bowl",
+    "accepted": {
+      "url": "https://camdensnowbowl.com/",
+      "kids_ski_free_url": "https://camdensnowbowl.com/lift-ticket/",
+      "ski_school_url": "https://camdensnowbowl.com/ski-school/",
+      "ski_school_cost_url": "https://camdensnowbowl.com/ski-school/"
+    },
+    "rejected": {},
+    "cost": 0.03756533333333333
+  },
+  {
+    "id": 473,
+    "name": "Camp 10 Ski Area",
+    "accepted": {},
+    "rejected": {
+      "url": "head fetch failed: https://www.camp10skiandsnowboard.com/"
+    },
+    "cost": 0.03756533333333333
+  },
+  {
+    "id": 536,
+    "name": "Camp Fortune",
+    "accepted": {
+      "url": "https://campfortune.com/en/",
+      "ski_school_url": "https://campfortune.com/en/kids-lessons/",
+      "ski_school_cost_url": "https://campfortune.com/en/kids-lessons/"
+    },
+    "rejected": {},
+    "cost": 0.03756533333333333
+  },
+  {
+    "id": 537,
+    "name": "Castle Mountain Resort",
+    "accepted": {
+      "url": "https://www.skicastle.ca/",
+      "ski_school_url": "https://www.skicastle.ca/lessons/"
+    },
+    "rejected": {},
+    "cost": 0.04035933333333334
+  },
+  {
+    "id": 504,
+    "name": "Cataloochee Ski Area",
+    "accepted": {
+      "url": "https://cataloochee.com/",
+      "kids_ski_free_url": "https://cataloochee.com/pricing-promos/slope-tickets/",
+      "ski_school_url": "https://cataloochee.com/pricing-promos/lessons/",
+      "ski_school_cost_url": "https://cataloochee.com/pricing-promos/lessons/"
+    },
+    "rejected": {},
+    "cost": 0.04035933333333334
+  },
+  {
+    "id": 505,
+    "name": "Catamount Mountain Resort",
+    "accepted": {
+      "url": "https://catamountski.com/"
+    },
+    "rejected": {
+      "ski_school_url": "head 404: https://catamountski.com/lessons/"
+    },
+    "cost": 0.04035933333333334
+  },
+  {
+    "id": 624,
+    "name": "Chamonix",
+    "accepted": {
+      "url": "https://en.chamonix.com/",
+      "ski_school_url": "https://en.chamonix.com/activities/winter/skiing/ski-schools",
+      "ski_school_cost_url": "https://en.chamonix.com/activities/winter/skiing/ski-schools"
+    },
+    "rejected": {},
+    "cost": 0.045016
+  },
+  {
+    "id": 405,
+    "name": "Chamonix Mont-Blanc Valley",
+    "accepted": {
+      "url": "https://en.chamonix.com/",
+      "ski_school_url": "https://en.chamonix.com/activities/winter/skiing/ski-schools",
+      "ski_school_cost_url": "https://en.chamonix.com/activities/winter/skiing/ski-schools"
+    },
+    "rejected": {},
+    "cost": 0.045016
+  },
+  {
+    "id": 397,
+    "name": "Changbaishan",
+    "accepted": {
+      "kids_ski_free_url": "https://www.clubmed.us/r/changbaishan/w"
+    },
+    "rejected": {},
+    "cost": 0.045016
+  },
+  {
+    "id": 463,
+    "name": "Cherry Peak",
+    "accepted": {
+      "url": "https://www.skicpr.com/",
+      "ski_school_url": "https://www.skicpr.com/learn-to-ski",
+      "ski_school_cost_url": "https://www.skicpr.com/book-lessons"
+    },
+    "rejected": {},
+    "cost": 0.03859066666666667
+  },
+  {
+    "id": 406,
+    "name": "CMH Heli-Skiing",
+    "accepted": {
+      "url": "https://www.cmhheli.com/"
+    },
+    "rejected": {},
+    "cost": 0.03859066666666667
+  },
+  {
+    "id": 474,
+    "name": "Coffee Mill Ski Area",
+    "accepted": {
+      "url": "https://cmskiarea.com/"
+    },
+    "rejected": {},
+    "cost": 0.03859066666666667
+  },
+  {
+    "id": 627,
+    "name": "Coronet Peak",
+    "accepted": {
+      "url": "https://www.coronetpeak.co.nz/",
+      "kids_ski_free_url": "https://www.coronetpeak.co.nz/family/",
+      "ski_school_url": "https://www.coronetpeak.co.nz/kids/",
+      "ski_school_cost_url": "https://www.coronetpeak.co.nz/kids/"
+    },
+    "rejected": {},
+    "cost": 0.05405566666666667
+  },
+  {
+    "id": 407,
+    "name": "Coronet Peak, The Remarkables & Mt Hutt",
+    "accepted": {
+      "url": "https://www.nzski.com/"
+    },
+    "rejected": {},
+    "cost": 0.05405566666666667
+  },
+  {
+    "id": 592,
+    "name": "Corralco Mountain Resort",
+    "accepted": {
+      "url": "https://corralco.com/eng/19/Montana/",
+      "ski_school_url": "https://corralco.com/eng/19/Montana/"
+    },
+    "rejected": {},
+    "cost": 0.05405566666666667
+  },
+  {
+    "id": 441,
+    "name": "Crans-Montana",
+    "accepted": {
+      "url": "https://www.crans-montana.ch/en/",
+      "ski_school_url": "https://www.crans-montana.ch/en/ski_schools/",
+      "ski_school_cost_url": "https://www.crans-montana.ch/en/ski/ski_schools/?idcmt=Partenaire_CampsEcoles_3a69d6f4580155e7a9df79b02e9197b1"
+    },
+    "rejected": {},
+    "cost": 0.049323000000000006
+  },
+  {
+    "id": 475,
+    "name": "Crystal Mountain",
+    "accepted": {
+      "url": "https://www.crystalmountain.com/",
+      "kids_ski_free_url": "https://www.crystalmountain.com/ski/kids-lessons/",
+      "ski_school_url": "https://www.crystalmountain.com/ski/lessons/",
+      "ski_school_cost_url": "https://www.crystalmountain.com/ski/lessons/"
+    },
+    "rejected": {},
+    "cost": 0.049323000000000006
+  },
+  {
+    "id": 464,
+    "name": "Cuchara",
+    "accepted": {
+      "url": "https://cucharamountainpark.org/"
+    },
+    "rejected": {},
+    "cost": 0.049323000000000006
+  },
+  {
+    "id": 568,
+    "name": "Cupid Valley",
+    "accepted": {
+      "url": "https://www.yukidaruma-kogen.com/"
+    },
+    "rejected": {},
+    "cost": 0.043181666666666674
+  },
+  {
+    "id": 507,
+    "name": "Dartmouth Skiway",
+    "accepted": {
+      "url": "https://dartmouthskiway.com/",
+      "ski_school_url": "https://dartmouthskiway.com/snowsportsschool/"
+    },
+    "rejected": {},
+    "cost": 0.043181666666666674
+  },
+  {
+    "id": 476,
+    "name": "Detroit Mountain",
+    "accepted": {
+      "url": "https://detroitmountain.com/",
+      "ski_school_url": "https://detroitmountain.com/winter/lessons/"
+    },
+    "rejected": {},
+    "cost": 0.04275833333333334
+  },
+  {
+    "id": 408,
+    "name": "Dolomiti Superski",
+    "accepted": {},
+    "rejected": {
+      "url": "head 403: https://www.dolomitisuperski.com/",
+      "kids_ski_free_url": "head 403: https://www.dolomitisuperski.com/en/plan-and-book/skipassandprices/superskifamily",
+      "ski_school_url": "head 403: https://www.dolomitisuperski.com/en/experiences/services/ski-schools"
+    },
+    "cost": 0.04275833333333334
+  },
+  {
+    "id": 596,
+    "name": "Domaine skiable des Contamines",
+    "accepted": {
+      "url": "https://www.lescontamines.com/",
+      "kids_ski_free_url": "https://www.lescontamines.com/winter/ski/alpine-ski-domain/prices"
+    },
+    "rejected": {
+      "ski_school_url": "cross-domain (esf-lescontamines.net vs lescontamines.com): https://www.esf-lescontamines.net/"
+    },
+    "cost": 0.04275833333333334
+  },
+  {
+    "id": 310,
+    "name": "Donner Ski Ranch",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.037698666666666665
+  },
+  {
+    "id": 508,
+    "name": "Dry Hill Ski Area",
+    "accepted": {
+      "url": "https://www.skidryhill.com/",
+      "ski_school_url": "https://www.skidryhill.com/lessons"
+    },
+    "rejected": {
+      "ski_school_cost_url": "head 404: https://www.skidryhill.com/book-a-lesson-online"
+    },
+    "cost": 0.037698666666666665
+  },
+  {
+    "id": 569,
+    "name": "Dynaland",
+    "accepted": {
+      "url": "https://www.dynaland.co.jp/",
+      "ski_school_url": "https://www.dynaland.co.jp/school/"
+    },
+    "rejected": {},
+    "cost": 0.037698666666666665
+  },
+  {
+    "id": 597,
+    "name": "Ejder3200 Palandoken",
+    "accepted": {},
+    "rejected": {
+      "url": "head 403: https://www.ejder3200.com",
+      "kids_ski_free_url": "head 403: https://www.ejder3200.com/Skipass"
+    },
+    "cost": 0.04384166666666667
+  },
+  {
+    "id": 598,
+    "name": "Erciyes Ski Resort",
+    "accepted": {
+      "url": "https://www.erciyeskayak.com/en",
+      "ski_school_url": "https://erciyeskayak.com/en/ski-instruction"
+    },
+    "rejected": {},
+    "cost": 0.04384166666666667
+  },
+  {
+    "id": 539,
+    "name": "Fairmont Hot Springs",
+    "accepted": {
+      "url": "https://www.fairmonthotsprings.com/",
+      "ski_school_url": "https://www.fairmonthotsprings.com/fairmont-hot-springs-ski-area",
+      "ski_school_cost_url": "https://www.fairmonthotsprings.com/fairmont-hot-springs-ski-area"
+    },
+    "rejected": {},
+    "cost": 0.04395633333333334
+  },
+  {
+    "id": 539,
+    "name": "Fairmont Hot Springs",
+    "accepted": {
+      "url": "https://fairmontmontana.com/"
+    },
+    "rejected": {},
+    "cost": 0.04395633333333334
+  },
+  {
+    "id": 453,
+    "name": "Falls Creek",
+    "accepted": {
+      "url": "https://www.fallscreek.com.au/",
+      "ski_school_cost_url": "https://www.fallscreek.com.au/lessons-programs/"
+    },
+    "rejected": {
+      "ski_school_url": "cross-domain (skifalls.com.au vs fallscreek.com.au): https://www.skifalls.com.au/lessons-rentals/kids-lessons"
+    },
+    "cost": 0.04395633333333334
+  },
+  {
+    "id": 409,
+    "name": "Furano Ski Resort",
+    "accepted": {
+      "url": "https://www.princehotels.com/en/ski/furano/",
+      "kids_ski_free_url": "https://www.princehotels.com/en/ski/kids/furano.html"
+    },
+    "rejected": {
+      "ski_school_url": "cross-domain (spfurano.com vs princehotels.com): https://www.spfurano.com/en/furanosnowschool.html",
+      "ski_school_cost_url": "cross-domain (spfurano.com vs princehotels.com): https://www.spfurano.com/en/furanosnowschool.html"
+    },
+    "cost": 0.049178
+  },
+  {
+    "id": 570,
+    "name": "Geto Kogen",
+    "accepted": {
+      "url": "https://www.getokogen.com/winter_en/",
+      "ski_school_url": "https://www.getokogen.com/winter_en/04activity/school/01ski.html",
+      "ski_school_cost_url": "https://www.getokogen.com/winter_en/04activity/school/01ski.html"
+    },
+    "rejected": {},
+    "cost": 0.049178
+  },
+  {
+    "id": 599,
+    "name": "Glencoe Mountain Resort",
+    "accepted": {
+      "url": "https://www.glencoemountain.co.uk/"
+    },
+    "rejected": {},
+    "cost": 0.049178
+  },
+  {
+    "id": 600,
+    "name": "Glenshee Ski Centre",
+    "accepted": {
+      "url": "https://www.ski-glenshee.co.uk/",
+      "kids_ski_free_url": "https://www.ski-glenshee.co.uk/Prices-and-Packages"
+    },
+    "rejected": {
+      "ski_school_url": "cross-domain (skischoolglenshee.co.uk vs ski-glenshee.co.uk): https://www.skischoolglenshee.co.uk/",
+      "ski_school_cost_url": "cross-domain (skischoolglenshee.co.uk vs ski-glenshee.co.uk): https://www.skischoolglenshee.co.uk/lessons/"
+    },
+    "cost": 0.048014
+  },
+  {
+    "id": 314,
+    "name": "Granby Ranch",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.048014
+  },
+  {
+    "id": 395,
+    "name": "Grand Massif Samoëns Morillon",
+    "accepted": {},
+    "rejected": {
+      "kids_ski_free_url": "cross-domain (grand-massif.com vs clubmed.us): https://www.grand-massif.com/en/ski-offers/package-rates/"
+    },
+    "cost": 0.048014
+  },
+  {
+    "id": 410,
+    "name": "Grandvalira Resorts Andorra",
+    "accepted": {
+      "url": "https://www.grandvalira.com/en",
+      "ski_school_url": "https://www.grandvalira.com/en/schools/children-lessons",
+      "ski_school_cost_url": "https://www.grandvalira.com/en/schools/children-lessons"
+    },
+    "rejected": {
+      "daycare_url": "head 404: https://www.grandvalira.com/en/schools/children-lessons/nursery"
+    },
+    "cost": 0.046003333333333334
+  },
+  {
+    "id": 477,
+    "name": "Great Bear Ski Valley",
+    "accepted": {
+      "url": "https://www.greatbearpark.com/",
+      "kids_ski_free_url": "https://www.greatbearpark.com/lessons/",
+      "ski_school_url": "https://www.greatbearpark.com/lessons/",
+      "ski_school_cost_url": "https://www.greatbearpark.com/lessons/"
+    },
+    "rejected": {},
+    "cost": 0.046003333333333334
+  },
+  {
+    "id": 479,
+    "name": "Great Glen Trails Outdoor Center",
+    "accepted": {
+      "url": "https://greatglentrails.com/",
+      "ski_school_url": "https://greatglentrails.com/about/"
+    },
+    "rejected": {},
+    "cost": 0.046003333333333334
+  },
+  {
+    "id": 448,
+    "name": "Hakuba Valley",
+    "accepted": {
+      "url": "https://www.hakubavalley.com/en/",
+      "kids_ski_free_url": "https://www.hakubavalley.com/en/ticket_en/",
+      "ski_school_url": "https://www.hakubavalley.com/en/ski_school_en/"
+    },
+    "rejected": {},
+    "cost": 0.041667333333333334
+  },
+  {
+    "id": 540,
+    "name": "Hardwood Ski and Bike",
+    "accepted": {
+      "url": "https://hardwoodskiandbike.ca/"
+    },
+    "rejected": {},
+    "cost": 0.041667333333333334
+  },
+  {
+    "id": 509,
+    "name": "Hatley Pointe",
+    "accepted": {
+      "url": "https://hatleypointe.com/",
+      "ski_school_url": "https://hatleypointe.com/the-mountain/"
+    },
+    "rejected": {},
+    "cost": 0.041667333333333334
+  },
+  {
+    "id": 274,
+    "name": "Hidden Valley",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.03834133333333333
+  },
+  {
+    "id": 274,
+    "name": "Hidden Valley",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.03834133333333333
+  },
+  {
+    "id": 571,
+    "name": "Hirugano Kogen Ski Resort",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.03834133333333333
+  },
+  {
+    "id": 601,
+    "name": "Hochzeiger Bergbahnen Pitztal",
+    "accepted": {
+      "url": "https://www.hochzeiger.com/en/",
+      "kids_ski_free_url": "https://www.hochzeiger.com/en/free-childrens-ski-courses-for-beginners.html"
+    },
+    "rejected": {
+      "ski_school_url": "cross-domain (skischule-hochzeiger.com vs hochzeiger.com): https://skischule-hochzeiger.com/en/ski-school-hochzeiger/",
+      "ski_school_cost_url": "cross-domain (skischule-hochzeiger.com vs hochzeiger.com): https://skischule-hochzeiger.com/en/price-list/"
+    },
+    "cost": 0.04440166666666667
+  },
+  {
+    "id": 541,
+    "name": "Hockley Valley Resort",
+    "accepted": {
+      "url": "https://hockley.com/",
+      "kids_ski_free_url": "https://hockley.com/ski-snowboarding/",
+      "ski_school_url": "https://hockley.com/ski-snowboarding/",
+      "ski_school_cost_url": "https://hockley.com/event/season-pass-programs-2025/"
+    },
+    "rejected": {},
+    "cost": 0.04440166666666667
+  },
+  {
+    "id": 572,
+    "name": "Hodaigi Mountain Resort",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.04440166666666667
+  },
+  {
+    "id": 454,
+    "name": "Hotham",
+    "accepted": {
+      "url": "https://www.mthotham.com.au/",
+      "ski_school_url": "https://www.mthotham.com.au/lessons/lessons/kids-lessons"
+    },
+    "rejected": {},
+    "cost": 0.03582833333333333
+  },
+  {
+    "id": 542,
+    "name": "Hudson Bay Mountain",
+    "accepted": {
+      "url": "https://hudsonbaymountain.com/"
+    },
+    "rejected": {
+      "ski_school_url": "head 404: https://hudsonbaymountain.com/camps-clubs/"
+    },
+    "cost": 0.03582833333333333
+  },
+  {
+    "id": 480,
+    "name": "Huff Hills Ski Area",
+    "accepted": {
+      "url": "https://www.huffhills.com/"
+    },
+    "rejected": {},
+    "cost": 0.03582833333333333
+  },
+  {
+    "id": 602,
+    "name": "Innsbruck Ski & City Network",
+    "accepted": {
+      "url": "https://www.ski-plus-city.com/en/"
+    },
+    "rejected": {},
+    "cost": 0.047803000000000005
+  },
+  {
+    "id": 411,
+    "name": "Ischgl",
+    "accepted": {
+      "url": "https://www.ischgl.com/en/",
+      "ski_school_url": "https://www.ischgl.com/en/winter/ski-schools-guides",
+      "daycare_url": "https://www.ischgl.com/en/plan-your-trip/ischgl-a-z/guest-kindergarten-idalp_infra_100001496"
+    },
+    "rejected": {
+      "kids_ski_free_url": "head 404: https://www.ischgl.com/en/active/ski-winter/service-package/child-supervision"
+    },
+    "cost": 0.047803000000000005
+  },
+  {
+    "id": 573,
+    "name": "Kamui Ski Links",
+    "accepted": {
+      "url": "https://www.kamui-skilinks.com/en/",
+      "ski_school_url": "https://www.kamui-skilinks.com/en/",
+      "ski_school_cost_url": "https://www.kamui-skilinks.com/en/"
+    },
+    "rejected": {},
+    "cost": 0.047803000000000005
+  },
+  {
+    "id": 603,
+    "name": "Kaunertaler Gletscher",
+    "accepted": {
+      "url": "https://www.kaunertaler-gletscher.at/en/",
+      "kids_ski_free_url": "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/service-und-informations/kostenlose-kleinkinderskikurse.html",
+      "ski_school_url": "https://www.kaunertaler-gletscher.at/en/kaunertal-glacier/service-und-informations/ski-school.html"
+    },
+    "rejected": {},
+    "cost": 0.049716
+  },
+  {
+    "id": 604,
+    "name": "Kaya Palazzo Kartalkaya Ski & Mountain Resort",
+    "accepted": {},
+    "rejected": {
+      "url": "head 403: https://www.kayapalazzohotels.com/en/kaya-palazzo-ski-mountain-resort-2/",
+      "kids_ski_free_url": "head 403: https://www.kayapalazzohotels.com/en/kaya-palazzo-ski-mountain-resort-2/ski/",
+      "ski_school_url": "head 403: https://www.kayapalazzohotels.com/en/kaya-palazzo-ski-mountain-resort-2/"
+    },
+    "cost": 0.049716
+  },
+  {
+    "id": 307,
+    "name": "Kelly Canyon",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.049716
+  },
+  {
+    "id": 510,
+    "name": "King Pine",
+    "accepted": {
+      "url": "https://www.kingpine.com/",
+      "ski_school_cost_url": "https://www.kingpine.com/lessons/group-lessons/"
+    },
+    "rejected": {
+      "ski_school_url": "head 404: https://www.kingpine.com/lessons/"
+    },
+    "cost": 0.045023
+  },
+  {
+    "id": 630,
+    "name": "Kiroro Grand",
+    "accepted": {
+      "url": "https://www.clubmed.us/r/kiroro-grand/w",
+      "ski_school_url": "https://www.clubmed.us/r/kiroro-grand/w"
+    },
+    "rejected": {},
+    "cost": 0.045023
+  },
+  {
+    "id": 402,
+    "name": "Kiroro Peak",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.045023
+  },
+  {
+    "id": 574,
+    "name": "Kiroro Snow World",
+    "accepted": {
+      "url": "https://www.kiroro.co.jp/snowworld/",
+      "ski_school_url": "https://www.kiroro.co.jp/ski_kids_lessons/",
+      "ski_school_cost_url": "https://www.kiroro.co.jp/ski_lessons/"
+    },
+    "rejected": {},
+    "cost": 0.048218000000000004
+  },
+  {
+    "id": 412,
+    "name": "Kitzbühel",
+    "accepted": {
+      "url": "https://www.kitzbuehel.com/en/",
+      "ski_school_url": "https://www.kitzbuehel.com/en/sport/skiing/ski-schools/"
+    },
+    "rejected": {},
+    "cost": 0.048218000000000004
+  },
+  {
+    "id": 390,
+    "name": "La Plagne 2100",
+    "accepted": {
+      "kids_ski_free_url": "https://www.clubmed.us/r/la-plagne-2100/y",
+      "ski_school_cost_url": "https://www.clubmed.us/r/la-plagne-2100/y"
+    },
+    "rejected": {},
+    "cost": 0.048218000000000004
+  },
+  {
+    "id": 394,
+    "name": "La Rosière",
+    "accepted": {
+      "kids_ski_free_url": "https://www.clubmed.us/r/la-rosiere/w"
+    },
+    "rejected": {},
+    "cost": 0.049955000000000006
+  },
+  {
+    "id": 457,
+    "name": "Leavenworth Winter Sports Club",
+    "accepted": {
+      "url": "https://skileavenworth.com/",
+      "ski_school_url": "https://skileavenworth.com/lessons"
+    },
+    "rejected": {},
+    "cost": 0.049955000000000006
+  },
+  {
+    "id": 445,
+    "name": "Les 3 Vallées",
+    "accepted": {
+      "url": "https://www.les3vallees.com/en",
+      "kids_ski_free_url": "https://www.les3vallees.com/en/skipass/child-1-day-solo-pass",
+      "ski_school_url": "https://www.les3vallees.com/en/guide/instructors-and-guides/children-ski-lessons-and-nursery",
+      "ski_school_cost_url": "https://www.les3vallees.com/en/guide/useful-advice/lessons-and-skipasses"
+    },
+    "rejected": {},
+    "cost": 0.049955000000000006
+  },
+  {
+    "id": 605,
+    "name": "Les 7 Laux",
+    "accepted": {
+      "url": "https://www.les7laux.com/",
+      "kids_ski_free_url": "https://www.les7laux.com/winter/downhill-skiing-nordic-skiing-other-winter-sports/ski/packages-rates/"
+    },
+    "rejected": {
+      "ski_school_url": "cross-domain (esf7laux.fr vs les7laux.com): https://www.esf7laux.fr/en/esf-7laux-en/"
+    },
+    "cost": 0.049949999999999994
+  },
+  {
+    "id": 391,
+    "name": "Les Arcs Panorama",
+    "accepted": {
+      "kids_ski_free_url": "https://www.clubmed.us/r/les-arcs-panorama/w"
+    },
+    "rejected": {},
+    "cost": 0.049949999999999994
+  },
+  {
+    "id": 606,
+    "name": "Leukerbad Torrent Ski Resort & Gemmi Resort",
+    "accepted": {},
+    "rejected": {
+      "url": "head 403: https://leukerbad.ch/en/skiing",
+      "kids_ski_free_url": "head 403: https://leukerbad.ch/en/skiing",
+      "ski_school_url": "cross-domain (skischule-leukerbad.ch vs leukerbad.ch): https://www.skischule-leukerbad.ch/en/",
+      "ski_school_cost_url": "cross-domain (skischule-leukerbad.ch vs leukerbad.ch): https://www.skischule-leukerbad.ch/en/"
+    },
+    "cost": 0.049949999999999994
+  },
+  {
+    "id": 607,
+    "name": "Levi",
+    "accepted": {
+      "url": "https://www.levi.fi/en/",
+      "kids_ski_free_url": "https://www.levi.fi/en/ski/families/",
+      "ski_school_url": "https://www.levi.fi/en/ski/ski-school/",
+      "ski_school_cost_url": "https://skiresort.levi.fi/en/bookprivateskischool",
+      "daycare_url": "https://www.levi.fi/en/ski/families/leevilandia/"
+    },
+    "rejected": {},
+    "cost": 0.04364300000000001
+  },
+  {
+    "id": 350,
+    "name": "Little Switzerland",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.04364300000000001
+  },
+  {
+    "id": 481,
+    "name": "Loch Lomond",
+    "accepted": {
+      "url": "https://www.lochlomond.ca/",
+      "ski_school_url": "https://www.lochlomond.ca/snow-school/",
+      "ski_school_cost_url": "https://www.lochlomond.ca/snow-school/"
+    },
+    "rejected": {},
+    "cost": 0.04364300000000001
+  },
+  {
+    "id": 511,
+    "name": "Lost Valley",
+    "accepted": {
+      "url": "https://www.lostvalleyski.com/",
+      "kids_ski_free_url": "https://www.lostvalleyski.com/lift_ticket_season_pass/",
+      "ski_school_url": "https://www.lostvalleyski.com/lessons/",
+      "ski_school_cost_url": "https://shop.lostvalleyski.com/lessonprograms"
+    },
+    "rejected": {},
+    "cost": 0.043486000000000004
+  },
+  {
+    "id": 413,
+    "name": "Lutsen Mountains",
+    "accepted": {
+      "url": "https://www.lutsen.com/",
+      "ski_school_url": "https://www.lutsen.com/plan-purchase/lessons",
+      "ski_school_cost_url": "https://www.lutsen.com/plan-purchase/lessons/youth-lessons"
+    },
+    "rejected": {
+      "kids_ski_free_url": "head 403: https://www.lutsen.com/node/562"
+    },
+    "cost": 0.043486000000000004
+  },
+  {
+    "id": 345,
+    "name": "Magic Mountain",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.043486000000000004
+  },
+  {
+    "id": 575,
+    "name": "Maiko Resort",
+    "accepted": {
+      "url": "https://snow.tohokukanko.jp/en/resorts/detail_maiko.html"
+    },
+    "rejected": {},
+    "cost": 0.047352000000000005
+  },
+  {
+    "id": 608,
+    "name": "Malá Úpa",
+    "accepted": {
+      "url": "https://www.skimu.cz/"
+    },
+    "rejected": {},
+    "cost": 0.047352000000000005
+  },
+  {
+    "id": 544,
+    "name": "Manning Park",
+    "accepted": {
+      "url": "https://manningpark.com/"
+    },
+    "rejected": {
+      "ski_school_url": "head fetch failed: http://winter.manningpark.com/lessons/"
+    },
+    "cost": 0.047352000000000005
+  },
+  {
+    "id": 339,
+    "name": "Maple Ski Ridge",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.038655
+  },
+  {
+    "id": 546,
+    "name": "Marble Mountain",
+    "accepted": {
+      "url": "https://skimarble.com/",
+      "ski_school_url": "https://skimarble.com/snow-school/"
+    },
+    "rejected": {},
+    "cost": 0.038655
+  },
+  {
+    "id": 502,
+    "name": "Marquette Mountain",
+    "accepted": {
+      "url": "https://www.marquettemountain.com/",
+      "ski_school_url": "https://shop.marquettemountain.com/lessons",
+      "ski_school_cost_url": "https://shop.marquettemountain.com/lessons"
+    },
+    "rejected": {},
+    "cost": 0.038655
+  },
+  {
+    "id": 292,
+    "name": "Massif du Sud",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.03285233333333334
+  },
+  {
+    "id": 512,
+    "name": "McIntyre Ski Area",
+    "accepted": {
+      "url": "https://www.mcintyreskiarea.com/",
+      "ski_school_url": "https://www.mcintyreskiarea.com/single-lessons/"
+    },
+    "rejected": {},
+    "cost": 0.03285233333333334
+  },
+  {
+    "id": 625,
+    "name": "Megève",
+    "accepted": {
+      "url": "https://www.megeve-tourisme.fr/en/"
+    },
+    "rejected": {},
+    "cost": 0.03285233333333334
+  },
+  {
+    "id": 414,
+    "name": "Megève Ski Area",
+    "accepted": {
+      "url": "https://forfait.megeve.com/hiver/en/",
+      "kids_ski_free_url": "https://forfait.megeve.com/hiver/en/frequently-asked-questions/",
+      "ski_school_url": "https://megeve.com/en/winter/sledgin-skiing/skiing-school/"
+    },
+    "rejected": {},
+    "cost": 0.048189333333333334
+  },
+  {
+    "id": 513,
+    "name": "Middlebury Snowbowl",
+    "accepted": {
+      "url": "https://middleburysnowbowl.com/",
+      "ski_school_url": "https://middleburysnowbowl.com/lesson-programs/"
+    },
+    "rejected": {
+      "ski_school_cost_url": "head 404: https://middleburysnowbowl.com/private-lessons-and-packages/"
+    },
+    "cost": 0.048189333333333334
+  },
+  {
+    "id": 415,
+    "name": "Mike Wiegele Helicopter Skiing",
+    "accepted": {
+      "url": "https://www.wiegele.com/"
+    },
+    "rejected": {},
+    "cost": 0.048189333333333334
+  },
+  {
+    "id": 487,
+    "name": "Minocqua Winter Park",
+    "accepted": {
+      "url": "https://minocquawinterpark.org/",
+      "ski_school_url": "https://minocquawinterpark.org/park/ski/"
+    },
+    "rejected": {},
+    "cost": 0.03937566666666667
+  },
+  {
+    "id": 458,
+    "name": "Mission Ridge",
+    "accepted": {
+      "url": "https://www.missionridge.com/",
+      "ski_school_url": "https://www.missionridge.com/lessons/"
+    },
+    "rejected": {},
+    "cost": 0.03937566666666667
+  },
+  {
+    "id": 514,
+    "name": "Mohawk Mountain",
+    "accepted": {
+      "url": "https://www.mohawkmtn.com/"
+    },
+    "rejected": {},
+    "cost": 0.03937566666666667
+  },
+  {
+    "id": 416,
+    "name": "MONA Yongpyong",
+    "accepted": {
+      "url": "https://monayongpyong.com/",
+      "ski_school_cost_url": "https://monayongpyong.com/liftCharge"
+    },
+    "rejected": {
+      "ski_school_url": "head 404: https://monayongpyong.com/Lesson"
+    },
+    "cost": 0.039900000000000005
+  },
+  {
+    "id": 547,
+    "name": "Mont Edouard",
+    "accepted": {
+      "url": "https://www.montedouard.com/",
+      "ski_school_url": "https://www.montedouard.com/en/winter-at-mount-edward"
+    },
+    "rejected": {
+      "ski_school_cost_url": "head 404: https://www.montedouard.com/en/season-pass"
+    },
+    "cost": 0.039900000000000005
+  },
+  {
+    "id": 548,
+    "name": "Mont Habitant",
+    "accepted": {
+      "url": "https://www.monthabitant.com/"
+    },
+    "rejected": {},
+    "cost": 0.039900000000000005
+  },
+  {
+    "id": 549,
+    "name": "Mont Rigaud",
+    "accepted": {
+      "url": "https://ski.montrigaud.com/",
+      "ski_school_cost_url": "https://ski.montrigaud.com/snow-school/private-lessons-42"
+    },
+    "rejected": {
+      "ski_school_url": "head 500: https://ski.montrigaud.com/snow-school/"
+    },
+    "cost": 0.04415866666666667
+  },
+  {
+    "id": 525,
+    "name": "Montage Mountain",
+    "accepted": {
+      "url": "https://www.montagemountainresorts.com/",
+      "kids_ski_free_url": "https://www.montagemountainresorts.com/dailyrates/",
+      "ski_school_url": "https://www.montagemountainresorts.com/ski-snowboard-lessons/",
+      "ski_school_cost_url": "https://www.montagemountainresorts.com/ski-snowboard-lessons/"
+    },
+    "rejected": {},
+    "cost": 0.04415866666666667
+  },
+  {
+    "id": 461,
+    "name": "Moose Mountain",
+    "accepted": {
+      "url": "https://shredthemoose.com/"
+    },
+    "rejected": {},
+    "cost": 0.04415866666666667
+  },
+  {
+    "id": 483,
+    "name": "Mount Baldy Ski Area",
+    "accepted": {
+      "url": "https://www.skimountbaldy.ca/",
+      "kids_ski_free_url": "https://www.skimountbaldy.ca/tickets-and-passes",
+      "ski_school_url": "https://www.skimountbaldy.ca/lessons",
+      "ski_school_cost_url": "https://www.skimountbaldy.ca/lessons"
+    },
+    "rejected": {},
+    "cost": 0.041875666666666665
+  },
+  {
+    "id": 484,
+    "name": "Mount Kato",
+    "accepted": {
+      "url": "https://mountkato.com/"
+    },
+    "rejected": {},
+    "cost": 0.041875666666666665
+  },
+  {
+    "id": 576,
+    "name": "Mount Racey Ski Resort",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.041875666666666665
+  },
+  {
+    "id": 459,
+    "name": "Mountain High",
+    "accepted": {
+      "url": "https://www.mthigh.com/site",
+      "kids_ski_free_url": "https://www.mthigh.com/site/lessons-and-rentals/lessons/childrens-lessons.html",
+      "ski_school_url": "https://www.mthigh.com/site/lessons-and-rentals/lessons/childrens-lessons.html",
+      "ski_school_cost_url": "https://www.mthigh.com/site/lessons-and-rentals/lessons/childrens-lessons.html"
+    },
+    "rejected": {},
+    "cost": 0.049432333333333335
+  },
+  {
+    "id": 417,
+    "name": "Mt Buller",
+    "accepted": {
+      "url": "https://www.mtbuller.com.au/summer",
+      "kids_ski_free_url": "https://www.mtbuller.com.au/winter/lift-passes/lift-passes-overview",
+      "ski_school_url": "https://www.mtbuller.com.au/winter/ski-snowboard-school",
+      "ski_school_cost_url": "https://www.mtbuller.com.au/winter/ski-snowboard-school"
+    },
+    "rejected": {},
+    "cost": 0.049432333333333335
+  },
+  {
+    "id": 485,
+    "name": "Mt La Crosse",
+    "accepted": {
+      "url": "https://mtlacrosse.com/"
+    },
+    "rejected": {},
+    "cost": 0.049432333333333335
+  },
+  {
+    "id": 515,
+    "name": "Mt. Abram",
+    "accepted": {
+      "url": "https://www.mtabram.com/",
+      "kids_ski_free_url": "https://www.mtabram.com/winter/the-mountain-winter/hours-info/vacation-week/",
+      "ski_school_url": "https://www.mtabram.com/winter/rentals-lessons/lessons/",
+      "ski_school_cost_url": "https://www.mtabram.com/winter/rentals-lessons/lessons/"
+    },
+    "rejected": {},
+    "cost": 0.052262333333333334
+  },
+  {
+    "id": 331,
+    "name": "Mt. Ashland",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.052262333333333334
+  },
+  {
+    "id": 354,
+    "name": "Mt. Eyak",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.052262333333333334
+  },
+  {
+    "id": 351,
+    "name": "Mt. Holiday",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.04490633333333333
+  },
+  {
+    "id": 486,
+    "name": "Mt. Ripley Ski Area",
+    "accepted": {
+      "url": "https://www.mtu.edu/mont-ripley/"
+    },
+    "rejected": {
+      "ski_school_url": "head 404: https://www.mtu.edu/mont-ripley/lessons/"
+    },
+    "cost": 0.04490633333333333
+  },
+  {
+    "id": 577,
+    "name": "Muica Snow Resort",
+    "accepted": {},
+    "rejected": {},
+    "cost": 0.040747
+  },
+  {
+    "id": 552,
+    "name": "Murray Ridge Ski Area",
+    "accepted": {
+      "url": "https://www.murrayridge.com/"
+    },
+    "rejected": {},
+    "cost": 0.040747
+  },
+  {
+    "id": 418,
+    "name": "Myoko Suginohara Ski Resort",
+    "accepted": {
+      "url": "https://www.princehotels.com/en/ski/myoko_kogen/",
+      "kids_ski_free_url": "https://www.princehotels.com/en/ski/kids/myoko.html",
+      "ski_school_url": "https://www.princehotels.com/en/ski/myoko_kogen/"
+    },
+    "rejected": {},
+    "cost": 0.04139466666666667
+  },
+  {
+    "id": 578,
+    "name": "Nayoro Piyashiri Ski Resort",
+    "accepted": {
+      "url": "https://www.nayoro.co.jp/piyashiri/"
+    },
+    "rejected": {},
+    "cost": 0.04139466666666667
+  },
+  {
+    "id": 419,
+    "name": "Nekoma Mountain",
+    "accepted": {
+      "url": "https://en.nekoma.co.jp/"
+    },
+    "rejected": {},
+    "cost": 0.04139466666666667
+  },
+  {
+    "id": 579,
+    "name": "Ninox Snow Park",
+    "accepted": {
+      "url": "https://snow.tohokukanko.jp/en/resorts/detail_ninox.html"
+    },
+    "rejected": {},
+    "cost": 0.04377233333333334
+  },
+  {
+    "id": 420,
+    "name": "Niseko United",
+    "accepted": {
+      "url": "https://www.niseko.ne.jp/en/",
+      "kids_ski_free_url": "https://www.niseko.ne.jp/en/lift/",
+      "ski_school_url": "https://www.niseko.ne.jp/en/niseko-ski-school/"
+    },
+    "rejected": {},
+    "cost": 0.04377233333333334
+  },
+  {
+    "id": 609,
+    "name": "Norefjell Ski Resort",
+    "accepted": {
+      "url": "https://www.norefjell.com/en"
+    },
+    "rejected": {},
+    "cost": 0.04377233333333334
+  },
+  {
+    "id": 488,
+    "name": "Norway Mountain",
+    "accepted": {},
+    "rejected": {
+      "url": "head This operation was aborted: http://www.norwaymountain.com",
+      "ski_school_url": "head This operation was aborted: http://www.norwaymountain.com/ski-school.html"
+    },
+    "cost": 0.04384366666666667
+  },
+  {
+    "id": 450,
+    "name": "Nozawa Onsen",
+    "accepted": {
+      "url": "https://en.nozawaski.com/",
+      "kids_ski_free_url": "https://en.nozawaski.com/the-mountain/lift-ticket/ticket-prices/",
+      "ski_school_url": "https://en.nozawaski.com/the-mountain/lesson/ski-school/"
+    },
+    "rejected": {},
+    "cost": 0.04384366666666667
+  },
+  {
+    "id": 526,
+    "name": "Ober Mountain",
+    "accepted": {
+      "url": "https://www.obermountain.com"
+    },
+    "rejected": {},
+    "cost": 0.04384366666666667
+  }
+]
