@@ -13,6 +13,11 @@
 //   * Aux URLs (kids_ski_free etc.) must live on the same eTLD+1 as the
 //     main URL, otherwise they're rejected as likely hallucinations. This
 //     is a hard-earned lesson from the Epic roster scrape.
+//   * Some URL fields are *gated* on a sibling boolean field — see
+//     BOOLEAN_GATES. e.g. kids_ski_free_url is only filled when the resort
+//     actually has a kids-ski-free policy (kids_ski_free is non-null and
+//     not "No"). Without the gate, the model invents URLs for resorts that
+//     don't have the policy at all.
 //   * Resumable: per-resort results are written to data/scraped/enrich-urls.json
 //     as we go. Rerunning skips resorts already in that file.
 //   * Hard cost cap (see MAX_COST_USD).
@@ -43,6 +48,24 @@ const URL_FIELDS = [
   "daycare_url",
 ];
 
+// URL fields that only apply when a sibling field confirms the policy/feature.
+// Map: url field → name of the field that gates it.
+// Gate-open rule (see gateOpen): boolean is non-null/empty AND not "No".
+// Examples of truthy gate values:
+//   kids_ski_free: "Under 5", "Under 7", "Included", "Under 13 (Mon-Fri)"
+//   daycare:       "Yes", "Yes ($137)", "Yes (CA$65)"
+const BOOLEAN_GATES = {
+  kids_ski_free_url: "kids_ski_free",
+  daycare_url: "daycare",
+};
+
+function gateOpen(resort, field) {
+  const gate = BOOLEAN_GATES[field];
+  if (!gate) return true;
+  const v = resort[gate];
+  return v !== null && v !== undefined && v !== "" && v !== "No";
+}
+
 // --- args ---
 const args = process.argv.slice(2);
 const limitIdx = args.indexOf("--limit");
@@ -69,12 +92,15 @@ console.log(`[resume] ${results.length} resorts already processed`);
 // --- fetch candidate resorts ---
 let { data: all, error } = await supabase
   .from("resorts")
-  .select("id, name, location, pass_type, pass_types, url, kids_ski_free_url, ski_school_url, ski_school_cost_url, daycare_url")
+  .select("id, name, location, pass_type, pass_types, kids_ski_free, daycare, url, kids_ski_free_url, ski_school_url, ski_school_cost_url, daycare_url")
   .order("name");
 if (error) throw error;
 
+// A field "needs work" only when (a) it's empty AND (b) its gate is open.
+// Without the gate check, we'd send the model resorts where the only missing
+// field is e.g. kids_ski_free_url on a resort that doesn't have the policy.
 const needsWork = all.filter((r) =>
-  URL_FIELDS.some((f) => !r[f] || r[f] === "")
+  URL_FIELDS.some((f) => (!r[f] || r[f] === "") && gateOpen(r, f))
 );
 
 let resorts = needsWork.filter((r) => !done.has(`${r.id}`));
@@ -169,10 +195,16 @@ function buildUserPrompt(batch) {
       const passes = (r.pass_types || [r.pass_type]).join(", ");
       const have = URL_FIELDS.filter((f) => r[f] && r[f] !== "").map((f) => `${f}=${r[f]}`);
       const haveStr = have.length ? `\n     already-known: ${have.join(" | ")}` : "";
-      return `${i + 1}. ${r.name} — ${r.location} — passes: ${passes}${haveStr}`;
+      const skip = Object.entries(BOOLEAN_GATES)
+        .filter(([uf]) => !gateOpen(r, uf))
+        .map(([uf, g]) => `${uf} (${g}=${r[g] ?? "null"})`);
+      const skipStr = skip.length
+        ? `\n     RETURN NULL for: ${skip.join(", ")} — resort lacks the underlying policy/feature`
+        : "";
+      return `${i + 1}. ${r.name} — ${r.location} — passes: ${passes}${haveStr}${skipStr}`;
     })
     .join("\n");
-  return `Find the 5 URLs for each of these ${batch.length} ski resorts. If any URL is already known (listed above), you can use that domain as a hint but you still need to return a value for that field in your output (you can echo the known URL back). For missing URLs, search and return the real page URL or null.\n\n${list}\n\nReturn results as a JSON array inside <result></result> tags, one entry per resort in the same order.`;
+  return `Find the 5 URLs for each of these ${batch.length} ski resorts. If any URL is already known (listed above), you can use that domain as a hint but you still need to return a value for that field in your output (you can echo the known URL back). For missing URLs, search and return the real page URL or null. If a resort is marked "RETURN NULL for: <field>", do NOT search for or invent a URL for that field — return null.\n\n${list}\n\nReturn results as a JSON array inside <result></result> tags, one entry per resort in the same order.`;
 }
 
 // --- main loop ---
@@ -257,6 +289,15 @@ for (let i = 0; i < resorts.length; i += BATCH_SIZE) {
       if (orig[f] && orig[f] !== "") continue;
       const proposed = item[f];
       if (!proposed) continue;
+
+      // Gate check: don't fill kids_ski_free_url unless the resort actually
+      // has a kids-ski-free policy, etc. The model often proposes plausible
+      // URLs for resorts where the underlying feature doesn't exist.
+      if (!gateOpen(orig, f)) {
+        const gate = BOOLEAN_GATES[f];
+        rowLog.rejected[f] = `gate-closed (${gate}=${orig[gate] ?? "null"}): ${proposed}`;
+        continue;
+      }
 
       // Basic shape check
       let u;
